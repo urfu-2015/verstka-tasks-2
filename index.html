@@ -47,7 +47,7 @@
                         <td>ePub</td>
                     </tr>
                     <tr>
-                        <td>Переплет:</td>
+                        <td>Переплёт:</td>
                         <td>Твёрдый переплёт</td>
                     </tr>
                     <tr>
@@ -76,18 +76,18 @@
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td><time datetime="1828-08-16">16 августа 1828</time></td>
+                            <td><time datetime="1828-08-16">16 августа 1828 г</time></td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
-                            <td><time datetime="1910-11-07">7 ноября 1910</time></td>
+                            <td><time datetime="1910-11-07">7 ноября 1910 г</time></td>
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
                             <td>Ясная Поляна, Тульская губерния, Российская империя</td>
                         </tr>
                         <tr>
-                            <td>Род деятельност:</td>
+                            <td>Род деятельности:</td>
                             <td>прозаик, публицист, философ</td>
                         </tr>
                     </table>
@@ -95,7 +95,7 @@
             </article>
             
             <article>
-                <h2>Harry Potter and tde Sorcerer's Stone</h2>
+                <h2>Harry Potter and the Sorcerer's Stone</h2>
                 <table>
                     <tr>
                         <td>Тип:</td>
@@ -130,12 +130,12 @@
                         <td>pdf</td>
                     </tr>
                     <tr>
-                        <td>Переплет:</td>
-                        <td>Мягкий переплет</td>
+                        <td>Переплёт:</td>
+                        <td>Мягкий переплёт</td>
                     </tr>
                     <tr>
                     <td>Дата размещения:</td>
-                    <td><time datetime="2015-10-04">4 октября 2015</time></td>
+                    <td><time datetime="2015-10-04">4 октября 2015 г</time></td>
                     </tr>
                     <tr>
                         <td>Жанр:</td>
@@ -242,7 +242,7 @@
                     </tr>
                     <tr>
                         <td>Дата размещения:</td>
-                        <td><time datetime="2015-10-01">1 октября 2015</time></td>
+                        <td><time datetime="2015-10-01">1 октября 2015 г</time></td>
                     </tr>
                     <tr>
                         <td>URL:</td><td>
@@ -264,7 +264,7 @@
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td><time datetime="1954-08-16">16 августа 1954</time></td>
+                            <td><time datetime="1954-08-16">16 августа 1954 г</time></td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
@@ -290,10 +290,10 @@
                         <option value="film">Фильм:</option>
                     </select>
                     <label for="year">Год:</label>
-                    <input type="text" id="year" name="year">
+                    <input id="year" name="year">
 
                     <label for="genre">Жанр:</label>
-                    <input type="text" id="genre" name="genre">
+                    <input id="genre" name="genre">
 
                     <label for="url">URL:</label>
                     <input type="url" id="url" name="url">
@@ -304,39 +304,86 @@
 
                 <!--Автор-->
                 <fieldset title="Информация об авторе">
-                    <label>Автор:</label>
-                    <label>Дата рождения:</label>
-                    <label>Дата смерти:</label>
-                    <label>Место рождения:</label>
+                    <label for="author">Автор:</label>
+                    <input id="author" name="author">
+
+                    <label for="authorDateOfBirth">Дата рождения:</label>
+                    <input type="date" id="authorDateOfBirth" name="authorDateOfBirth">
+
+                    <label for="authorDateOfDeath">Дата смерти:</label>
+                    <input type="date" id="authorDateOfDeath" name="authorDateOfDeath">
+
+                    <label for="authorPlaceOfDeath">Место рождения:</label>
+                    <input id="authorPlaceOfDeath" name="authorPlaceOfDeath">
+
                     <label>Род деятельности:</label>
-                    <label>URL:</label>
-                    <label>Адрес:</label>
-                    <label>Email:</label>
+                    <input id="" name="">
+
+                    <label for="authorUrl">URL:</label>
+                    <input type="url" id="authorUrl" name="authorUrl">
+
+                    <label for="authorAddress">Адрес:</label>
+                    <input id="authorAddress" name="authorAddress">
+
+                    <label for="authorEmail">Email:</label>
+                    <input type="email" id="authorEmail" name="authorEmail">
                 </fieldset>
 
                 <!--Книга доп. инф.-->
-                <fieldset title="Информация о книге">
-                    <label>Тип издания:</label>
-                    <label>Язык:</label>
-                    <label>Страниц:</label>
-                    <label>Формат:</label>
-                    <label>Переплёт:</label>
-                    <label>Издательство:</label>
-                    <label>ISBN:</label>
+                <fieldset title="дополнительная информация о книге">
+                    <label for="bookType">Тип издания:</label>
+                    <input id="bookType" name="bookType">
+
+                    <label for="bookLanguage">Язык:</label>
+                    <input id="bookLanguage" name="bookLanguage">
+
+                    <label for="bookPages">Количество страниц:</label>
+                    <input type="number" id="bookPages" name="bookPages">
+
+                    <label for="bookFormat">Формат:</label>
+                    <input id="bookFormat" name="bookFormat">
+
+                    <label for="bookCover">Переплёт:</label>
+                    <input id="bookCover" name="bookCover">
+
+                    <label for="bookPublisher">Издательство:</label>
+                    <input id="bookPublisher" name="bookPublisher">
+
+                    <label for="bookISBN">ISBN:</label>
+                    <input id="bookISBN" name="bookISBN">
                 </fieldset>
 
                 <!--Фильм доп. инф.-->
-                <fieldset title="Информация о фильме">
-                    <label>Страна</label>
-                    <label>Слоган</label>
-                    <label>Режиссёр</label>
-                    <label>Сценарий</label>
-                    <label>Продюссер</label>
-                    <label>Оператор</label>
-                    <label>Композитор</label>
-                    <label>Художник</label>
-                    <label>Монтаж</label>
+                <fieldset title="дополнительная информация о фильме">
+                    <label for="filmCountry">Страна</label>
+                    <input id="filmCountry" name="filmCountry">
+
+                    <label for="filmLine">Слоган</label>
+                    <input id="filmLine" name="filmLine">
+
+                    <label for="film">Режиссёр</label>
+                    <input id="" name="">
+
+                    <label for="filmScenario">Сценарий</label>
+                    <input id="filmScenario" name="filmScenario">
+
+                    <label for="film">Продюссер</label>
+                    <input id="" name="">
+
+                    <label for="film">Оператор</label>
+                    <input id="" name="">
+
+                    <label for="film">Композитор</label>
+                    <input id="" name="">
+
+                    <label for="film">Художник</label>
+                    <input id="" name="">
+
+                    <label for="film">Монтаж</label>
+                    <input id="" name="">
                 </fieldset>
+                
+                <input type="submit" name="submitButton" value="Добавить">
             </form>
         </main>
     </body>
