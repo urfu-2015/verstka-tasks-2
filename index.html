@@ -1,3 +1,325 @@
-<html>
-    <!-- Ваш замечательный код -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бабулькин сервант</title>
+    <style>
+        #film:checked ~ .book {
+            display: none;
+        }     
+        #book:checked ~ .filmForm {
+            display: none;
+        } 
+        #film:checked ~ #isFilm {
+            display: none;
+        } 
+        #film:checked ~ #lableIsFilm {
+            display: none;
+        } 
+        #isFilm:checked  ~ .filmForm {
+            display: block;
+        }         
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Книги и фильмы</h1>
+        </header>
+        <article>
+            <h2>- Война и мир.</h2>
+            <img
+                width="200"
+                height="270"
+                src="https://lh4.ggpht.com/0E2SWOpJ_lO2-1KexN7m9E6-kn_q1GYRtNnYAgHX-zWDAkqSzcif73Z50CSkXkd6oOxx=h900"
+                alt="Постер. Война и мир"
+            >
+            <ul>
+                <li>Тип: Книга
+                <li>Издательство: АСТ, Астрель
+                <li><abbr title='International Standard Book Number'>ISBN</abbr>: 5-17-006400-4,978-5-17-006400-7
+                <li>Год: 1867 г
+                <li>Тип издания: Авторский сборник
+                <li>Язык: Русский
+                <li>Страниц: 704 стр.
+                <li>Формат: ePub
+                <li>Переплет: Твердый переплет
+                <li>Дата размещения: 8 котобря 2015
+                <li>Жанр: Русская классика, Литература 19 века
+                <li>URL: 
+                    <a 
+                        href='http://babulenkin-servant.com/books/war_and_peace.epub'
+                        download
+                        type="application/epub">
+                        war_and_peace.epub
+                    </a>
+                <li>Прослушать книгу
+                    <audio controls>
+                        <source src="http://babulenkin-servant.com/audio/no-file.mp3"  type="audio/mp3">
+                        Элемент аудио не поддерживается вашим браузером.
+                        <a href="http://babulenkin-servant.com/audio/no-file.mp3">Скачайть аудио книгу</a>.
+                    </audio>
+                <li>
+                    <p>
+                      Описание: Великий роман-эпопея Льва Толстого чудесным образом, как огромная мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых, политических, философских, портретных, пейзажных, психологических...
+                    </p>
+
+                <li> 
+                    <p>Связи:</p>
+                    <p>Фильм: <a href='#'>Перейти к фильму</a></p> 
+                <li>Автор: Лев Николаевич Толстой
+                <li>
+                    <img
+                    width="200"
+                    height="270"
+                    src="http://www.logoslovo.ru/media/pic_full/12/37360.jpg"
+                    alt="Постер. Война и мир"   
+                    >
+                <li>Дата рождения: 16 августа 1828
+                <li>Дата смерти: 7 ноября 1910
+                <li>Место рождения:    Ясная Поляна, Тульская губерния, Российская империя
+                <li>Род деятельности: прозаик, публицист, философ
+            </ul>
+
+            <h2>- Harry Potter and the Sorcerer's Stone</h2>
+             <img
+                width="200"
+                height="270"
+                src="https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg"
+                alt="Постер. Harry Potter and the Sorcerer's Stone"   
+                >
+            <ul>
+                <li>Тип: Книга
+                <li>Издательство: АСТ, Астрель
+                <li><abbr title='International Standard Book Number'>ISBN</abbr>: 978-0439708180
+                <li>Год: 1998 г
+                <li>Язык: English
+                <li>Страниц: 309 стр.
+                <li>Формат: pdf
+                <li>Переплет: Мягкий переплет
+                <li>Дата размещения: 4 котобря 2015
+                <li>Жанр: Fantasy, Adventure, Kids &amp; Family
+                <li>URL:
+                    <a 
+                        href='http://babulenkin-servant.com/books/potter.pdf'
+                        download
+                        type="application/pdf">
+                        potter.pdf
+                    </a>
+                <li lang="en">
+                        Описание: Harry Potter has no idea how famous he is. That's because he's being raised by his miserable aunt and uncle who are terrified Harry will learn that he's really a wizard, just as his parents were.
+                <li>Автор: J. K. Rowling
+                <li><img
+                    width="200"
+                    height="270"
+                    src="http://vignette4.wikia.nocookie.net/harrypotter/images/9/9b/Jkrowling.jpg/revision/latest?cb=20131116180110&path-prefix=ru"
+                    alt="Постер. Война и мир"   
+                    >
+                <li>Дата рождения: 31 июля 1965
+                <li>Дата смерти: –
+                <li>Место рождения:    Глостершир, Англия
+                <li>Род деятельности: прозаик
+                <li>URL: <a href='jkrowling.com'>jkrowling.com</a>
+                <li>Адрес: 50 Bedford Square, London
+                <li>Email: <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+            </ul>
+
+            <h2>- Titanic</h2>
+            <img
+                width="200"
+                height="270"
+                src="https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg"
+                alt="Постер. Harry Potter and the Sorcerer's Stone"   
+            >
+
+            <ul>
+                <li>Тип: Фильм
+                <li>Год: 1997
+                <li>Страна: США
+                <li>Слоган: «Ничто на Земле не сможет разлучить их»
+                <li>Режиссер: Джеймс Кэмерон
+                <li>Сценарий: Джеймс Кэмерон
+                <li>Продюсер: Джеймс Кэмерон, Джон Ландау, Памела Исли
+                <li>Оператор: Рассел Карпентер
+                <li>Композитор: Джеймс Хорнер
+                <li>Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли
+                <li>Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис
+                <li>Жанр: драма, мелодрама
+                <li>Дата размещения: 1 котобря 2015:
+                <!--  КОТОБРЯ!!!!! :з -->
+                <li>Трейлер:<br>
+                    <iframe 
+                        width="500" height="300"
+                        src="https://www.youtube.com/embed/zCy5WQ9S4c0"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                <li>Фильм:<br>
+                    <video 
+                        width="500" 
+                        height="300" 
+                        controls  
+                        poster="http://www.sanlook.com/wp-content/uploads/2015/04/Yandex.jpg">
+                        <source src="http://babulenkin-servant.com/films/titanic.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <track label="English" kind="subtitles" srclang="en" src="no-subtitres-en.vtt" default>
+                        Элемент video не поддерживается вашим браузером.
+                        <a href="http://babulenkin-servant.com/films/titanic.mp4">Скачайть фильм</a>.
+                    </video>
+                <li>
+                    <p>
+                        Описание: Молодые влюбленные Джек и Роза находят друг друга в первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики, и их страстная любовь превратится в схватку со смертью.
+                    </p>
+                <li>Автор: Джеймс Кэмерон
+                <li>Дата рождения: 16 августа 1954
+                <li>Дата смерти: –
+                <li>Место рождения: Капускасинг, Онтарио, Канада
+                <li>Род деятельности: продюсер, режиссер, сценарист, актер
+            </ul>
+        </article>
+
+
+        <article>
+            <h2>А ЗДЕСЬ ФОРМА ДОБАВЛЕНИЯ НОВЫХ КНИГ И ФИЛЬМОВ</h2>
+            <form action="#" method="POST">
+                <h3>Выберете тип</h3>
+                <input type="radio" name="type" id="film" value="film">Фильм
+                <input type="radio" name="type" id="book" value="book">Книга
+                <br>
+                
+                
+                <div class='book'>
+                    <h2>Книга</h2>
+                    <label for="titleBook">Название</label>
+                    <input id="titleBook" name="titleBook">
+                    <br>
+                    <label for="yearBook">Год</label>
+                    <input id="yearBook" type="number" min="1000" max="2070" value="2015" name="yearBook">
+                    <br>
+                    <label for="publishingHouse">Издательство</label>
+                    <input id="publishingHouse" name="publishingHouse">
+                    <br>
+                    <label for="isbn">ISBN</label>
+                    <input id="isbn" name="isbn">
+                    <br>
+                    <label for="publicationType">Тип издания</label>
+                    <input id="publicationType" name="publicationType">
+                    <br>
+                    <select id="language" name="type">
+                        <option selected>Выберите язык</option>
+                        <option>Русский</option>
+                        <option>Английский</option>
+                    </select>
+                    <br>
+                    <label for="countPage">Колличество страниц</label>
+                    <input id="countPage" type="number" min="0" value="0" name="countPage">
+                    <br>
+                    <label for="format">Переплет</label>
+                    <select id="format" name="type">
+                        <option selected>Выберите тип</option>
+                        <option>Мягкий переплет</option>
+                        <option>Твердый переплет</option>
+                    </select>
+                    <br>
+                    <label for="audio">Аудио версия книги</label>
+                    <input id="audio" name="audio" type="file" value="" accept="audio/mpeg">
+                    <br>
+                </div>
+                <label id="lableIsFilm" for="isFilm">Есть фильм</label>
+                <input id="isFilm" type="checkbox" name="isFilm" value="Есть фильм">
+                <br>
+                <div class='filmForm'>
+                    <h2>Фильм</h2>
+                    <label for="titleFilm">Название</label>
+                    <input id="titleFilm" name="titleFilm">
+                    <br>
+                    <label for="yearFilm">Год</label>
+                    <input id="yearFilm" type="number" min="1800" max="2070" value="2015" name="yearFilm">
+                    <br>
+                    <label for="country">Страна</label>
+                    <select id="country" name="type">
+                        <option selected>Выберите страну</option>
+                        <option>Россия</option>
+                        <option>Англия</option>
+                        <option>США</option>
+                    </select>
+                    <br>
+                    <label for="tagline">Слоган</label>
+                    <input id="tagline" name="tagline">
+                    <br>
+                    <label for="director">Режисер</label>
+                    <input id="director" name="director">
+                    <br>
+                    <label for="screenwriter">Сценарист</label>
+                    <input id="screenwriter" name="screenwriter">
+                    <br>
+                    <label for="producer">Продюсер</label>
+                    <input id="producer" name="producer">
+                    <br>
+                    <label for="operator">Оператор</label>
+                    <input id="operator" name="operator">
+                    <br>
+                    <label for="composer">Композитор</label>
+                    <input id="composer" name="composer">
+                    <br>
+                    <label for="artist">Художник</label>
+                    <input id="artist" name="artist">
+                    <br>
+                    <label for="installation">Монтаж</label>
+                    <input id="installation" name="installation">
+                    <br>                 
+                    <label for="Subtitre">Субтитры</label>
+                    <input id="Subtitre" name="Subtitre" type="file">
+                </div>
+                <div class="author">
+                    <h2>Автор</h2>
+                    <label for="authorInput">Автор</label>
+                    <input id="authorInput" name="authorInput">
+                    <br>  
+                    <label for="placeOfBirth">Место рождения</label>
+                    <input id="placeOfBirth" name="placeOfBirth">
+                    <br>  
+                    <label for="occupation">Род деятельности</label>
+                    <input id="occupation" name="occupation">
+                    <br>  
+                    <label for="dateBirth">Дата рождения</label>
+                    <input id="dateBirth" name="dateBirth" type="date">
+                    <br>  
+                    <label for="dateDeath">Дата смерти</label>
+                    <input id="dateDeath" name="dateDeath" type="date">
+                    <br>  
+                    <label for="email">Электронная почта автора</label>
+                    <input id="email" name="email" type="email" value="">
+                    <br>                
+                    <label for="url">Домашняя страница автора</label>
+                    <input id="url" name="url" type="url">
+                    <br>
+                    <label for="adress">Адрес</label>
+                    <input id="adress" name="adress">
+                    <br>
+                    <label for="phone">Телефон автора</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+700000000000">
+                    <br>
+                    <label for="placeBorn">Место рождения</label>
+                    <input id="placeBorn" name="placeBorn">
+                    <br>    
+                </div>
+
+                <label for="genre">Жанр</label>
+                <input id="genre" name="genre">
+                <br>            
+                <label for="description">Описание</label>
+                <textarea id="description" name="description"></textarea>
+                <br>
+                <label for="file">Файл</label>
+                <input id="file" name="file" type="file">
+                <br>
+                <button type="submit">Загрузить</button>
+            </form>
+        </article>
+       
+    </section>
+    <footer>
+        <address>Yandex.</address>
+    </footer>
+</body>
 </html>
