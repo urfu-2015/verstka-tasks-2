@@ -1,3 +1,371 @@
-<html>
-    <!-- Ваш замечательный код -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keyword" content="Война и мир, Harry Potter, Titanic, Гарри Поттер, Титаник">
+        <title>Бабуленькин сервант</title>
+        <base target="_blank" />
+        <style type="text/css">
+            h1, h2, input {
+                text-align: center;
+            }
+
+            p {
+                margin: 1px;
+            }
+
+            input {
+                margin: 5px;
+            }
+
+            .bookIcon, .button, iframe, video {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .tolstoy {
+                position: relative;
+                left: 450px;
+                bottom: 200px;
+                margin-bottom: -100px;
+            }
+
+            .rowling {
+                position: relative;
+                left: 450px;
+                bottom: 220px;
+                margin-bottom: -150px;
+            }
+
+            .cameron {
+                position: relative;
+                left: 450px;
+                bottom: 200px;
+                margin-bottom: -100px;
+            }
+
+            .authorIcon {
+                margin-left: 150px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Бабуленькин сервант</h1>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <article itemscope itemtype="http://schema.org/Book">
+                    <header>
+                        <h2><span itemprop="name">Война и мир</span></h2>
+                    </header>
+                    <img src="images/warAndPeaceIcon.jpg" class="bookIcon"
+                         alt="War and peace book icon" height="300px">
+                    <p><em>Тип:</em>Книга</p>
+                    <p><em>Издательство:</em><span itemprop="publisher">АСТ, Астрель</span></p>
+                    <p><em><abbr title=" International Standard Book Number">ISBN</abbr>:</em>
+                        <span itemprop="isbn">5-17-006400-4</span>,
+                        <span itemprop="isbn">978-5-17-006400-7</span>
+                    </p>
+                    <p><em>Год:</em><span itemprop="dateCreated">1867</span>г</p>
+                    <p><em>Тип издания:</em>Авторский сборник</p>
+                    <p><em>Язык:</em><span itemprop="inLanguage">Русский</span></p>
+                    <p><em>Страниц:</em><span itemprop="numberOfPages">704</span> стр.</p>
+                    <p><em>Формат:</em><span itemprop="bookFormat">ePub</span></p>
+                    <p><em>Переплет:</em>Твердый переплет</p>
+                    <p>
+                        <em>Дата размещения:</em>
+                        <span itemprop="datePublished"><time>2015-10-08</time></span>
+                    </p>
+                    <p>
+                        <em>Жанр:</em>
+                        <span itemprop="genre">Русская классика</span>,
+                        <span itemprop="genre">Литература 19 века</span>
+                    </p>
+                    <p>
+                        <em>URL:</em>
+                        <em><a href="http://babulenkin-servant.com/books/war_and_peace.epub" itemprop="url">
+                            http://babulenkin-servant.com/books/war_and_peace.epub
+                        </a></em>
+                    </p>
+                    <p>
+                        <em>Описание:</em>
+                        <span itemprop="description">
+                            Великий роман-эпопея Льва Толстого чудесным образом, как огромная
+                            мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
+                            политических, философских, портретных, пейзажных, психологических...
+                        </span>
+                    </p>
+                    <p>
+                        <em>Аудиокнига:</em>
+                        <em><a href="http://audioknigi.club/tolstoy-lev-voyna-i-mir-prudovskiy-ilya">
+                            http://audioknigi.club/tolstoy-lev-voyna-i-mir-prudovskiy-ilya
+                        </a></em>
+                    </p>
+                    <p><em>Фильм:</em>Да</p>
+                    <img src="images/tolstoy.jpg" class="authorIcon" alt="Lev Tolstoy" height="250px">
+                    <div itemprop="author" class="tolstoy" itemscope itemtype="http://schema.org/Person">
+                        <p>
+                            <em>Автор:</em>
+                            <span itemprop="givenName">Лев</span>
+                            Николаевич
+                            <span itemprop="familyName">Толстой</span>
+                        </p>
+                        <p>
+                            <em>Дата рождения:</em><time itemprop="birthDate">1828-08-16</time>
+                        </p>
+                        <p>
+                            <em>Дата смерти:</em><time itemprop="deathDate">1910-11-07</time>
+                        </p>
+                        <p>
+                            <span itemprop="birthPlace">
+                                <em>Место рождения:</em>
+                                <span itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="addressLocality">Ясная Поляна</span>,
+                                    <span itemprop="addressRegion">Тульская губерния</span>,
+                                    <span itemprop="addressCountry">Российская империя</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            <em>Род деятельности:</em>
+                            <span itemprop="jobTitle">прозаик</span>,
+                            <span itemprop="jobTitle">публицист</span>,
+                            <span itemprop="jobTitle">философ</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article itemscope itemtype="http://schema.org/Book">
+                    <header>
+                        <h2><span itemprop="name">Harry Potter and the Sorcerer's Stone</span></h2>
+                    </header>
+                    <img src="images/HarryPotterBook.jpg" class="bookIcon"
+                         alt="Harry Potter book icon" height="300px">
+                    <p><em>Тип:</em>Книга</p>
+                    <p><em>Издательство:</em><span itemprop="publisher">АСТ, Астрель</span></p>
+                    <p><em>ISBN:</em><span itemprop="isbn">978-0439708180</span></p>
+                    <p><em>Год:</em><span itemprop="dateCreated">1998</span> г</p>
+                    <p><em>Язык:</em><span itemprop="inLanguage">English</span></p>
+                    <p><em>Страниц:</em><span itemprop="numberOfPages">309</span> стр.</p>
+                    <p><em>Формат:</em><span itemprop="bookFormat">pdf</span></p>
+                    <p><em>Переплет:</em>Мягкий переплет</p>
+                    <p>
+                        <em>Дата размещения:</em>
+                        <time itemprop="datePublished">2015-10-04</time>
+                    </p>
+                    <p>
+                        <em>Жанр:</em>
+                        <span itemprop="genre">Fantasy</span>,
+                        <span itemprop="genre">Adventure</span>
+                        <span itemprop="genre">Kids & Family</span>
+                    </p>
+                    <p>
+                        <em>URL:</em>
+                        <span itemprop="url">
+                            <a href="http://babulenkin-servant.com/books/potter.pdf">
+                                http://babulenkin-servant.com/books/potter.pdf
+                            </a>
+                        </span>
+                    </p>
+                    <p>
+                        <em>Описание:</em>
+                        <span itemprop="description">
+                            Harry Potter has no idea how famous he is. That's because he's
+                            being raised by his miserable aunt and uncle who are terrified Harry will
+                            learn that he's really a wizard, just as his parents were.
+                        </span>
+                    </p>
+                    <p>
+                        <em>Аудиокнига:</em>
+                        <a href="https://soundcloud.com/pottermore/+
+                        +harry-potter-and-the-philosophers-stone-stephen-fry-audio-book">
+                            https://soundcloud.com/pottermore/
+                            harry-potter-and-the-philosophers-stone-stephen-fry-audio-book
+                        </a>
+                    </p>
+                    <p><em>Фильм:</em>Да</p>
+                    <p><em>Трейлер:</em></p>
+                    <video width="460" height="310" controls poster="images/HPFilmIcon.jpg">
+                        <source src="videos/harryTrailer.mp4"
+                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Элемент video не поддерживается вашим браузером.
+                    </video>
+                    <img src="images/rowling.jpeg" class="authorIcon" alt="J.K.Rowling" height="250px">
+                    <div itemprop="author" class="rowling" itemscope itemtype="http://schema.org/Person">
+                        <p><em>Автор:</em><span itemprop="author">J.K.Rowling</span></p>
+                        <p>
+                            <em>Дата рождения:</em>
+                            <time itemprop="birthDate">1965-07-31</time>
+                        </p>
+                        <p><em>Дата смерти:</em><span itemprop="deathDate">-</span></p>
+                        <p>
+                            <span itemprop="birthPlace">
+                                <em>Место рождения:</em>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="addressLocality">Глостершир</span>,
+                                    <span itemprop="addressCountry">Англия</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p><em>Род деятельности:</em><span itemprop="jobTitle"> прозаик</span></p>
+                        <address>
+                            <em>URL:</em>
+                            <span itemprop="url">
+                                <a href="jkrowling.com">jkrowling.com</a>
+                            </span>
+                            <br>
+                            <em>Адрес:</em>
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="addressRegion">London</span>
+                                <span itemprop="streetAddress">Bedford Square, 50</span>
+                            </span>
+                            <br>
+                            <em>Email:</em>
+                            <span itemprop="email">
+                                <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                            </span>
+                        </address>
+                    </div>
+                </article>
+
+                <article itemscope itemtype="http://schema.org/Movie">
+                    <header>
+                        <h2><span itemprop="name">Titanic</span></h2>
+                    </header>
+                    <video width="460" height="315" controls poster="images/titanicIcon.jpg">
+                        <source src="videos/titanicTrailer.mp4"
+                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Элемент video не поддерживается вашим браузером.
+                    </video>
+                    <p><em>Тип:</em>Фильм</p>
+                    <p><em>Год:</em><span itemprop="dateCreated">1997</span></p>
+                    <p><em>Страна:</em><span itemprop="contentLocation">США</span></p>
+                    <p>
+                        <em>Слоган:</em>
+                        <q itemprop="headline">Ничто на Земле не сможет разлучить их</q>
+                    </p>
+                    <p><em>Режиссер:</em><span itemprop="director">Джеймс Кэмерон</span></p>
+                    <p><em>Сценарий:</em><span itemprop="author">Джеймс Кэмерон</span></p>
+                    <p>
+                        <em>Продюсер:</em>
+                        <span itemprop="producer">Джеймс Кэмерон</span>,
+                        <span itemprop="producer">Джон Ландау</span>,
+                        <span itemprop="producer">Памела Исли</span>
+                    </p>
+                    <p><em>Оператор:</em><span itemprop="provider">Рассел Карпентер</span></p>
+                    <p><em>Композитор:</em><span itemprop="musicBy">Джеймс Хорнер</span></p>
+                    <p><em>Художники:</em>Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли</p>
+                    <p><em>Монтаж:</em>Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис</p>
+                    <p><em>Жанр:</em><span itemprop="genre">драма, мелодрама</span></p>
+                    <p>
+                        <em>Дата размещения:</em>
+                        <time itemprop="datePublished">2015-10-01</time>
+                    </p>
+                    <p>
+                        <em>URL:</em>
+                        <span itemprop="url">
+                            <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                                http://babulenkin-servant.com/films/titanic.mp4
+                            </a>
+                        </span>
+                    </p>
+                    <p>
+                        <em>Описание:</em>
+                        <span itemprop="description">
+                            Молодые влюбленные Джек и Роза находят друг друга в первом и
+                            последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                            шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
+                            и их страстная любовь превратится в схватку со смертью.
+                        </span>
+                    </p>
+                    <img src="images/cameron.jpg" class="authorIcon" alt="James Cameron" height="250px">
+                    <div itemprop="author" class="cameron" itemscope itemtype="http://schema.org/Person">
+                        <p><em>Автор:</em><span itemprop="author">Джеймс Кэмерон</span></p>
+                        <p>
+                            <em>Дата рождения:</em>
+                            <time itemprop="birthDate">1954-08-16</time>
+                        </p>
+                        <p><em>Дата смерти:</em><span itemprop="deathDate">-</span></p>
+                        <p>
+                            <span itemprop="birthPlace">
+                                <em>Место рождения:</em>
+                                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="addressLocality">Капускасинг</span>,
+                                    <span itemprop="addressRegion">Онтарио</span>,
+                                    <span itemprop="addressCountry">Канада</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            <em>Род деятельности:</em>
+                            <span itemprop="jobTitle">продюсер</span>,
+                            <span itemprop="jobTitle">режиссер</span>,
+                            <span itemprop="jobTitle">сценарист</span>,
+                            <span itemprop="jobTitle">актер</span>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <article>
+                <header>
+                    <h2>Добавить новое произведение:</h2>
+                </header>
+                <form method="post">
+                    <label for="type">Выберите тип загружаемого произведения:</label>
+                    <select id="type" name="type">
+                        <option>Книга</option>
+                        <option>Фильм</option>
+                    </select>
+                    <br>
+                    <label for="name">Название произведения:</label>
+                    <input id="name" placeholder="Евгений Онегин" name="name" value="" required>
+                    <br>
+                    <label for="author">Автор:</label>
+                    <input id="author" placeholder="Пушкин А.С." name="author" value="" required>
+                    <br>
+                    <label for="language">Язык:</label>
+                    Русский
+                    <input id="language" name="language" type="radio" value="Русский" checked>
+                    English
+                    <input name="language" type="radio" value="English">
+                    <br>
+                    <label for="publishDate">Год выпуска:</label>
+                    <input id="publishDate" name="publishDate" placeholder="XXXX" pattern="[0-9]{4}"
+                           maxlength="4" value="">
+                    <br>
+                    <label for="country">Страна:</label>
+                    <input id="country" placeholder="Россия" name="country" value="">
+                    <br>
+                    <label for="date">Дата публикации:</label>
+                    <input id="date" name="date" type="date" value="2015-10-14">
+                    <br>
+                    <label for="genre">Жанр:</label>
+                    <input id="genre" placeholder="Классика" name="genre" value="">
+                    <br>
+                    <label for="bookIcon">Обложка для книги:</label>
+                    <input id="bookIcon" name="bookIcon" type="file"
+                           value="" accept="image/jpeg,image/png,image/gif">
+                    <br>
+                    <label for="audioBook">Аудио версия книги:</label>
+                    <input id="audioBook" name="audioBook" type="file"
+                           value="" accept="audio/mp4,audio/mpeg,audio/vnd.wave">
+                    <br>
+                    <label for="trailer">Трейлер фильма:</label>
+                    <input id="trailer" name="trailer" type="file"
+                           value="" accept="video/mp4,video/ogg,video/x-ms-wmv">
+                    <br>
+                    <label for="url">Официальный сайт автора:</label>
+                    <input id="url" name="url" type="url" value="">
+                    <br>
+                    <label for="description">Название произведения:</label>
+                    <textarea id="description" placeholder="Описание" name="description"></textarea>
+                    <br>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </article>
+        </main>
+    </body>
 </html>
