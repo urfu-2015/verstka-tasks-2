@@ -1,3 +1,394 @@
-<html>
-    <!-- Ваш замечательный код -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Бабуленькин сервант</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1>Бабуленькин сервант</h1>
+        </header>
+        <section itemscope itemtype="http://schema.org/Book">
+            <header>
+                <h2 itemprop="name">Война и Мир</h2>
+            </header>
+            <article>
+                <header>
+                    <img itemprop="image" src="Война и мир.jpeg" alt="Война и Мир">
+                </header>
+                <ul>
+                    <li itemprop="category">Тип: Книга</li>
+                    <li itemprop="publisher">Издательство: АСТ, Астрель</li>
+                    <li itemprop="isbn">
+                        <abbr title="International Standard Book Number">ISBN</abbr>:  
+                        5-17-006400-4,978-5-17-006400-7
+                    </li>
+                    <li itemprop="dateCreated">Год: 1867 г</li>
+                    <li itemprop="bookEdition">Тип издания: Авторский сборник</li>
+                    <li itemprop="inLanguage">Язык: Русский</li>
+                    <li itemprop="numberOfPages">Страниц: 704 стр.</li>
+                    <li itemprop="bookFormat">Формат: epub</li>
+                    <li itemprop="cover">Переплёт: Твёрдый переплёт</li>
+                    <li itemprop="datePublished">Дата размещения: 8 котобря 2015</li>
+                    <li itemprop="genre">Жанр: Русская классика, Литература 19 века</li>
+                    <li itemprop="url">
+                        <abbr title="Uniform Resource Locator">URL:</abbr>
+                        <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                            http://babulenkin-servant.com/books/war_and_peace.epub
+                        </a>
+                    </li>
+                    <li itemprop="about">
+                        Описание: Великий роман-эпопея Льва Толстого чудесным образом, как огромная
+                        мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
+                        политических, философских, портретных, пейзажных, психологических...
+                    </li>
+                </ul>
+            </article>
+            <section itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <header>
+                    <h3>
+                        <span itemprop="givenName">Лев Николаевич</span> 
+                        <span itemprop="familyName">Толстой</span>
+                    </h3>
+                </header>
+                <article>
+                    <header>
+                        <img src="Толстой.jpg" 
+                        itemprop="image" alt="Л.Н. Толстой">
+                    </header>
+                    <ul>
+                        <li itemprop="birthDate">Дата рождения: 16 августа 1828</li>
+                        <li itemprop="deathDate">Дата смерти: 7 ноября 1910</li>
+                        <li itemprop="address">
+                            <section itemscope itemtype="http://schema.org/PostalAddress">
+                                Место рождения:
+                                <span itemprop="addressLocation">Ясная Поляна</span>,
+                                <span itemprop="addressRegion">Тульская губерния</span>,  
+                                <span itemprop="addressCountry">Российская империя</span>
+                            </section>
+                        </li>
+                        <li itemprop="jobTitle">Род деятельности: прозаик, публицист, философ</li>
+                    </ul>
+                    <audio itemprop="audio" controls>
+                        <source src="http://slushai-knigi.com/uploads/files/2014-10/1412858110_1_1_01_01.mp3" 
+                        type="audio/mpeg">
+                        Audio не поддерживается вашим браузером. 
+                        <a href="http://slushai-knigi.com/14-skachat-audioknigu-voyna-i-mir.html">
+                            Скачайте отрывок
+                        </a>.
+                    </audio>
+                    <video itemprop="video" poster="VoinaIMirPoster.jpg"> 
+                        <source src="http://сервант/VoinaIMirFilm.mp4" type="video/mp4">
+                        <source src="http://сервант/VoinaIMirFilm.ogv" type="video/ogg">
+                        <track kind="subtitles" src="http://сервант/voinaimir.ru.srt" srclang="ru" 
+                        label="Русский">
+                        Элемент video не поддерживается вашим браузером.
+                        <a href="http://сервант/VoinaIMirFilm.mp4">Скачайте видео</a>
+                    </video>
+                </article>
+            </section>
+        </section>
+        <section itemscope itemtype="http://schema.org/Book">
+            <header>
+                <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
+            </header>
+            <article>
+                <header>
+                    <img src="ГП" itemprop="image" alt="ГП">
+                </header>
+                <ul>
+                    <li itemprop="category">Тип: Книга</li>
+                    <li itemprop="publisher">Издательство: АСТ, Астрель</li>
+                    <li itemprop="isbn">
+                        <abbr title="International Standard Book Number">ISBN</abbr>: 
+                        978-0439708180
+                    </li>
+                    <li itemprop="dateCreated">Год: 1998 г</li>
+                    <li itemprop="inLanguage">Язык: English</li>
+                    <li itemprop="numberOfPages">Страниц: 309 стр.</li>
+                    <li itemprop="bookFormat">Формат: pdf</li>
+                    <li itemprop="cover">Переплёт: Мягкий переплёт</li>
+                    <li itemprop="datePublished">Дата размещения: 4 котобря 2015</li>
+                    <li itemprop="genre">Жанр: Fantasy, Adventure, Kids &amp; Family</li>
+                    <li itemprop="url">
+                        <abbr title="Uniform Resource Locator">URL:</abbr>
+                        <a href="http://babulenkin-servant.com/books/potter.pdf">
+                            http://babulenkin-servant.com/books/potter.pdf
+                        </a>
+                    </li>
+                    <li itemprop="about">
+                        Описание: Harry Potter has no idea how famous he is. That's because he's
+                        being raised by his miserable aunt and uncle who are terrified Harry will
+                        learn that he's really a wizard, just as his parents were.
+                    </li>
+                </ul>
+            </article>
+            <section itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <header>
+                    <h3>
+                        <span itemprop="givenName">J. K.</span> 
+                        <span itemprop="familyName">Rowling</span>
+                    </h3>
+                </header>
+                <article>
+                    <header>
+                        <img src="Роулинг.jpg" itemprop="image" alt="Rowling">
+                    </header>
+                    <ul>
+                        <li itemprop="birthDate">Дата рождения: 31 июля 1965</li>
+                        <li itemprop="deathDate">Дата смерти: &ndash;</li>
+                        <li itemprop="address">
+                            <section itemscope itemtype="http://schema.org/PostalAddress">
+                                Место рождения:
+                                <span itemprop="addressRegion"> Глостершир</span>, 
+                                <span itemprop="addressCountry">Англия</span>
+                            </section>
+                        </li>
+                        <li itemprop="jobTitle">Род деятельности: прозаик</li>
+                        <li itemprop="url">
+                            <abbr title="Uniform Resource Locator">URL:</abbr>
+                            <a href="jkrowling.com">jkrowling.com</a>
+                        </li>
+                        <li itemprop="address">
+                            <section itemscope itemtype="http://schema.org/PostalAddress">
+                                Место рождения:
+                                <span itemprop="streetAddress">50 Bedford Square</span>,
+                                <span itemprop="addressRegion"> London</span>
+                            </section>
+                        </li>
+                        
+                        <li itemprop="email">Email: info@jkrowlingpr.com</li>
+                    </ul>
+                    <audio itemprop="audio" controls>
+                        <source src="http://slushai-knigi.com/uploads/files/2014-08/1407594430_garri-potter-1.mp3" 
+                        type="audio/mpeg">
+                        Audio не поддерживается вашим браузером. 
+                        <a href="http://slushai-knigi.com/68-garri-potter-i-filosofskiy-kamen-audiokniga.html">
+                            Скачайте отрывок
+                        </a>.
+                    </audio>
+                    <video itemprop="video" poster="HarryPotterPoster.jpg"> 
+                        <source src="http://сервант/HarryPotterFilm.mp4" type="video/mp4">
+                        <source src="http://сервант/HarryPotterFilm.ogv" type="video/ogg">
+                        <track kind="subtitles" src="http://сервант/harrypotter.ru.srt" srclang="ru" 
+                        label="Русский">
+                        Элемент video не поддерживается вашим браузером.
+                        <a href="http://сервант/HarryPotterFilm.mp4">Скачайте видео</a>
+                    </video>
+                </article>
+            </section>
+        </section>
+        <section itemscope itemtype="http://schema.org/Movie">
+            <header>
+                <h2 itemprop="name">Titanic</h2>
+            </header>
+            <article>
+                <header>
+                    <img src="Titanic.jpg" itemprop="image" alt="Titanic">
+                </header>
+                <ul>
+                    <li itemprop="category">Тип: Фильм</li>
+                    <li itemprop="dateCreated">Год: 1997</li>
+                    <li itemprop="address">
+                        <section itemscope itemtype="http://schema.org/PostalAddress">
+                            Страна: 
+                            <span itemprop="addressCountry">США</span>
+                        </section>
+                    </li>
+                    <li itemprop="description">Слоган:"Ничто на Земле не сможет разлучить их"</li>
+                    <li itemprop="director">Режиссёр:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джеймс</span> 
+                            <span itemprop="familyName">Кэмерон</span>
+                        </section>
+                    </li>
+                    <li itemprop="creator">Сценарий:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джеймс</span> 
+                            <span itemprop="familyName">Кэмерон</span>
+                        </section>
+                    </li>
+                    <li itemprop="producer">Продюсер:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джеймс</span> 
+                            <span itemprop="familyName">Кэмерон</span>, 
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джон</span> 
+                            <span itemprop="familyName">Ландау</span>, 
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Памела</span> 
+                            <span itemprop="familyName">Исли</span>
+                        </section>
+                    </li>
+                    <li itemprop="operator">Оператор:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Рассел</span> 
+                            <span itemprop="familyName">Карпентер</span>
+                        </section>
+                    </li>
+                    <li itemprop="musicBy">Композитор:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джеймс</span> 
+                            <span itemprop="familyName">Хорнер</span>
+                        </section>
+                    </li>
+                    <li itemprop="artist">Художник:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Питер</span> 
+                            <span itemprop="familyName">Ламонт</span>
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Мартин</span> 
+                            <span itemprop="familyName">Лэйн</span>
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Чарльз</span> 
+                            <span itemprop="familyName">Дуайт Ли</span>
+                        </section>
+                    </li>
+                    <li itemprop="editor">Монтаж:
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Кондад</span> 
+                            <span itemprop="familyName">Бафф IV</span>
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Джеймс</span> 
+                            <span itemprop="familyName">Кэмерон</span>
+                        </section>
+                        <section itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">Ричард А.</span> 
+                            <span itemprop="familyName">Харрис</span>
+                        </section>
+                    </li>
+                    <li itemprop="genre">Жанр: драма, мелодрама</li>
+                    <li itemprop="datePublished">Дата размещения: 1 котобря 2015</li>
+                    <li itemprop="url">
+                        <abbr title="Uniform Resource Locator">URL:</abbr>
+                        <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                            http://babulenkin-servant.com/films/titanic.mp4
+                        </a>
+                    </li>
+                    <li itemprop="about">
+                        Описание: Молодые влюбленные Джек и Роза находят друг друга в первом и
+                        последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                        шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
+                        и их страстная любовь превратится в схватку со смертью.
+                    </li>                    
+                </ul>
+                <video itemprop="video" poster="titanicPoster.jpg"> 
+                    <source src="http://сервант/titanicTrailer.mp4" type="video/mp4">
+                    <source src="http://сервант/titanicTrailer.ogv" type="video/ogg">
+                    <track kind="subtitles" src="http://сервант/titanic.ru.srt" srclang="ru" 
+                    label="Русский">
+                    Элемент video не поддерживается вашим браузером.
+                    <a href="http://сервант/titanicTrailer.mp4">Скачайте видео</a>
+                </video>
+            </article>
+            <section itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <header>
+                    <h3>
+                        <span itemprop="givenName">Джеймс</span> 
+                        <span itemprop="familyName">Кэмерон</span>
+                    </h3>
+                </header>
+                <article>
+                    <header>
+                        <img itemprop="image" alt="Джеймс Кэмерон" src="Cameron.jpg">
+                    </header>
+                    <ul>
+                        <li itemprop="birthDate">Дата рождения: 16 августа 1954</li>
+                        <li itemprop="deathDate">Дата смерти: &ndash;</li>
+                        <li itemprop="address">
+                            <section itemscope itemtype="http://schema.org/PostalAddress">
+                                Место рождения:
+                                <span itemprop="addressLocality">Капускасинг</span>                                
+                                <span itemprop="addressRegion">Онтарио</span>
+                                <span itemprop="addressCountry">Канада</span> 
+                            </section>
+                        </li>
+                        <li itemprop="jobTitle">продюсер, режиссер, сценарист, актер</li>
+                    </ul>
+                </article>
+            </section>     
+        </section>
+        <section>
+            <header> 
+                <h2> Пополнение коллекции бабуленькиного серванта: </h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Добавление книги</h3>
+                </header>
+                <form>
+                <fieldset>
+                    <legend>Информация о книге:</legend>
+                    <label for="nameBook">Название:</label>
+                    <input id="nameBook" type="text" required>
+                    <label for="yearBook">Год:</label>
+                    <input id="yearBook" type="text" required>
+                    <label for="publisherBook">Издательство:</label>
+                    <input id="publisherBook" type="text">
+                    <label for="isbn">ISBN:</label>
+                    <input id="isbn" type="text">
+                    <label for="language">Язык:</label>
+                    <input id="language" type="text" required>
+                    <label for="genreBook">Жанр:</label>
+                    <input id="genreBook" type="text">
+                    <label for="descriptionBook">Описание:</label>
+                    <textarea id="descriptionBook" cols="100" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Информация об авторе:</legend>
+                    <label for="writer">Автор:</label>
+                    <input id="writer" type="text" required placeholder="Лев Николаевич Толстой">
+                    <label for="dateBirthWriter">Дата рождения:</label>
+                    <input id="dateBirthWriter" type="date" required>
+                    <label for="dateDeathWriter">Дата смерти:</label>
+                    <input id="dateDeathWriter" type="date">                    
+                    <label for="placeBirthWriter">Место рождения:</label>
+                    <input id="placeBirthWriter" type="text" required>
+                    <label for="roleWriter">Род деятельности:</label>
+                    <input id="roleWriter" type="text" required>
+                </fieldset>
+                <button type="submit" formmethod="POST">Добавить книгу</button>
+            </form>
+            </article>
+            <article>
+                <header>
+                    <h3>Добавление фильма</h3>
+                </header>
+                <fieldset>
+                    <legend>Информация о фильме:</legend>
+                    <label for="nameFilm">Название:</label>
+                    <input id="nameFilm" type="text" required>
+                    <label for="yearFilm">Год:</label>
+                    <input id="yearFilm" type="text" required>
+                    <label for="countryFilm">Страна:</label>
+                    <input id="countryFilm" type="text" required>
+                    <label for="directorFilm">Режиссёр:</label>
+                    <input id="directorFilm" type="text" required>
+                    <label for="genreFilm">Жанр:</label>
+                    <input id="genreFilm" type="text">
+                    <label for="descriptionFilm">Описание:</label>
+                    <textarea id="descriptionFilm" cols="100" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Информация об авторе:</legend>
+                    <label for="director">Автор:</label>
+                    <input id="director" type="text" required placeholder="James Cameron">
+                    <label for="dateBirthDirector">Дата рождения:</label>
+                    <input id="dateBirthDirector" type="date" required>
+                    <label for="dateDeathDirector">Дата смерти:</label>
+                    <input id="dateDeathDirector" type="date">                    
+                    <label for="placeBirthDirector">Место рождения:</label>
+                    <input id="placeBirthDirector" type="text" required>
+                    <label for="roleDirector">Род деятельности:</label>
+                    <input id="roleDirector" type="text" required>
+                </fieldset>
+                <button type="submit" formmethod="POST">Добавить фильм</button>
+            </article>
+        </section>
+    </body>
 </html>
