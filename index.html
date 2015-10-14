@@ -13,7 +13,7 @@
                 <header>
                     <h2>Война и мир</h2>
                 </header>
-                <img src="http://old.vitanova.ru/addition/exclusive/Voyna%20i%20mir/mir1.gif" width="300" alt="Картинка Война и мир">
+                <img src="http://old.vitanova.ru/addition/exclusive/Voyna%20i%20mir/mir1.gif" width="300" title="Война и мир" alt="Картинка Война и мир">
                 <table>
                     <tr>
                         <td>Тип:</td>
@@ -99,7 +99,7 @@
                 <header>
                     <h2 lang="en">Harry Potter and the Sorcerer's Stone</h2>
                 </header>
-                <img src="http://www.paulfrasercollectibles.com/upload/public/docimages/Image/q/s/x/harry-potter_410.jpg" width="300" alt="Картинка Harry Potter and the Sorcerer's Stone">
+                <img src="http://www.paulfrasercollectibles.com/upload/public/docimages/Image/q/s/x/harry-potter_410.jpg" width="300" title="Harry Potter and the Sorcerer's Stone" alt="Картинка Harry Potter and the Sorcerer's Stone">
                 <table>
                     <tr>
                         <td>Тип:</td>
@@ -151,7 +151,7 @@
                     </tr>
                 </table>
                 <p lang="en">
-                    Описание: Harry Potter has no idea how famous he is. tdat's because he's
+                    <span lang="ru">Описание</span>: Harry Potter has no idea how famous he is. tdat's because he's
                     being raised by his miserable aunt and uncle who are terrified Harry will
                     learn tdat he's really a wizard, just as his parents were.
                 </p>
@@ -187,7 +187,7 @@
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a></td>
+                            <td><address><a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a></address></td>
                         </tr>
                     </table>
                 </footer>
@@ -197,7 +197,7 @@
                 <header>
                     <h2>Titanic</h2>
                 </header>
-                <img src="https://s-media-cache-ak0.pinimg.com/236x/53/95/ff/5395ff3fd2be3dc7b14de8f8db3b11ba.jpg" width="300" alt="Картинка Титаник">
+                <img src="https://s-media-cache-ak0.pinimg.com/236x/53/95/ff/5395ff3fd2be3dc7b14de8f8db3b11ba.jpg" width="300" title="Titanic" alt="Картинка Титаник">
                 <table>
                     <tr>
                         <td>Тип:</td>
@@ -299,22 +299,23 @@
                     <!--Общее-->
                     <fieldset title="Общая информация">
                         <label for="type">Тип:</label>
-                        <select id="type" name="type">
-                            <option value="book">Книга:</option>
-                            <option value="film">Фильм:</option>
+                        <select id="type" name="type" required>
+                            <option selected></option>
+                            <option value="book">Книга</option>
+                            <option value="film">Фильм</option>
                         </select><br>
                         
                         <label for="year">Год:</label>
-                        <input id="year" name="year"><br>
+                        <input id="year" name="year" required><br>
 
                         <label for="genre">Жанр:</label>
-                        <input id="genre" name="genre"><br>
+                        <input id="genre" name="genre" required><br>
 
-                        <label for="url">URL:</label>
-                        <input type="url" id="url" name="url"><br>
+                        <label for="file">Файл:</label>
+                        <input type="file" id="file" name="file" required><br>
 
-                        <label for="description">Описание:</label>
-                        <textarea id="description" name="description"></textarea><br>
+                        <label for="description">Описание:</label><br>
+                        <textarea id="description" name="description" placeholder="Введите описание произведения" required></textarea><br>
                     </fieldset>
 
                     <!--Автор-->
@@ -345,7 +346,7 @@
                     </fieldset>
 
                     <!--Книга доп. инф.-->
-                    <fieldset title="дополнительная информация о книге">
+                    <fieldset title="Дополнительная информация о книге">
                         <label for="bookType">Тип издания:</label>
                         <input id="bookType" name="bookType"><br>
 
@@ -365,11 +366,11 @@
                         <input id="bookPublisher" name="bookPublisher"><br>
 
                         <label for="bookISBN">ISBN:</label>
-                        <input id="bookISBN" name="bookISBN"><br>
+                        <input id="bookISBN" name="bookISBN" pattern="[0-9\-]+"><br>
                     </fieldset>
 
                     <!--Фильм доп. инф.-->
-                    <fieldset title="дополнительная информация о фильме">
+                    <fieldset title="Дополнительная информация о фильме">
                         <label for="filmCountry">Страна</label>
                         <input id="filmCountry" name="filmCountry"><br>
 
