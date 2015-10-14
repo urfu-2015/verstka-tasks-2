@@ -6,11 +6,11 @@
     </head>
     <body>
         <header>
-            <h2>Бабуленькин сервант</h2>
+            <h1>Бабуленькин сервант</h1>
         </header>
         <section itemscope itemtype="http://schema.org/Book">
             <header>
-                <h3 itemprop="name">Война и Мир</h3>
+                <h2 itemprop="name">Война и Мир</h2>
             </header>
             <article>
                 <header>
@@ -46,10 +46,10 @@
             </article>
             <section itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <header>
-                    <h4>
+                    <h3>
                         <span itemprop="givenName">Лев Николаевич</span> 
                         <span itemprop="familyName">Толстой</span>
-                    </h4>
+                    </h3>
                 </header>
                 <article>
                     <header>
@@ -90,7 +90,7 @@
         </section>
         <section itemscope itemtype="http://schema.org/Book">
             <header>
-                <h3 itemprop="name">Harry Potter and the Sorcerer's Stone</h3>
+                <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
             </header>
             <article>
                 <header>
@@ -125,10 +125,10 @@
             </article>
             <section itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <header>
-                    <h4>
+                    <h3>
                         <span itemprop="givenName">J. K.</span> 
                         <span itemprop="familyName">Rowling</span>
-                    </h4>
+                    </h3>
                 </header>
                 <article>
                     <header>
@@ -180,7 +180,7 @@
         </section>
         <section itemscope itemtype="http://schema.org/Movie">
             <header>
-                <h3 itemprop="name">Titanic</h3>
+                <h2 itemprop="name">Titanic</h2>
             </header>
             <article>
                 <header>
@@ -208,7 +208,7 @@
                             <span itemprop="familyName">Кэмерон</span>
                         </section>
                     </li>
-                    <li itemprop="producer">Продюсер:</li>
+                    <li itemprop="producer">Продюсер:
                         <section itemscope itemtype="http://schema.org/Person">
                             <span itemprop="givenName">Джеймс</span> 
                             <span itemprop="familyName">Кэмерон</span>, 
@@ -221,17 +221,20 @@
                             <span itemprop="givenName">Памела</span> 
                             <span itemprop="familyName">Исли</span>
                         </section>
-                    <li itemprop="operator">Оператор:</li>
+                        </li>
+                    <li itemprop="operator">Оператор:
                         <section itemscope itemtype="http://schema.org/Person">
                             <span itemprop="givenName">Рассел</span> 
                             <span itemprop="familyName">Карпентер</span>
                         </section>
-                    <li itemprop="musicBy">Композитор:</li>
+                    </li>
+                    <li itemprop="musicBy">Композитор:
                         <section itemscope itemtype="http://schema.org/Person">
                             <span itemprop="givenName">Джеймс</span> 
                             <span itemprop="familyName">Хорнер</span>
                         </section>
-                    <li itemprop="artist">Художник:</li>
+                    </li>
+                    <li itemprop="artist">Художник:
                         <section itemscope itemtype="http://schema.org/Person">
                             <span itemprop="givenName">Питер</span> 
                             <span itemprop="familyName">Ламонт</span>
@@ -244,7 +247,8 @@
                             <span itemprop="givenName">Чарльз</span> 
                             <span itemprop="familyName">Дуайт Ли</span>
                         </section>
-                    <li itemprop="editor">Монтаж:</li>
+                    </li>
+                    <li itemprop="editor">Монтаж:
                         <section itemscope itemtype="http://schema.org/Person">
                             <span itemprop="givenName">Кондад</span> 
                             <span itemprop="familyName">Бафф IV</span>
@@ -257,6 +261,7 @@
                             <span itemprop="givenName">Ричард А.</span> 
                             <span itemprop="familyName">Харрис</span>
                         </section>
+                    </li>
                     <li itemprop="genre">Жанр: драма, мелодрама</li>
                     <li itemprop="datePublished">Дата размещения: 1 котобря 2015</li>
                     <li itemprop="url">
@@ -283,10 +288,10 @@
             </article>
             <section itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <header>
-                    <h4>
+                    <h3>
                         <span itemprop="givenName">Джеймс</span> 
                         <span itemprop="familyName">Кэмерон</span>
-                    </h4>
+                    </h3>
                 </header>
                 <article>
                     <header>
@@ -332,7 +337,7 @@
                     <label for="genreBook">Жанр:</label>
                     <input id="genreBook" type="text">
                     <label for="descriptionBook">Описание:</label>
-                    <textarea if="descriptionBook" cols="100" rows="10"></textarea>
+                    <textarea id="descriptionBook" cols="100" rows="10"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Информация об авторе:</legend>
@@ -367,7 +372,7 @@
                     <label for="genreFilm">Жанр:</label>
                     <input id="genreFilm" type="text">
                     <label for="descriptionFilm">Описание:</label>
-                    <textarea if="descriptionFilm" cols="100" rows="10"></textarea>
+                    <textarea id="descriptionFilm" cols="100" rows="10"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Информация об авторе:</legend>
