@@ -9,9 +9,9 @@
             <h1>Список книг и фильмов из Бабуленькиного серванта</h1>
         </header>
         <main>
-            <article>
+            <article itemscope itemtype="http://schema.org/Book">
                 <header>
-                    <h2>Война и мир</h2>
+                    <h2 itemprop="name">Война и мир</h2>
                 </header>
                 <img src="http://old.vitanova.ru/addition/exclusive/Voyna%20i%20mir/mir1.gif" width="300" title="Война и мир" alt="Картинка Война и мир">
                 <table>
@@ -21,11 +21,11 @@
                     </tr>
                     <tr>
                         <td>Издательство:</td>
-                        <td>АСТ, Астрель</td>
+                        <td itemprop="publisher">АСТ, Астрель</td>
                     </tr>
                     <tr>
                         <td><abbr title="International Standard Book Number">ISBN</abbr>:</td>
-                        <td>5-17-006400-4,978-5-17-006400-7</td>
+                        <td><span itemprop="isbn">5-17-006400-4</span>,<span itemprop="isbn">978-5-17-006400-7</span></td>
                     </tr>
                     <tr>
                         <td>Год:</td>
@@ -37,11 +37,11 @@
                     </tr>
                     <tr>
                         <td>Язык:</td>
-                        <td>Русский</td>
+                        <td itemprop="inLanguage">Русский</td>
                     </tr>
                     <tr>
                         <td>Страниц:</td>
-                        <td>704 стр.</td>
+                        <td><span itemprop="numberOfPages">704</span> стр.</td>
                     </tr>
                     <tr>
                         <td>Формат:</td>
@@ -57,31 +57,39 @@
                     </tr>
                     <tr>
                         <td>Жанр:</td>
-                        <td>Русская классика, Литература 19 века</td>
+                        <td span itemprop="genre">Русская классика, Литература 19 века</td>
                     </tr>
                     <tr>
                         <td><abbr title="Uniform Resource Locator">URL</abbr>:</td>
-                        <td><a href="http://babulenkin-servant.com/books/war_and_peace.epub">http://babulenkin-servant.com/books/war_and_peace.epub</a></td>
+                        <td><a href="http://babulenkin-servant.com/books/war_and_peace.epub" itemprop="url">http://babulenkin-servant.com/books/war_and_peace.epub</a></td>
                     </tr>
                 </table>
                 <p>
-                    Описание: Великий роман-эпопея Льва Толстого чудесным образом, как огромная
+                    <span lang="ru">Описание</span>: <span itemprop='description'>Великий роман-эпопея Льва Толстого чудесным образом, как огромная
                     мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
-                    политических, философских, портретных, пейзажных, психологических...
+                    политических, философских, портретных, пейзажных, психологических...</span>
                 </p>
                 <footer>
-                    <table>
+                    <table itemprop="author" itemscope itemtype="http://schema.org/Person">
                         <tr>
                             <td>Автор:</td>
-                            <td>Лев Николаевич Толстой</td>
+                            <td>
+                                <span itemprop="givenName">Лев</span>
+                                <span itemprop="additionalName">Николаевич</span>
+                                <span itemprop="familyName">Толстой</span>
+                            </td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td><time datetime="1828-08-16">16 августа 1828 г</time></td>
+                            <td>
+                                <time datetime="1828-08-16" itemprop="birthDate">16 августа 1828 г</time>
+                            </td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
-                            <td><time datetime="1910-11-07">7 ноября 1910 г</time></td>
+                            <td>
+                                <time datetime="1910-11-07" itemprop="deathDate">7 ноября 1910 г</time>
+                            </td>
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
@@ -95,9 +103,9 @@
                 </footer>
             </article>
             <hr>
-            <article>
+            <article itemscope itemtype="http://schema.org/Book">
                 <header>
-                    <h2 lang="en">Harry Potter and the Sorcerer's Stone</h2>
+                    <h2 lang="en" itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
                 </header>
                 <img src="http://www.paulfrasercollectibles.com/upload/public/docimages/Image/q/s/x/harry-potter_410.jpg" width="300" title="Harry Potter and the Sorcerer's Stone" alt="Картинка Harry Potter and the Sorcerer's Stone">
                 <table>
@@ -107,11 +115,11 @@
                     </tr>
                     <tr>
                         <td>Издательство:</td>
-                        <td>АСТ, Астрель</td>
+                        <td itemprop="publisher">АСТ, Астрель</td>
                     </tr>
                     <tr>
                         <td>ISBN:</td>
-                        <td>978-0439708180</td>
+                        <td itemprop="isbn">978-0439708180</td>
                     </tr>
                     <tr>
                         <td>Год:</td>
@@ -123,11 +131,11 @@
                     </tr>
                     <tr>
                         <td>Язык:</td>
-                        <td lang="en">English</td>
+                        <td lang="en" itemprop="inLanguage">English</td>
                     </tr>
                     <tr>
                         <td>Страниц:</td>
-                        <td>309 стр.</td>
+                        <td><span itemprop="numberOfPages">309</span> стр.</td>
                     </tr>
                     <tr>
                         <td>Формат:</td>
@@ -143,27 +151,29 @@
                     </tr>
                     <tr>
                         <td>Жанр:</td>
-                        <td lang="en">Fantasy, Adventure, Kids & Family</td>
+                        <td lang="en" itemprop="genre">Fantasy, Adventure, Kids & Family</td>
                     </tr>
                     <tr>
                         <td>URL:</td>
-                        <td><a href="http://babulenkin-servant.com/books/potter.pdf">http://babulenkin-servant.com/books/potter.pdf</a></td>
+                        <td>
+                            <a href="http://babulenkin-servant.com/books/potter.pdf" itemprop="url">http://babulenkin-servant.com/books/potter.pdf</a>
+                        </td>
                     </tr>
                 </table>
                 <p lang="en">
-                    <span lang="ru">Описание</span>: Harry Potter has no idea how famous he is. tdat's because he's
+                    <span lang="ru">Описание</span>: <span itemprop="description">Harry Potter has no idea how famous he is. tdat's because he's
                     being raised by his miserable aunt and uncle who are terrified Harry will
-                    learn tdat he's really a wizard, just as his parents were.
+                    learn tdat he's really a wizard, just as his parents were.</span>
                 </p>
                 <footer>
-                    <table>
+                    <table itemprop="author" itemscope itemtype="http://schema.org/Person">
                         <tr>
                             <td>Автор:</td>
                             <td lang="en">J. K. Rowling</td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td><time datetime="1965-07-31">31 июля 1965</time></td>
+                            <td><time datetime="1965-07-31" itemprop="birthDate">31 июля 1965</time></td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
@@ -183,19 +193,24 @@
                         </tr>
                         <tr>
                             <td>Адрес:</td>
-                            <td lang="en"><address>50 Bedford Square, London</address></td>
+                            <td lang="en">
+                                <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">50 Bedford Square</span>
+                                    , London
+                                </address>
+                            </td>
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><address><a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a></address></td>
+                            <td><address><a href="mailto:info@jkrowlingpr.com" itemprop="email">info@jkrowlingpr.com</a></address></td>
                         </tr>
                     </table>
                 </footer>
             </article>
             <hr>
-            <article>
+            <article itemscope itemtype="http://schema.org/Movie">
                 <header>
-                    <h2>Titanic</h2>
+                    <h2 itemprop="name">Titanic</h2>
                 </header>
                 <img src="https://s-media-cache-ak0.pinimg.com/236x/53/95/ff/5395ff3fd2be3dc7b14de8f8db3b11ba.jpg" width="300" title="Titanic" alt="Картинка Титаник">
                 <table>
@@ -232,7 +247,7 @@
                         <td>Рассел Карпентер</td>
                     </tr>
                     <tr>
-                        <td>Композитор:</td>
+                        <td itemptop="musicBy">Композитор:</td>
                         <td>Джеймс Хорнер</td>
                     </tr>
                     <tr>
@@ -256,7 +271,7 @@
                         <td><a href="http://babulenkin-servant.com/films/titanic.mp4">http://babulenkin-servant.com/films/titanic.mp4</a></td>
                     </tr>
                 </table>
-                <p>
+                <p itemprop="description">
                     Описание:
                     Молодые влюбленные Джек и Роза находят друг друга в первом и
                     последнем плавании «непотопляемого» Титаника. Они не могли знать, что
@@ -266,14 +281,17 @@
                 <h3>Трейлер к фильму на английском языке</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MtSTrceeFZY" allowfullscreen></iframe>
                 <footer>
-                    <table>
+                    <table  itemprop="director" itemscope itemtype="http://schema.org/Person">
                         <tr>
                             <td>Автор:</td>
-                            <td>Джеймс Кэмерон</td>
+                            <td>
+                                <span itemprop="givenName">Джеймс</span>
+                                <span itemprop="familyName">Кэмерон</span>
+                            </td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td><time datetime="1954-08-16">16 августа 1954 г</time></td>
+                            <td><time datetime="1954-08-16" itemprop="birthDate">16 августа 1954 г</time></td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
