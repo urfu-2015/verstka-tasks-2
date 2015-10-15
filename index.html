@@ -134,7 +134,7 @@
                     <label for="language">Язык:</label>
                     <input id="language" type="text" required><br>
                     <label for="pages">Число страниц</label>                      
-                    <input id="pages" type="date" required><br>                       
+                    <input id="pages" type="number" min="1" required><br>                       
                     <label for="hardcover">Переплет:</label>
                     <input id="hardcover" type="text" required><br>
                     <label for="date">Дата размещения:</label>
@@ -157,15 +157,16 @@
                     <label for="occupation">Род деятельности:</label>
                     <input id="occupation" type="text" required><br>
                     <button type="submit">Отправить форму</button>
+                    <button type="reset">Сбросить форму</button>
                 </form>
         <h2>Форма для видео</h2>
             <form>
                 <label for="namefilm">Название:</label>
                 <input id="namefilm" type="text" required><br>
                 <label for="data">Год:</label>
-                <input id="data" type="data" required><br>
-                <label for="counter">Страна:</label>
-                <input id="counter" type="text" required><br>
+                <input id="data" type="date" required><br>
+                <label for="country">Страна:</label>
+                <input id="country" type="text" required><br>
                 <label for="tagline">Слоган:</label>
                 <input id="tagline" type="text" required><br>
                 <label for="producer">Режиссер:</label>
@@ -202,6 +203,7 @@
                 <label for="occupation">Род деятельности:</label>
                 <input id="occupation" type="text" required><br>
                 <button type="submit">Отправить форму</button>
+                <button type="reset">Сбросить форму</button>
             </form>
     </body>
 </html>   
