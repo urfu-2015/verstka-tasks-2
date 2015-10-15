@@ -14,11 +14,16 @@
             font-size: 14px;
         }
 
+        article {
+            display: inline-block;
+            border-bottom: 5px solid saddlebrown;
+        }
+
         h2 {
             text-align: center;
         }
 
-        span:not(.leaf) {
+        span.bold {
             font-weight: bold;
         }
 
@@ -26,8 +31,23 @@
             font-family: wingdings;
         }
 
-        .author {
-            padding-left: 30px;
+        .photo {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: 200px
+        }
+
+        .cover {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: 500px; /*чисто для своего экрана*/
+        }
+
+        .star {
+            font-size: smaller;
+            color: red;
         }
     </style>
 </head>
@@ -37,181 +57,425 @@
             <h2>
                 <span class="leaf">&#206;</span> Сервант <span class="leaf">&#211;</span>
                 </h2>
-            <article>
-                <h3>Война и мир</h3>
+            <article itemscope itemtype="http://schema.org/Book">
+                <h3 itemprop="name">Война и мир</h3>
                 <p>
-                    <!--обложка-->
-                    <span>Тип:</span> Книга<br>
-                    <span>Издательство:</span> АСТ, Астрель<br>
-                    <span>ISBN:</span> 5-17-006400-4,978-5-17-006400-7<br>
-                    <span>Год:</span> 1867<br>
-                    <span>Тип издания:</span> Авторский сборник<br>
-                    <span>Язык:</span> Русский<br>
-                    <span>Страниц:</span> 704 стр.<br>
-                    <span>Формат:</span> ePub<br>
-                    <span>Переплет:</span> Твердый переплет<br>
-                    <span>Дата размещения:</span> 8 котобря 2015<br>
-                    <span>Жанр:</span> Русская классика, Литература 19 века<br>
-                    <span>URL:</span> <a
+                    <img
+                        itemprop="image"
+                        class="cover"
+                        src="img/war-peace.jpg"
+                        alt="Война и мир"
+                        srcset="img/war-peace_big.jpg 2x, img/war-peace_400.jpg 400w"><br>
+                    <span class="bold">Тип:</span> Книга<br>
+                    <span class="bold">Издательство:</span>
+                    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                        <span itemprop="name">АСТ, Астрель</span>
+                    </span><br>
+                    <span class="bold">ISBN:</span>
+                    <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
+                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1867</span><br> <!--?-->
+                    <span class="bold">Тип издания:</span>
+                    <span itemprop="bookEdition">Авторский сборник</span><br>
+                    <span class="bold">Язык:</span>
+                    <span itemprop="inLanguage" content="ru">Русский</span><br>
+                    <span class="bold">Страниц:</span> <span itemprop="numberOfPages">704</span> стр.<br>
+                    <span class="bold">Формат:</span> ePub<br>
+                    <span class="bold">Переплет:</span>
+                    <span itemprop="bookFormat" itemscope itemtype="http://schema.org/Paperback">
+                        Твердый переплет
+                    </span><br>
+                    <span class="bold">Дата размещения:</span>
+                    <time datetime="2015-10-08">8 котобря 2015</time><br>
+                    <span class="bold">Жанр:</span>
+                    <span itemprop="genre">Русская классика, Литература 19 века</span><br>
+                    <span class="bold">URL:</span> <a
+                                        itemprop="url"
                                         href="/books/war_and_peace.epub"
                                         type="application/epub+zip"
                                         title="Скачать 'Войну и мир'" download>
                                         http://babulenkin-servant.com/books/war_and_peace.epub
                                         </a><br> <!-- нет типа epub -->
-                    <span>Описание:</span> Великий роман-эпопея Льва Толстого чудесным образом, как огромная
-                    мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
-                    политических, философских, портретных, пейзажных, психологических...<br>
+                    <span class="bold">Описание:</span>
+                    <span itemprop="about">Великий роман-эпопея Льва Толстого чудесным образом,
+                    как огромная мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
+                    политических, философских, портретных, пейзажных, психологических...</span><br>
                 </p>
-                <p class="author">
-                    <span>Автор:</span> Лев Николаевич Толстой<br>
-                    <span>Дата рождения:</span> <time>16 августа 1828</time><br>
-                    <span>Дата смерти:</span> <time>7 ноября 1910</time><br>
-                    <span>Место рождения:</span> Ясная Поляна, Тульская губерния, Российская империя<br>
-                    <span>Род деятельности:</span> прозаик, публицист, философ
+                <p itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <img itemprop="image" class="photo" src="img/tolstoi.jpg" alt="Лев Николаевич">
+                    <span class="bold">Автор:</span> <span itemprop="name">Лев Николаевич Толстой</span><br>
+                    <span class="bold">Дата рождения:</span>
+                    <time itemprop="birthDate" datetime="1828-08-16">16 августа 1828</time><br>
+                    <span class="bold">Дата смерти:</span>
+                    <time itemprop="deathDate" datetime="1910-11-07">7 ноября 1910</time><br>
+                    <span class="bold">Место рождения:</span>
+                    <span itemprop="birthPlace">Ясная Поляна, Тульская губерния, Российская империя</span><br>
+                    <span class="bold">Род деятельности:</span>
+                    <span itemprop="jobTitle">прозаик, публицист, философ</span>
                 </p>
             </article>
-            <article>
-                <h3>Harry Potter and the Sorcerer's Stone</h3>
+            <article itemscope itemtype="http://schema.org/Book">
+                <h3 itemprop="name">Harry Potter and the Sorcerer's Stone</h3>
                 <p>
-                    <!--обложка-->
-                    <span>Тип:</span> Книга<br>
-                    <span>Издательство:</span> АСТ, Астрель<br>
-                    <span>ISBN:</span> 978-0439708180<br>
-                    <span>Год:</span> 1998<br>
-                    <span>Язык:</span> English<br>
-                    <span>Страниц:</span> 309 стр.<br>
-                    <span>Формат:</span> pdf<br>
-                    <span>Переплет:</span> Мягкий переплет<br>
-                    <span>Дата размещения:</span> <time>4 котобря 2015</time><br>
-                    <span>Жанр:</span> Fantasy, Adventure, Kids & Family<br>
-                    <span>URL:</span> <a
+                    <img
+                        itemprop="image"
+                        class="cover"
+                        src="img/sorcerers-stone.jpg"
+                        alt="Harry Potter and the Sorcerer's Stone"
+                        srcset="img/sorcerers-stone_big.jpg 2x, img/sorcerers-stone_400.jpg 400w"><br>
+                    <span class="bold">Тип:</span> Книга<br>
+                    <span class="bold">Издательство:</span>
+                    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                        <span itemprop="name">АСТ, Астрель</span>
+                    </span><br>
+                    <span class="bold">ISBN:</span> <span itemprop="isbn">978-0439708180</span><br>
+                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1998</span><br>
+                    <span class="bold">Язык:</span>
+                    <span itemprop="inLanguage" content="en">English</span><br>
+                    <span class="bold">Страниц:</span> <span itemprop="numberOfPages">309</span> стр.<br>
+                    <span class="bold">Формат:</span> pdf<br>
+                    <span class="bold">Переплет:</span>
+                    <span itemprop="bookFormat" href="http://schema.org/Paperback">Мягкий переплет</span><br>
+                    <span class="bold">Дата размещения:</span>
+                    <time datetime="2015-10-04">4 котобря 2015</time><br>
+                    <span class="bold">Жанр:</span>
+                    <span itemprop="genre">Fantasy, Adventure, Kids & Family</span><br>
+                    <span class="bold">URL:</span> <a
+                                        itemprop="url"
                                         href="/books/potter.pdf"
                                         type="application/pdf"
                                         title="Скачать 'Harry Potter and the Sorcerer's Stone'" download>
                                         http://babulenkin-servant.com/books/potter.pdf
                                         </a><br>
-                    <span>Описание:</span> Harry Potter has no idea how famous he is. That's because he's
-                    being raised by his miserable aunt and uncle who are terrified Harry will
-                    learn that he's really a wizard, just as his parents were.<br>
+                    <span class="bold">Описание:</span>
+                    <span itemprop="about">Harry Potter has no idea how famous he is.
+                    That's because he's being raised by his miserable aunt and uncle who are terrified
+                    Harry will learn that he's really a wizard, just as his parents were.</span><br>
                 </p>
-                <p class="author">
-                    <span>Автор:</span> J. K. Rowling<br>
-                    <span>Дата рождения:</span> <time>31 июля 1965</time><br>
-                    <span>Дата смерти:</span> –<br>
-                    <span>Место рождения:</span> Глостершир, Англия<br>
-                    <span>Род деятельности:</span> прозаик<br>
-                    <span>URL:</span> <a
+                <p itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <img itemprop="image" class="photo" src="img/rowling.jpg" alt="J. K.">
+                    <span class="bold">Автор:</span> <span itemprop="name">J. K. Rowling</span><br>
+                    <span class="bold">Дата рождения:</span>
+                    <time datetime="1965-07-31">31 июля 1965</time><br>
+                    <span class="bold">Дата смерти:</span> –<br>
+                    <span class="bold">Место рождения:</span>
+                    <span itemprop="birthPlace">Глостершир, Англия</span><br>
+                    <span class="bold">Род деятельности:</span>
+                    <span itemprop="jobTitle">прозаик</span><br>
+                    <span class="bold">URL:</span> <a
+                                        itemprop="url"
                                         href="http://jkrowling.com"
                                         title="Официальный сайт">
                                         jkrowling.com
                                         </a><br>
-                    <span>Адрес:</span> 50 Bedford Square, London<br>
-                    <span>Email:</span> <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                    <span class="bold">Адрес:</span>
+                    <span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">50 Bedford Square</span>,
+                            <span itemprop="addressLocality">London</span>
+                        </span>
+                    </span><br>
+                    <span class="bold">Email:</span>
+                    <a itemprop="email" href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
                 </p>
             </article>
-            <article>
-                <h3>Titanic</h3>
+            <article itemscope itemtype="http://schema.org/Movie">
+                <h3 itemprop="name">Titanic</h3>
                 <p>
-                    <!--трейлер-->
-                    <span>Тип:</span> Фильм<br>
-                    <span>Год:</span> 1997<br>
-                    <span>Страна:</span> США<br>
-                    <span>Слоган:</span> «Ничто на Земле не сможет разлучить их»<br>
-                    <span>Режиссер:</span> Джеймс Кэмерон<br>
-                    <span>Сценарий:</span> Джеймс Кэмерон<br>
-                    <span>Продюсер:</span> Джеймс Кэмерон, Джон Ландау, Памела Исли<br>
-                    <span>Оператор:</span> Рассел Карпентер<br>
-                    <span>Композитор:</span> Джеймс Хорнер<br>
-                    <span>Художник:</span> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
-                    <span>Монтаж:</span> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
-                    <span>Жанр:</span> драма, мелодрама<br>
-                    <span>Дата размещения:</span> <time>1 котобря 2015</time><br>
-                    <span>URL:</span> <a
+                    <video itemprop="trailer" width="640" height="360" controls poster="img/kate-and-leo.jpg">
+                        <track kind="subtitles" src="video/sub.ru.srt" srclang="ru"
+                               label="Русский">
+                        <track kind="subtitles" src="video/sub.en.srt" srclang="en"
+                               label="English">
+                        <source src="video/Честный%20трейлер%20-%20Титаник%20(русская%20озвучка).mp4"
+                                type='video/mp4'>
+                        Элемент video не поддерживается вашим браузером.
+                        <a href="http://www.youtube.com/watch?v=PT97QDLHFd0">Посмотрите на Youtube</a>.
+                    </video><br>
+                    <span class="bold">Тип:</span> Фильм<br>
+                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1997</span><br>
+                    <span class="bold">Страна:</span>
+                    <span property="contentLocation" itemscope itemtype="http://schema.org/Place">
+                        <span itemprop="name">США</span>
+                    </span><br>
+                    <span class="bold">Слоган:</span> «Ничто на Земле не сможет разлучить их»<br>
+                    <span class="bold">Режиссер:</span>
+                    <span itemprop="director" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Джеймс Кэмерон</span>
+                    </span><br>
+                    <span class="bold">Сценарий:</span>
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Джеймс Кэмерон</span>
+                    </span><br>
+                    <span class="bold">Продюсер:</span>
+                    <span itemprop="producer" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Джеймс Кэмерон</span>,
+                        <span itemprop="name">Джон Ландау</span>,
+                        <span itemprop="name">Памела Исли</span>
+                    </span><br>
+                    <span class="bold">Оператор:</span> Рассел Карпентер<br>
+                    <span class="bold">Композитор:</span>
+                    <span itemprop="musicBy" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Джеймс Хорнер</span>
+                    </span><br>
+                    <span class="bold">Художник:</span> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
+                    <span class="bold">Монтаж:</span> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
+                    <span class="bold">Жанр:</span> <span itemprop="genre">драма, мелодрама</span><br>
+                    <span class="bold">Дата размещения:</span>
+                    <time datetime="2015-10-01">1 котобря 2015</time><br>
+                    <span class="bold">URL:</span> <a
+                                        itemprop="url"
                                         href="/films/titanic.mp4"
                                         type="video/mp4"
                                         title="Скачать 'Титаник'" download>
                                         http://babulenkin-servant.com/films/titanic.mp4
                                         </a><br>
-                    <span>Описание:</span> Молодые влюбленные Джек и Роза находят друг друга в первом и
-                    последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                    <span class="bold">Описание:</span>
+                    <span itemprop="about">Молодые влюбленные Джек и Роза находят друг друга
+                    в первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что
                     шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
-                    и их страстная любовь превратится в схватку со смертью.<br>
+                    и их страстная любовь превратится в схватку со смертью.</span><br>
                 </p>
-                <p class="author">
-                    <span>Автор:</span> Джеймс Кэмерон<br>
-                    <span>Дата рождения:</span> <time>16 августа 1954</time><br>
-                    <span>Дата смерти:</span> –<br>
-                    <span>Место рождения:</span> Капускасинг, Онтарио, Канада<br>
-                    <span>Род деятельности:</span> продюсер, режиссер, сценарист, актер
+                <p itemprop="director" itemscope itemtype="http://schema.org/Person">
+                    <img itemprop="image" class="photo" src="img/cameron.jpg" alt="Джеймс">
+                    <span class="bold">Автор:</span> <span itemprop="name">Джеймс Кэмерон</span><br>
+                    <span class="bold">Дата рождения:</span>
+                    <time itemprop="birthDate" datetime="1954-08-16">16 августа 1954</time><br>
+                    <span class="bold">Дата смерти:</span> –<br>
+                    <span class="bold">Место рождения:</span>
+                    <span itemprop="birthPlace">Капускасинг, Онтарио, Канада</span><br>
+                    <span class="bold">Род деятельности:</span>
+                    <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span>
                 </p>
             </article>
         </section>
         <section>
             <h2>Добавить новое произведение</h2>
             <form action="..." method="POST" enctype="multipart/form-data" id="myform">
-                <h4>Данные о произведении</h4>
+                <h4>Информация о произведении</h4>
                 <table>
                     <tr>
-                        <td><label for="type">Тип</label></td>
+                        <td>Тип</td>
                         <td>
-                            <select id="type" name="type" form="myform">
-                            <option selected>Книга</option>
-                            <option>Фильм</option>
-                            </select>
+                            <label>
+                                <input name="type" type="radio" value="Книга">Книга
+                            </label>
+                            <label>
+                                <input name="type" type="radio" value="Фильм">Фильм
+                            </label>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="title">Название</label></td>
-                        <td><input id="title" name="title" value="" form="myform" required></td>
+                        <td>
+                            <input id="title" name="title" value="" form="myform" required>
+                            <span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="year">Год</label></td>
-                        <td><input id="year" name="year" value="" form="myform" required></td>
+                        <td>
+                            <input id="year" name="year" value="" form="myform"
+                                   pattern="[12][0-9]{3}" required>
+                            <span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="genre">Жанры</label></td>
-                        <td><input id="genre" name="genre" value="" form="myform" required></td>
+                        <td>
+                            <input id="genre" name="genre" value="" form="myform" required>
+                            <span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="url">URL</label></td>
-                        <td><input id="url" name="url" value="" form="myform" required></td>
+                        <td>
+                            <input id="url" name="url" value="" form="myform" required>
+                            <span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><label>Обложка/трейлер</label></td>
+                        <td><label for="picture">Обложка/трейлер</label></td>
                         <td>
-                            <input name="picture" type="file" value=""
+                            <input id="picture" name="picture" type="file" value=""
                                    accept="image/jpeg,image/png,image/gif,video/mp4,video/avi"
-                                   form="myform">
+                                   form="myform"><span class="star">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="summary">Описание</label></td>
+                        <td>
+                            <textarea id="summary" name="summary" form="myform" required></textarea>
+                            <span class="star"> *</span>
                         </td>
                     </tr>
                 </table>
-                <h4>Данные об авторе произведения</h4>
+                <details>
+                    <summary>Дополнительная информация (необязательно, но желательно)</summary>
+                    <table>
+                        <tr>
+                            <th colspan="2">Фильмы</th>
+                            <th colspan="2">Книги</th>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Страна</label></td>
+                            <td>
+                                <input id="country" name="country" value="" form="myform">
+                            </td>
+                            <td><label for="publisher">Издательство</label></td>
+                            <td>
+                                <input id="publisher" name="publisher" value="" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="tagline">Слоган</label></td>
+                            <td>
+                                <input id="tagline" name="tagline" value="" form="myform">
+                            </td>
+                            <td><label for="isbn">ISBN</label></td>
+                            <td>
+                                <input id="isbn" name="isbn" value="" pattern="[\d\-,]{9,}" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="director">Режиссёр</label></td>
+                            <td>
+                                <input id="director" name="director" value="" form="myform">
+                            </td>
+                            <td><label for="lang">Язык</label></td>
+                            <td>
+                                <input id="lang" name="lang" value="" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="writer">Сценарий</label></td>
+                            <td>
+                                <input id="writer" name="writer" value="" form="myform">
+                            </td>
+                            <td><label for="pages">Количество страниц</label></td>
+                            <td>
+                                <input id="pages" name="pages" value="" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="producer">Продюсер</label></td>
+                            <td>
+                                <input id="producer" name="producer" value="" form="myform">
+                            </td>
+                            <td><label for="format">Формат</label></td>
+                            <td>
+                                <input id="format" name="format" value="" pattern="[a-z0-9]{3,4}" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="operator">Оператор</label></td>
+                            <td>
+                                <input id="operator" name="operator" value="" form="myform">
+                            </td>
+                            <td>Переплёт</td>
+                            <td>
+                                <label>
+                                    <input name="paperback" type="radio" value="hard">Твёрдый
+                                </label>
+                                <label>
+                                    <input name="paperback" type="radio" value="soft">Мягкий
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="music">Композитор</label></td>
+                            <td>
+                                <input id="music" name="music" value="" form="myform">
+                            </td>
+                            <td><label for="pubtype">Тип издания</label></td>
+                            <td>
+                                <input id="pubtype" name="pubtype" value="" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="art">Художник</label></td>
+                            <td>
+                                <input id="art" name="art" value="" form="myform">
+                            </td>
+                            <td><label for="audio">Аудиокнига</label></td>
+                            <td>
+                                <input id="audio" name="audio" type="file" value=""
+                                       accept="audio/mpeg3,audio/wav" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="editor">Монтаж</label></td>
+                            <td>
+                                <input id="editor" name="editor" value="" form="myform">
+                            </td>
+                        </tr>
+                    </table>
+                </details>
+                <h4>Информация об авторе</h4>
                 <table>
                     <tr>
                         <td><label for="author">Имя</label></td>
-                        <td><input id="author" name="author" value="" form="myform" required></td>
+                        <td>
+                            <input id="author" name="author" value="" form="myform"
+                                   maxlength="50" required><span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="birthdate">Дата рождения</label></td>
                         <td>
                             <input id="birthdate" name="birthdate" type="date" value=""
-                                   form="myform" required>
+                                   form="myform" required><span class="star"> *</span>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="deathdate">Дата смерти</label></td>
-                        <td><input id="deathdate" name="deathdate" type="date" form="myform" value=""></td>
+                        <td>
+                            <input id="deathdate" name="deathdate" type="date" form="myform" value="">
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="birthplace">Место рождения</label></td>
-                        <td><input id="birthplace" name="birthplace" value="" form="myform" required></td>
+                        <td>
+                            <input id="birthplace" name="birthplace" value="" form="myform" required>
+                            <span class="star"> *</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="occupation">Род деятельности</label></td>
-                        <td><input id="occupation" name="occupation" value="" form="myform" required></td>
+                        <td>
+                            <input id="occupation" name="occupation" value="" form="myform" required>
+                            <span class="star"> *</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Фото/портрет</label></td>
+                        <td>
+                            <input id="photo" name="photo" type="file" value=""
+                                   accept="image/jpeg,image/png,image/gif" form="myform">
+                            <span class="star">*</span>
+                        </td>
                     </tr>
                 </table>
-                <button type="submit">Добавить</button>
+                <details>
+                    <summary>Дополнительная информация (необязательно, но желательно)</summary>
+                    <table>
+                        <tr>
+                            <td><label for="address">Адрес</label></td>
+                            <td><input id="address" name="address" value="" form="myform"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td>
+                                <input id="email" name="email" value=""
+                                       pattern="[\w\-]+@[a-zа-я\-]+\.[a-zа-я]+" form="myform">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="site">URL</label></td>
+                            <td><input id="site" name="site" value="" form="myform"></td>
+                        </tr>
+                    </table>
+                </details>
+                <button type="submit">Добавить</button><button type="reset">Очистить</button>
             </form>
         </section>
     </main>
