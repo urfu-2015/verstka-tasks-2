@@ -233,103 +233,201 @@
             <section>
                 <h2>Форма для добавления книг и фильмов</h2>
                 <form action="" method="post">
-                    <label for="artType">Тип произведения</label>
-                    <select id="artType" name="artType" required>
-                        <option>Фильм</option>
-                        <option>Книга</option>
-                    </select>
-                    <br>
-                    <h4>Информация об авторе:</h4>
-                    <label for="author">Автор: </label>
-                    <input id="author" name="author" required>
-                    <br>
-                    <label for="birthDate">Дата рождения: </label>
-                    <input id="birthDate" name="birthDate" type="date" required>
-                    <br>
-                    <label for="deathDate">Дата смерти: </label>
-                    <input id="deathDate" name="deathDate" type="date">
-                    <br>
-                    <label for="birthPlace">Место рождения: </label>
-                    <input id="birthPlace" name="birthPlace" required>
-                    <br>
-                    <label for="jobTitle">Род деятельности: </label>
-                    <input id="jobTitle" name="jobTitle">
-                    <br>
-                    <label for="authorURL">Сайт: </label>
-                    <input id="authorURL" name="authorURL" type="url">
-                    <br>
-                    <label for="authorAddress">Адрес: </label>
-                    <input id="authorAddress" name="authorAddress">
-                    <br>
-                    <label for="authorEmail">Email: </label>
-                    <input id="authorEmail" name="authorEmail" type="email">
-                    <br>
-                    <h4>Информация о произведении:</h4>
-                    <label for="year">Год:</label>
-                    <input id="year" name="year" required>
-                    <br>
-                    <label for="language">Язык:</label>
-                    <input id="language" name="language" required>
-                    <br>
-                    <label for="date">Дата размещения:</label>
-                    <input id="date" name="date" type="date" required>
-                    <br>
-                    <label for="genre">Жанр:</label>
-                    <input id="genre" name="genre" required>
-                    <br>
-                    <label for="url">URL:</label>
-                    <input id="url" name="genre" type="url" required>
-                    <br>
-                    <label for="description">Описание:</label>
-                    <textarea id="description"></textarea>
-                    <br>
-                    <h4>Информация о книге:</h4>
-                    <label for="publisher">Издательство:</label>
-                    <input id="publisher" name="publisher">
-                    <br>
-                    <label for="isbn">ISBN: </label>
-                    <input id="isbn" name="isbn" type="number">
-                    <br>
-                    <label for="edition">Тип издания: </label>
-                    <input id="edition" name="edition">
-                    <br>
-                    <label for="pages">Страниц:</label>
-                    <input id="pages" name="pages" type="number">
-                    <br>
-                    <label for="format">Формат:</label>
-                    <input id="format" name="format">
-                    <br>
-                    <label for="cover">Переплет: </label>
-                    <input id="cover" name="cover">
-                    <br>
-                    <h4>Информация о фильме: </h4>
-                    <label for="country">Страна: </label>
-                    <input id="country" name="country">
-                    <br>
-                    <label for="slogan">Слоган: </label>
-                    <input id="slogan" name="slogan">
-                    <br>
-                    <label for="director">Режиссер: </label>
-                    <input id="director" name="director">
-                    <br>
-                    <label for="scenario">Сценарий: </label>
-                    <input id="scenario" name="scenario">
-                    <br>
-                    <label for="producer">Продюсер: </label>
-                    <input id="producer" name="producer">
-                    <br>
-                    <label for="operator">Оператор: </label>
-                    <input id="operator" name="operator">
-                    <br>
-                    <label for="composer">Композитор: </label>
-                    <input id="composer">
-                    <br>
-                    <label for="artist">Художник: </label>
-                    <input id="artist" name="artist">
-                    <br>
-                    <label for="cutting">Монтаж: </label>
-                    <input id="cutting" name="cutting">
-                    <br>
+                    <label>
+                        Тип произведения:
+                        <br>
+                        <select class="inputType">
+                            <option value="film">Фильм</option>
+                            <option value="book">Книга</option>
+                        </select>
+                        <br>
+                    </label>
+                    <fieldset>
+                        <legend>Информация об авторе:</legend>
+                        <label>
+                            Автор:
+                            <br>
+                            <input name="author" required>
+                            <br>
+                        </label>
+                        <label>
+                            Дата рождения:
+                            <br>
+                            <input name="birthDate" type="date" required>
+                            <br>
+                        </label>
+                        <label>
+                            Дата смерти:
+                            <br>
+                            <input name="deathDate" type="date">
+                            <br>
+                        </label>
+                        <label>
+                            Место рождения:
+                            <br>
+                            <input name="birthPlace" required>
+                            <br>
+                        </label>
+                        <label>
+                            Род деятельности:
+                            <br>
+                            <input name="jobTitle">
+                            <br>
+                        </label>
+                        <label>
+                            Сайт:
+                            <br>
+                            <input name="authorURL" type="url">
+                            <br>
+                        </label>
+                        <label>
+                            Адрес:
+                            <br>
+                            <input name="authorAddress">
+                            <br>
+                        </label>
+                        <label>
+                            Email:
+                            <br>
+                            <input name="authorEmail" type="email">
+                            <br>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Информация о произведении:</legend>
+                        <label>
+                            Год:
+                            <br>
+                            <input name="year" required>
+                            <br>
+                        </label>
+                        <label>
+                            Язык:
+                            <br>
+                            <input name="language" required>
+                            <br>
+                        </label>
+                        <label>
+                            Дата размещения:
+                            <br>
+                            <input name="date" type="date" required>
+                            <br>
+                        </label>
+                        <label>
+                            Жанр:
+                            <br>
+                            <input name="genre" required>
+                            <br>
+                        </label>
+                        <label>
+                            URL:
+                            <br>
+                            <input name="url" type="url" required>
+                            <br>
+                        </label>
+                        <label>
+                            Описание:
+                            <br>
+                            <textarea name="description" cols="80" rows="5"></textarea>
+                            <br>
+                        </label>
+                    </fieldset>
+                    <fieldset class="bookInfo">
+                        <legend>Информация о книге:</legend>
+                        <label>
+                            Издательство:
+                            <br>
+                            <input name="publisher">
+                            <br>
+                        </label>
+                        <label>
+                            ISBN:
+                            <br>
+                            <input name="isbn" type="number">
+                            <br>
+                        </label>
+                        <label>
+                            Тип издания:
+                            <br>
+                            <input name="edition">
+                            <br>
+                        </label>
+                        <label>
+                            Страниц:
+                            <br>
+                            <input name="pages" type="number">
+                            <br>
+                        </label>
+                        <label>
+                            Формат:
+                            <br>
+                            <input name="format">
+                            <br>
+                        </label>
+                        <label>
+                            Переплет:
+                            <br>
+                            <input name="cover">
+                            <br>
+                        </label>
+                    </fieldset>
+                    <fieldset class="filmInfo">
+                        <legend>Информация о фильме: </legend>
+                        <label>
+                            Страна:
+                            <br>
+                            <input name="country">
+                            <br>
+                        </label>
+                        <label>
+                            Слоган:
+                            <br>
+                            <input name="slogan">
+                            <br>
+                        </label>
+                        <label>
+                            Режиссер:
+                            <br>
+                            <input name="director">
+                            <br>
+                        </label>
+                        <label>
+                            Сценарий:
+                            <br>
+                            <input name="scenario">
+                            <br>
+                        </label>
+                        <label>
+                            Продюсер:
+                            <br>
+                            <input name="producer">
+                            <br>
+                        </label>
+                        <label>
+                            Оператор:
+                            <br>
+                            <input name="operator">
+                            <br>
+                        </label>
+                        <label>
+                            Композитор:
+                            <br>
+                            <input name="composer">
+                            <br>
+                        </label>
+                        <label>
+                            Художник:
+                            <br>
+                            <input name="artist">
+                            <br>
+                        </label>
+                        <label>
+                            Монтаж:
+                            <br>
+                            <input name="cutting">
+                            <br>
+                        </label>
+                    </fieldset>
                     <button type="submit">Отправить</button>
                 </form>
             </section>
