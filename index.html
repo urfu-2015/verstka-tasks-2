@@ -3,39 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Бабуленькин сервант</title>
-    <style>
-        body
-        {
-            margin: 0;
-            background: #f6f5f3;
-            font: .8em Arial,Helvetica,sans-serif;
-        }
-        h1
-        {
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 36px;
-            color: #525050;
-            margin: 0 0 35px;
-        }
-        img
-        {
-            height: 400px;
-            width: 280px;
-        }
-        section
-        {
-            margin-right: 250px;
-            margin-left: 250px;
-            background: white;
-            border-left: 1px solid gainsboro;
-            border-right: 1px solid gainsboro;
-            padding: 40px;
-            color: #525050;
-            font-size: 15px;
-            line-height: 1.3;
-        }
-    </style>
 </head>
 <body>
 <!--Книги-->
@@ -43,22 +10,26 @@
     <h1>Книги</h1>
     <hr>
     <article itemscope itemtype="http://schema.org/Book">
-        <h2>Война и мир</h2>
-        <img itemprop="image" src="http://book2.me/f/9785699307845%20(1).jpg" alt="Война и мир">
+        <h2 itemprop="name">Война и мир</h2>
+        <img itemprop="image" width="280" height="400"
+             src="http://book2.me/f/9785699307845%20(1).jpg" alt="Война и мир">
         <br><br>
         <span itemprop="category"><strong>Тип:</strong> Книга</span><br>
         <span itemprop="publisher"><strong> Издательство:</strong> АСТ, Астрель</span><br>
-            <span itemprop="isbn">
-                <strong><abbr title="International Standard Book Number">ISBN</abbr>:</strong>
-                5-17-006400-4,978-5-17-006400-7
-            </span><br>
-        <span itemprop="dateCreated"><strong>Год:</strong> 1867 г</span><br>
+        <div>
+            <strong><abbr title="International Standard Book Number">ISBN</abbr>:</strong>
+            <span itemprop="isbn">5-17-006400-4</span>,
+            <span itemprop="isbn">978-5-17-006400-7</span>
+        </div>
+        <span itemprop="dateCreated"><strong>Год:</strong> <time>1867</time> г</span><br>
         <span itemprop="bookEdition"><strong>Тип издания:</strong> Авторский сборник</span><br>
         <span itemprop="inLanguage" content="ru"><strong>Язык:</strong> Русский</span><br>
         <span itemprop="numberOfPages"><strong>Страниц:</strong> 704 стр.</span><br>
         <span itemprop="bookFormat"><strong>Формат:</strong> ePub</span><br>
         <span itemprop="cover"><strong>Переплет:</strong> Твердый переплет</span><br>
-        <span itemprop="datePublished"><strong>Дата размещения:</strong> 8 котобря 2015</span>
+        <span itemprop="datePublished">
+            <strong>Дата размещения:</strong> <time>8 котобря 2015</time>
+        </span>
         <br>
         <span itemprop="genre"><strong>Жанр:</strong> Русская классика, Литература 19 века</span>
         <br>
@@ -83,12 +54,15 @@
     </article>
     <article itemscope itemtype="http://schema.org/Person">
         <h3>Лев Николаевич Толстой</h3>
-        <img itemprop="image"
+        <img itemprop="image" width="280" height="400"
              src="http://cf.kizlarsoruyor.com/a33264/47fb71ae-c05a-454a-b35a-753a26cf27fe.jpg"
              alt="Толстой">
         <br><br>
-        <span itemprop="birthDate"><strong>Дата рождения:</strong> 16 августа 1828</span><br>
-        <span itemprop="deathDate"><strong>Дата смерти:</strong> 7 ноября 1910</span><br>
+        <span itemprop="birthDate">
+            <strong>Дата рождения:</strong> <time>16 августа 1828</time>
+        </span><br>
+        <span itemprop="deathDate"><strong>Дата смерти:</strong> <time>7 ноября 1910</time></span>
+        <br>
         <span itemprop="address"></span>
         <div itemscope itemtype="http://schema.org/PostalAddress">
             <strong>Место рождения:</strong>
@@ -101,8 +75,8 @@
             </span>
     </article>
     <article itemscope itemtype="http://schema.org/Book">
-        <h2>Harry Potter and the Sorcerer's Stone</h2>
-        <img itemprop="image"
+        <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
+        <img itemprop="image" width="280" height="400"
              src="http://www.bookcampfrisco.com/uploads/2/9/1/2/29123455/7923888.jpg"
              alt="Harry Potter and the Sorcerer's Stone">
         <br><br>
@@ -112,14 +86,15 @@
                 <strong><abbr title="International Standard Book Number">ISBN</abbr>:</strong>
                 978-0439708180
             </span><br>
-        <span itemprop="dateCreated"><strong>Год:</strong> 1998 г</span><br>
+        <span itemprop="dateCreated"><strong>Год:</strong> <time>1998</time> г</span><br>
         <span itemprop="bookEdition"><strong>Тип издания:</strong> Авторский сборник</span><br>
         <span itemprop="inLanguage" content="en"><strong>Язык:</strong> English</span><br>
         <span itemprop="numberOfPages"><strong>Страниц:</strong> 309 стр.</span><br>
         <span itemprop="bookFormat"><strong>Формат:</strong> pdf</span><br>
         <span itemprop="cover"><strong>Переплет:</strong> Мягкий переплет</span><br>
-        <span itemprop="datePublished"><strong>Дата размещения:</strong> 4 котобря 2015</span>
-        <br>
+        <span itemprop="datePublished">
+            <strong>Дата размещения:</strong> <time>4 котобря 2015</time>
+        </span><br>
         <span itemprop="genre"><strong>Жанр:</strong> Fantasy, Adventure, Kids &#38; Family</span>
         <br>
             <span itemprop="url">
@@ -140,11 +115,12 @@
     </article>
     <article itemscope itemtype="http://schema.org/Person">
         <h3>J. K. Rowling</h3>
-        <img itemprop="image"
+        <img itemprop="image" width="280" height="400"
              src="http://cdn.mhpbooks.com/uploads/2014/07/shutterstock_166146551-1.jpg"
              alt="Rowling">
         <br><br>
-        <span itemprop="birthDate"><strong>Дата рождения:</strong> 31 июля 1965</span><br>
+        <span itemprop="birthDate"><strong>Дата рождения:</strong> <time>31 июля 1965</time></span>
+        <br>
         <span itemprop="deathDate"><strong>Дата смерти:</strong> -</span><br>
         <span itemprop="address"></span>
         <div itemscope itemtype="http://schema.org/PostalAddress">
@@ -176,58 +152,62 @@
     <h1>Фильмы</h1>
     <hr>
     <article itemscope itemtype="http://schema.org/Movie">
-        <h2>Titanic</h2>
-        <img itemprop="image"
+        <h2 itemprop="name">Titanic</h2>
+        <img itemprop="image" width="280" height="400"
              src="https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg" alt="Titanic">
         <br><br>
         <span itemprop="category"><strong>Тип:</strong> Фильм</span><br>
-        <span itemprop="dateCreated"><strong>Год:</strong> 1867 г</span><br>
+        <span itemprop="dateCreated"><strong>Год:</strong> <time>1867</time> г</span><br>
         <span itemprop="address"></span>
         <div itemscope itemtype="http://schema.org/PostalAddress">
             <strong>Страна:</strong>
             <span itemprop="addressCountry">США</span>
         </div>
-            <span itemprop="description">
-                <strong>Слоган:</strong> "Ничто на Земле не сможет разлучить их"
-            </span><br>
+        <span itemprop="description">
+            <strong>Слоган:</strong> "Ничто на Земле не сможет разлучить их"
+        </span><br>
         <span itemprop="director"><strong>Режиссёр:</strong> Джеймс Кэмерон</span><br>
         <span itemprop="creator"><strong>Сценарий:</strong> Джеймс Кэмерон</span><br>
-            <span itemprop="producer">
-                <strong>Продюсер:</strong> Джеймс Кэмерон, Джон Ландау, Памела Исли
-            </span><br>
+        <span itemprop="producer">
+            <strong>Продюсер:</strong> Джеймс Кэмерон, Джон Ландау, Памела Исли
+        </span><br>
         <span itemprop="operator"><strong>Оператор:</strong> Рассел Карпентер</span><br>
         <span itemprop="musicBy"><strong>Композитор:</strong> Джеймс Хорнер</span><br>
-
-            <span itemprop="artist">
-                <strong>Художник:</strong> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли
-            </span><br>
-            <span itemprop="editor">
-                <strong>Монтаж:</strong> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис
-            </span><br>
+        <span itemprop="artist">
+            <strong>Художник:</strong> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли
+        </span><br>
+        <span itemprop="editor">
+            <strong>Монтаж:</strong> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис
+        </span><br>
         <span itemprop="genre"><strong>Жанр:</strong> драма, мелодрама</span><br>
-        <span itemprop="datePublished"><strong>Дата размещения:</strong> 1 котобря 2015</span>
+        <span itemprop="datePublished">
+            <strong>Дата размещения:</strong> <time>1 котобря 2015</time>
+        </span>
         <br>
-            <span itemprop="url">
-                <strong>URL:</strong> <a href="http://babulenkin-servant.com/films/titanic.mp4">
-                babulenkin-servant.com/films/titanic.mp4</a>
-            </span><br>
-            <span itemprop="about">
-                <strong>Описание:</strong> Молодые влюбленные Джек и Роза находят друг друга в
-                первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что
-                шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики, и их
-                страстная любовь превратится в схватку со смертью.
-            </span><br><br>
+        <span itemprop="url">
+            <strong>URL:</strong> <a href="http://babulenkin-servant.com/films/titanic.mp4">
+            babulenkin-servant.com/films/titanic.mp4</a>
+        </span><br>
+        <span itemprop="about">
+            <strong>Описание:</strong> Молодые влюбленные Джек и Роза находят друг друга в
+            первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+            шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики, и их
+            страстная любовь превратится в схватку со смертью.
+        </span><br><br>
         <video width="600" height="300" controls>
-            <source src="http://r10---sn-ab5l6nsl.googlevideo.com/videoplayback?lmt=1387229724485798&#38;mime=video%2Fmp4&#38;upn=W9ZL5UdjK7k&#38;sparams=dur%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Csource%2Cupn%2Cexpire&#38;dur=130.612&#38;sver=3&#38;source=youtube&#38;id=o-ALiEx_2TR7GCazx14nQ_SlZ1e33kzmeppw1Z1LjCNMdj&#38;ratebypass=yes&#38;fexp=9408710%2C9414764%2C9416126%2C9417707&#38;mm=31&#38;itag=22&#38;mn=sn-ab5l6nsl&#38;key=yt6&#38;ip=2604%3Aa880%3A800%3A10%3A%3A143%3A9001&#38;expire=1444853974&#38;signature=BBC72857DD5873CE1CD8DC0456176462E98C5663.58142A41914E3B83AD6EA73FF8DE10125D519C08&#38;ipbits=0&#38;ms=au&#38;mv=m&#38;mt=1444832273&#38;initcwndbps=11302500&#38;pl=48&#38;signature=&#38;title=WAPWON.COM_Titanic_3D_Re-Release_Official_Trailer_%231_-_Leonardo_DiCaprio%2C_Kate_Winslet_Movie_%282012%29_HD" type="video/mp4">
+            <source src="https://r5---sn-xjpm-4g5e.googlevideo.com/videoplayback?expire=1445024129&amp;lmt=1439262869647573&amp;requiressl=yes&amp;signature=825F64E7C890ADF6B604FDCECC1F43122437E6.CCDAF9B265585FE3B2BA65F45A26CD94814CBBF2&amp;itag=22&amp;mv=m&amp;sparams=dur%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&amp;mt=1445002363&amp;ms=au&amp;sver=3&amp;pl=22&amp;mime=video%2Fmp4&amp;id=o-ANeFXe7y9LRyGozdi1awyua8fpc_on-FJv5rgENC3sQr&amp;mn=sn-xjpm-4g5e&amp;key=yt6&amp;ip=185.53.168.70&amp;ipbits=0&amp;upn=8kHDSsBhuX8&amp;mm=31&amp;ratebypass=yes&amp;initcwndbps=2142500&amp;source=youtube&amp;dur=130.612&amp;fexp=9408710%2C9408940%2C9414764%2C9414802%2C9415556%2C9416126%2C9416984%2C9417707%2C9418199%2C9418204%2C9418749%2C9420282%2C9421167%2C9421544%2C9421707%2C9422327%2C9422483%2C942" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="en.vtt">
             Элемент video не поддерживается вашим браузером.
         </video>
     </article>
     <article itemscope itemtype="http://schema.org/Person">
         <h3>Джеймс Кэмерон</h3>
-        <img itemprop="image"
+        <img itemprop="image" width="280" height="400"
              src="http://st.kp.yandex.net/images/actor_iphone/iphone360_27977.jpg" alt="Кэмерон">
         <br><br>
-        <span itemprop="birthDate"><strong>Дата рождения:</strong> 16 августа 1954</span><br>
+        <span itemprop="birthDate">
+            <strong>Дата рождения:</strong> <time>16 августа 1954</time>
+        </span><br>
         <span itemprop="deathDate"><strong>Дата смерти:</strong> -</span><br>
         <span itemprop="address"></span>
         <div itemscope itemtype="http://schema.org/PostalAddress">
