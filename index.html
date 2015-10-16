@@ -6,10 +6,10 @@
 </head>
 <body>
     <article>      
-    <h2>- Война и мир.</h2>
+        <h2>- Война и мир.</h2>
     <img src="http://royallib.com/data/images/87/cover_87012.jpg" width="250" height="380" alt="War and peace">
     <section itemscope itemtype="https://schema.org/Book">
-        <ul/>
+        <ul>
             <li>Тип: Книга</li>
             <li><span itemprop="bookEdition">Издательство: АСТ, Астрель</span></li>
             <li><span itemprop="isbn"><abbr title="International Standard Book Number">ISBN</abbr>: 5-17-006400-4,978-5-17-006400-7</span></li>
@@ -31,21 +31,24 @@
                 политических, философских, портретных, пейзажных, психологических...
             </span></li>
         </ul>
+     </section>  
     <img src="http://www.logoslovo.ru/media/pic_full/12/37360.jpg" width="100" height="150" alt="Leo Tolstoy">
     <section itemscope itemtype="https://schema.org/Person">
-        <ul/>
+        <ul>
             <li><span itemprop="additionalName">Автор: Лев Николаевич Толстой</span></li>
             <li><span itemprop="birthDate">Дата рождения: 16 августа 1828</span></li>
             <li><span itemprop="deathDate">Дата смерти: 7 ноября 1910</span></li>
             <li><span itemprop="birthPlace">Место рождения:    Ясная Поляна, Тульская губерния, Российская империя</span></li>
             <li><span itemprop="jobTitle">Род деятельности: прозаик, публицист, философ</span></li>
         </ul>
+    </section>    
     </article>
     <hr>
     <article>      
         <h2>- Harry Potter and the Sorcerer's Stone</h2>
         <img src="http://www.kinopoisk.ru/images/film_big/689.jpg" width="250" height="380" alt="Harry Potter and the Sorcerer's Stone">
-    <ul/>
+    <section itemscope itemtype="https://schema.org/Book">
+    <ul>
         <li>Тип: Книга</li>
         <li><span itemprop="bookEdition">Издательство: АСТ, Астрель</span></li>
         <li><span itemprop="isbn"><abbr title="International Standard Book Number">ISBN</abbr>: 978-0439708180</span></li>
@@ -66,9 +69,10 @@
             learn that he's really a wizard, just as his parents were.
              </span></li>
     </ul>
+    </section>
     <img src="http://aidanmoher.com/blog/wp-content/uploads/2015/06/JK-Rowling-JK.jpg" width="100" height="150" alt="J. K. Rowling">
     <section itemscope itemtype="https://schema.org/Person">
-        <ul/>
+        <ul>
             <li><span itemprop="additionalName">Автор: J. K. Rowling</span></li>
             <li><span itemprop="birthDate">Дата рождения: 31 июля 1965</span></li>
             <li><span itemprop="deathDate">Дата смерти: –</span></li>
@@ -78,13 +82,14 @@
             <li><span itemprop="address">Адрес: 50 Bedford Square, London</span></li>
            <li><span itemprop="email"><a href="mailto:info@jkrowlingpr.com">Email: info@jkrowlingpr.com</a></span></li>
         </ul>
+    </section>
     </article>
     <hr>
     <h2>-Titanic</h2>
     <article>
     <iframe width="380" height="250" src="https://www.youtube.com/embed/qFjyxJ21VJY" frameborder="0" allowfullscreen></iframe>
     <section itemscope itemtype="https://schema.org/Movie">
-        <ul/>
+        <ul>
             <li>Тип: Фильм</li>
             <li><span itemprop="copyrightYear">Год: 1997</span></li>
             <li>Страна: США</li>
@@ -104,9 +109,10 @@
             шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,<br>
             и их страстная любовь превратится в схватку со смертью.</span></li>
         </ul>
+    </section>
     <img src="http://media7.fast-torrent.ru/media/files/s3/px/kr/133275968035504389.jpg" width="100" height="150" alt="Джеймс Кэмерон">
     <section itemscope itemtype="https://schema.org/Person">
-        <ul/>
+        <ul>
             <li><span itemprop="additionalName">Автор: Джеймс Кэмерон</span></li>
             <li><span itemprop="birthDate">Дата рождения: 16 августа 1954</span></li>
             <li><span itemprop="deathDate">Дата смерти: –</span></li>
@@ -116,7 +122,7 @@
     </article>
     <hr>
     <h3>Добавить новую книгу:</h3>  
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <label for="picture">Обложка книги: </label>
         <input name="picture" type="file" value="" accept="image/jpeg,image/png,image/gif">
         <br>
@@ -188,12 +194,12 @@
         <input name="email" type="email" value="">
         <br>
         <p>      
-            <input type="button" value="Отправить">
+            <button type="submit">Отправить</bitton>
         <p>
     </form>
     <hr>
     <h3>Добавить новый фильм:</h3>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <label for="trailer">Трейлер фильма: </label>
         <input name="trailer" type="file" value="" accept="video/mp4">
         <br>
@@ -255,7 +261,7 @@
         <input name="jobTitle" value="" maxlength="32">
         <br>
         <p>
-            <input type="button" value="Отправить">
+            <button type="submit">Отправить</bitton>
         </p>
     </form>
 </body>
