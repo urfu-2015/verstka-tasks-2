@@ -117,8 +117,7 @@
         <table>
             <tr>
                 <td rowspan="2">
-                    <img src="http://data13.gallery.ru/albums/gallery/139648-e0ff1-38055132-m750x740-ud9603.jpg"
-                         title="Titanic" alt="Titanic">
+                    <video width="400" height="300" controls src="video/titanic.mp4" title="Titanic"></video>
                 </td>
                 <td colspan="2">
                     Тип: Фильм<br>
@@ -162,6 +161,144 @@
             </tr>
         </table>
     </section>
+    <hr><hr>
+
+    <table>
+        <thead>
+            <th>Добавить новую книгу</th>
+            <th></th>
+            <th>Добавить новый фильм</th>
+        </thead>
+        <tr>
+            <td>
+                <form method="POST">
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <td><label for="bookName">Название книги:</label></td>
+                                <td><input id="bookName" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="publisher">Издательство:</label></td>
+                                <td><input id="publisher"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="publicationYear">Год издания:</label></td>
+                                <td><input id="publicationYear"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="publicationType">Тип издания:</label></td>
+                                <td><input id="publicationType"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bookLanguage">Язык:</label></td>
+                                <td><input id="bookLanguage" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pagesCount">Количество страниц:  </label></td>
+                                <td><input id="pagesCount"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="wrapper">Обложка:</label></td>
+                                <td><input id="wrapper"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bookGenre">Жанр книги:</label></td>
+                                <td><input id="bookGenre"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bookFile">Файл</label></td>
+                                <td><input id="bookFile" type="file"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bookDescription">Описание:</label></td>
+                                <td><textarea id="bookDescription"></textarea><br></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+            <td></td>
+            <td>
+                <form method="POST">
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <td><label for="filmName">Название фильма:   </label></td>
+                                <td><input id="filmName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="releaseDate">Год:</label></td>
+                                <td><input id="releaseDate"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Страна:</label></td>
+                                <td><input id="country"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="headline">Слоган:</label></td>
+                                <td><input id="headline"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="filmGenre">Жанр фильма:</label></td>
+                                <td><input id="filmGenre"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="filmFile">Файл:</label></td>
+                                <td><input id="filmFile" type="file"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="filmDescription">Описание:</label></td>
+                                <td><textarea rows="7" cols="30" id="filmDescription"></textarea ><br></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <form method="POST">
+                    <fieldset>
+                        <legend>Добавить автора/режиссера</legend>
+                        <table>
+                            <tr>
+                                <td><label for="authorName">Имя:</label></td>
+                                <td><input id="authorName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="birthDate">Дата рождения:</label></td>
+                                <td><input id="birthDate"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="deathDate">Дата смерти:</label></td>
+                                <td><input id="deathDate"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="birthPlace">Место рождения:</label></td>
+                                <td><input id="birthPlace"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="jobTitle">Род деятельности:</label></td>
+                                <td><input id="jobTitle"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Добавить книгу</button>
+                <button type="submit">Добавить фильм</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
 </main>
 </body>
 </html>
