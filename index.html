@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=cp1251" /> 
     <meta charset="UTF-8">
     <meta name="keywords" content="book, movie">
     <title>Бабушкина коллекция</title>
@@ -15,7 +16,8 @@
                 <ul>
                     <li>Тип: Книга</li>
                     <li>Издательство: <span itemprop="publisher">АСТ, Астрель</span></li>
-                    <li>ISBN: <span itemprop="isbn">5-17-006400-4</span>,
+                    <li title="Международный стандартный книжный номер">ISBN: 
+						<span itemprop="isbn">5-17-006400-4</span>,
                         <span itemprop="isbn">978-5-17-006400-7</span>
                     </li>
                     <li>Год: <span itemprop="dateCreated">1867</span> г</li>
@@ -24,12 +26,12 @@
                     <li>Страниц: <span itemprop="numberOfPages">704</span> стр.</li>
                     <li>Формат: <span itemprop="bookFormat">ePub</span></li>
                     <li>Переплет: Твердый переплет</li>
-                    <li>Дата размещения: <span itemprop="datePublished">8 котобря 2015</span></li>
+                    <li>Дата размещения: <span itemprop="datePublished">8 октября 2015</span></li>
                     <li>Жанр: <span itemprop="genre">Русская классика</span>, <span itemprop="genre">
                         Литература 19 века</span>
                     </li>
                     <li>URL:
-                        <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                        <a href="http://babulenkin-servant.com/books/war_and_peace.epub" download>
                             http://babulenkin-servant.com/books/war_and_peace.epub
                         </a>
                     </li>
@@ -75,7 +77,7 @@
                 <ul>
                     <li>Тип: Книга</li>
                     <li>Издательство: <span itemprop="publisher">АСТ, Астрель</span></li>
-                    <li>ISBN: <span itemprop="isbn">978-0439708180</span></li>
+                    <li title="Международный стандартный книжный номер">ISBN: <span itemprop="isbn">978-0439708180</span></li>
                     <li>Год: <span itemprop="dateCreated">1998</span> г</li>
                     <li>Язык: <span itemprop="inLanguage">English</span></li>
                     <li>Страниц: <span itemprop="numberOfPages">309</span> стр.</li>
@@ -85,7 +87,7 @@
                     <li>Жанр: <span itemprop="genre">Fantasy</span>,
                         <span itemprop="genre">Adventure</span>, <span itemprop="genre">Kids & Family</span>
                     </li>
-                    <li>URL: <a href="http://babulenkin-servant.com/books/potter.pdf">
+                    <li>URL: <a href="http://babulenkin-servant.com/books/potter.pdf" download>
                         http://babulenkin-servant.com/books/potter.pdf</a>
                     </li>
                     <li lang="en">Описание: <span itemprop="about">Harry Potter has no idea how famous he is.
@@ -142,7 +144,7 @@
                         <span itemprop="genre">мелодрама</span>
                     </li>
                     <li>Дата размещения: <span itemprop="">1 котобря 2015</span></li>
-                    <li>URL: <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                    <li>URL: <a href="http://babulenkin-servant.com/films/titanic.mp4" download>
                         http://babulenkin-servant.com/films/titanic.mp4</a>
                     </li>
                     <li>Описание: <span itemprop="about">Молодые влюбленные Джек и Роза находят друг друга в первом и
@@ -170,59 +172,97 @@
         </article>
     </section>
     <hr>
-    <form>
+    <form action="" method="post">
         <h3>Форма для ввода информации о книге</h3>
         <ul>
-            <li>Издательство: <input type="text">
-            <li>ISBN: <input type="number">
-            <li>Год: <input type="number" max="2015"></li>
-            <li>Язык: <input type="text"></li>
-            <li>Кол-во страниц: <input type="number"></li>
-            <li>Формат: <input type="text"></li>
-            <li>Переплет: <input type="text"></li>
-            <li>Дата размещения: <input type="date"></li>
-            <li>Жанр: <input typr="text"></li>
-            <li>URL: <input type="url"></li>
-            <li>Описание: <textarea rows="3" cols="50" placeholder="Введите описание"></textarea></li>
+			<li><label for="nameBook">Название:*</label>
+				<input id="nameBook" type="text" required>
+            <li><label for="publisherBook">Издательство:*</label>
+				<input id="publisherBook" type="text" required>
+            <li><label for="isbn" title="Международный стандартный книжный номер">ISBN:</label>
+				<input id="isbn" type="text">
+            <li><label for="yearBook">Год:*</label>
+				<input id="yearBook" type="date" required>
+            <li><label for="language">Язык:*</label>
+                <input id="language" type="text" required>
+            <li><label for="pageCount">Кол-во страниц:*</label>
+				<input id="pageCount" type="number" required>
+            <li><label for="format">Формат:*</label>
+				<input id="format" type="text" required>
+            <li><label for="hardcover">Переплет:</label>
+				<input id="hardcover" type="text">
+            <li><label for="dateOfAddingBook">Дата размещения:*</label>
+				<input id="dateOfAddingBook" type="date" required>
+            <li><label for="genre">Жанр:</label>
+				<input id="genre" typr="text">
+            <li><label for="urlBook">URL:*</label>
+				<input id="urlBook" type="url" required>
+            <li><label for="descriptionOfBook">Описание: </label>
+				<textarea id="descriptionOfBook" rows="3" cols="50" placeholder="Введите описание"></textarea>
         </ul>
         <h4>Информация об авторе</h4>
         <ul>
-            <li>Автор: <input type="text"></li>
-            <li>Дата рождения: <input type="date"></li>
-            <li>Дата смерти: <input type="date"></li>
-            <li>Место рождения: <input type="text"></li>
-            <li>Род деятельности: <input type="text"></li>
+            <li><label for="author">Автор:*</label>
+				<input id="author" type="text" required></li>
+            <li><label for="birthdayAuthor">Дата рождения:*</label>
+				<input id="birthdayAuthor" type="date" required></li>
+            <li><label for="dethAuthor">Дата смерти: </label>
+				<input id="dethAuthor" type="date"></li>
+            <li><label for="placeOfBirthAuthor">Место рождения: </label>
+				<input id="placeOfBirthAuthor" type="text"></li>
+            <li><label for="occupationAuthor">Род деятельности: </label>
+				<input id="occupationAuthor" type="text"></li>
         </ul>
         <button type="submit">Отправить</button>
         <button type="reset">Сбросить</button>
     </form>
     <hr>
-    <form>
+    <form action="" method="post">
         <h3>Форма для ввода информации о фильме</h3>
         <ul>
-            <li>Год: <input type="number" max="2015" min="1900"></li>
-            <li>Страна <input type="text">
-            <li>Слоган: <input type="text">
-            <li>Режиссер: <input type="text">
-            <li>Сценарий: <input type="text">
-            <li>Продюссер: <input type="text">
-            <li>Оператор: <input type="text">
-            <li>Композитор: <input type="text"></li>
-            <li>Художник: <input type="text"></li>
-            <li>Монтаж: <input type="text"></li>
-            <li>Жанр: <input type="text">
-            <li>Дата размещения: <input type="date"></li>
-            <li>Жанр: <input typr="text"></li>
-            <li>URL: <input type="url"></li>
-            <li>Описание: <textarea rows="3" cols="50" placeholder="Введите описание"></textarea></li>
+			<li><label for="nameFilm">Название:*</label>
+				<input id="nameFilm" type="text" required>
+            <li><label for="yearFilm">Год:*</label>
+				<input id="yearFilm" type="date" required></li>
+            <li><label for="country">Страна:*</label>
+				<input id="country" type="text" required>
+            <li><label for="tagline">Слоган:</label>
+				<input id="tagline" type="text">
+			<li><label for="producerOfFilm">Режиссер:*</label>
+				<input id="producerOfFilm" type="text" required>
+            <li><label for="screenplay">Сценарий:</label>
+				<input id="screenplay" type="text">
+            <li><label for="producedBy">Продюссер:</label>
+				<input id="producedBy" type="text">
+            <li><label for="operator">Оператор:</label>
+				<input id="operator" type="text">
+            <li><label for="composer">Композитор:</label>
+				<input id="composer" type="text"></li>
+            <li><label for="artist">Художник:</label>
+				<input id="artist" type="text"></li>
+            <li><label for="mounting">Монтаж:</label>
+				<input id="mounting" type="text"></li>
+            <li><label for="genreOfFilm">Жанр:</label>
+				<input id="genreOfFilm" type="text">
+            <li><label for="dateOfAddingFilm">Дата размещения:*</label>
+				<input id="dateOfAddingFilm" type="date" required></li>
+            <li><label for="urlOfFilm">URL:*</label>
+				<input id="urlOfFilm" type="url" required></li>
+            <li><label for="descriptionOfFilm">Описание:</label>
+				<textarea id="descriptionOfFilm" rows="3" cols="50" placeholder="Введите описание"></textarea></li>
         </ul>
         <h4>Информация о режиссере</h4>
         <ul>
-            <li>Автор: <input type="text"></li>
-            <li>Дата рождения: <input type="date"></li>
-            <li>Дата смерти: <input type="date"></li>
-            <li>Место рождения: <input type="text"></li>
-            <li>Род деятельности: <input type="text"></li>
+            <li><label for="producer">Режиссер:*</label>
+				<input id="producer" type="text" required></li>
+            <li><label for="birthdayProducer">Дата рождения:*</label>
+				<input id="birthdayProducer" type="date" required></li>
+            <li><label for="dethProducer">Дата смерти: </label>
+				<input id="dethProducer" type="date"></li>
+            <li><label for="placeOfBirthProducer">Место рождения:</label>
+				<input id="placeOfBirthProducer" type="text"></li>
+            <li><label for="occupationProducer">Род деятельности:</label>
+				<input id="occupationProducer" type="text"></li>
         </ul>
         <button type="submit">Отправить</button>
         <button type="reset">Сбросить</button>
