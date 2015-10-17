@@ -2,6 +2,7 @@
 <html lang='ru'>
     <head>
         <meta charset='utf-8'>
+        <title>Бабуленькин сервант</title>
     </head>
     <body>
         <header><h1>Бабуленькин сервант</h1></header><hr>
@@ -107,13 +108,12 @@
                             <td><br>
                                 <audio controls
                                     src="https://psv4.vk.me/c1794/u171313786/audios/c78d5652f6fc.mp3"
-                                    itemprop="exampleOfWork"
-                                    alt="Не удается воспроизвести аудиофайл">
+                                    itemprop="exampleOfWork">
                                 </audio>
                             </td>
                         </tr>   
                     </table>
-                    <h3>Экранизации:</h3>
+                    <h3>Экранизации</h3>
                     <a href="http://www.kinopoisk.ru/film/38898/"
                         target="_blank">
                         <img src="http://st.kp.yandex.net/images/film_iphone/iphone360_38898.jpg"
@@ -273,14 +273,13 @@
                                 <td>Аудиокнига:</td>
                                 <td><br>
                                     <audio controls src="https://cs1-17v4.vk-cdn.net/p24/3186581291b7e2.mp3"
-                                         itemprop="workExample"
-                                         alt="Не удается воспроизвести аудиофайл">
+                                         itemprop="workExample">
                                     </audio>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <h3>Экранизации:</h3>
+                    <h3>Экранизации</h3>
                     <a href="http://www.kinopoisk.ru/film/689/"
                         target="blank">
                         <img src="http://st.kp.yandex.net/images/film_big/689.jpg"
@@ -295,9 +294,10 @@
                             width="260"
                             alt="J.K. Rowling">
                         <figcaption>
-                            <span itemprop="givenName"></span>.
+                            <span itemprop="givenName">J</span>.
                             <span itemprop="additionalName">K</span>.
-                            <span itemprop="familyName">Rowling</span></figurecaption>
+                            <span itemprop="familyName">Rowling</span>
+                        </figcaption>
                     </figure>
                     <table>
                         <tbody>
@@ -449,7 +449,7 @@
                     </table><br>
                     <iframe width="560" 
                             height="315"
-                            src="https://www.youtube.com/embed/2e-eXJ6HgkQ" 
+                            src="https://www.youtube.com/embed/2e-eXJ6HgkQ"
                             frameborder="0" 
                             allowfullscreen
                             itemprop="trailer">
@@ -501,7 +501,7 @@
                         <input type="text" required placeholder="Название"><br>
                         <input type="text" placeholder="Издательство"><br>
                         <input type="text" placeholder="ISBN"><br>
-                        <input type="date" placeholder="Год"><br>
+                        <input type="text" placeholder="Год"><br>
                         <input type="text" placeholder="Тип издания"><br>
                         <input type="text" placeholder="Язык"><br>
                         <input type="text" placeholder="Количество страниц"><br>
@@ -512,8 +512,8 @@
                         <h3>Автор</h3>
                         <input type="text" placeholder="Автор"><br>
                         Выбрать фото <input type="file" accept="image/*"><br>
-                        <input type="date" placeholder="Дата рождения"><br>
-                        <input type="date" placeholder="Дата смерти"><br>
+                        <input type="text" placeholder="Дата рождения"><br>
+                        <input type="text" placeholder="Дата смерти"><br>
                         <input type="text" placeholder="Место рождения"><br>
                         <input type="text" placeholder="Род деятельности"><br>
                         <input type="url"  placeholder="Ссылка"><br>
@@ -527,11 +527,12 @@
                     </form>
                 </article>
             </section><hr>
+            <section>
                 <header><h2>Добавить фильм</h2></header>
                 <article>
                     <form method="post" action="handler.php">
                         <input type="text" required placeholder="Название"><br>
-                        <input type="date" placeholder="Год"><br>
+                        <input type="text" placeholder="Год"><br>
                         <input type="text" placeholder="Страна"><br>
                         <input type="text" placeholder="Слоган"><br>
                         <input type="text" placeholder="Режиссер"><br>
@@ -547,8 +548,8 @@
                         <h3>Автор</h3>
                         <input type="text" placeholder="Автор"><br>
                         Выбрать фото <input type="file" accept="image/*"><br>
-                        <input type="date" placeholder="Дата рождения"><br>
-                        <input type="date" placeholder="Дата смерти"><br>
+                        <input type="text" placeholder="Дата рождения"><br>
+                        <input type="text" placeholder="Дата смерти"><br>
                         <input type="text" placeholder="Место рождения"><br>
                         <input type="text" placeholder="Род деятельности"><br>
                         <input type="url"  placeholder="Ссылка"><br>
