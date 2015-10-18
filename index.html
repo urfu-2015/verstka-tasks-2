@@ -5,286 +5,238 @@
         <title>Бабуленькин сервант. Лучший набор книг и фильмов в рунете!</title>
     </head>
     <body>
-        <h1>Популярное в Бабуленькином серванте</h1>
-        <ul>
-            <article>
-                <h2><li>Война и мир</li></h2>
-                <table>
-                    <tr>
-                        <td rowspan=2>
-                            <img src="images\warandpeace.jpg" alt="Война и мир" width=400>
-                        </td>
-                        <td>
-                            <p>
-                                Тип: Книга<br>
-                                Издательство: АСТ, Астрель<br>
-                                ISBN: 5-17-006400-4,978-5-17-006400-7<br>
-                                Год: <time>1867 г</time><br>
-                                Тип издания: Авторский сборник<br>
-                                Язык: Русский<br>
-                                Страниц: 704 стр.<br>
-                                Формат: <abbr title="Electronic Publication">ePub</abbr><br>
-                                Переплет: Твердый переплет<br>
-                                Дата размещения: <time>8 котобря 2015</time><br>
-                                Жанр: Русская классика, Литература 19 века<br>
-                                URL: <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
-                                    http://babulenkin-servant.com/books/war_and_peace.epub</a><br>
-                                Описание: Великий роман-эпопея Льва Толстого чудесным образом, как огромная 
-                                мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
-                                политических, философских, портретных, пейзажных, психологических...
-                            </p>
-                        </td>
-                        <td>
-                            <img src="images\tolstoy.jpg" alt="Лев Толстой" width=300>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Фильм (1965):</p>
-                            <video src="videos\warandpeace.mp4" width=300 controls>
-                        </td>
-                        <td>
-                            <p>
-                                Автор: <a href="https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич">
-                                    Лев Николаевич Толстой</a><br>
-                                Дата рождения: <time>16 августа 1828</time><br>
-                                Дата смерти: <time>7 ноября 1910</time><br>
-                                Место рождения: Ясная Поляна, Тульская губерния, Российская империя<br>
-                                Род деятельности: прозаик, публицист, философ<br>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </article>
-            <hr>
-            <article>
-                <h2><li>Harry Potter and the Sorcerer's Stone</li></h2>
-                <table>
-                    <tr>
-                        <td rowspan=2>
-                            <img src="images\hp1.jpg" alt="Гарри Поттер" width=400>
-                        </td>
-                        <td>
-                            <p>
-                                Тип: Книга<br>
-                                Издательство: АСТ, Астрель<br>
-                                ISBN: 978-0439708180<br>
-                                Год: <time>1998 г</time><br>
-                                Язык: English<br>
-                                Страниц: 309 стр.<br>
-                                Формат: pdf<br>
-                                Переплет: Мягкий переплет<br>
-                                Дата размещения: <time>4 котобря 2015</time><br>
-                                Жанр: Fantasy, Adventure, Kids &amp; Family<br>
-                                URL: <a href="http://babulenkin-servant.com/books/potter.pdf">
-                                    http://babulenkin-servant.com/books/potter.pdf</a><br>
-                                Описание: Harry Potter has no idea how famous he is. That's because he's
-                                being raised by his miserable aunt and uncle who are terrified Harry will
-                                learn that he's really a wizard, just as his parents were.
-                            </p>
-                        </td>
-                        <td>
-                            <img src="images\rowling.jpg" alt="Джоан Роулинг" width=300>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Фильм (2001):</p>
-                            <video src="videos\hp1.mp4" width=300 controls>
+        <header>
+            <h1>Популярное в Бабуленькином серванте</h1>
+        </header>
+        <main>
+            <ul>
+                <li>
+                    <article itemscope itemtype="http://schema.org/Book">
+                        <h2 itemprop="name">Война и мир</h2>
+                        <img src="images\warandpeace.jpg" alt="Война и мир" width=400 itemprop="image">
+                        <p>
+                            Тип: Книга<br>
+                            Издательство: 
+                            <span itemprop="publisher" itemscope itemtype="http://ruschema.org/Organization">
+                                <span itemprop="name">АСТ, Астрель</span>
+                            </span><br>
+                            <abbr title="International Standard Book Number">
+                                ISBN
+                            </abbr>
+                            : <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
+                            Год: <datetime itemprop="datePublished">1867 г</datetime><br>
+                            Тип издания: Авторский сборник<br>
+                            Язык: <span itemprop="inLanguage">Русский</span><br>
+                            Страниц: <span itemprop="numberOfPages">704</span> стр.<br>
+                            Формат: <abbr title="Electronic Publication">ePub</abbr><br>
+                            Переплет: Твердый переплет<br>
+                            Дата размещения: <datetime>8 котобря 2015</datetime><br>
+                            Жанр: Русская классика, Литература 19 века<br>
+                            URL: <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                                http://babulenkin-servant.com/books/war_and_peace.epub</a><br>
+                            Описание: <span itemprop="description">Великий роман-эпопея Льва Толстого 
+                            чудесным образом, как огромная мозаика, сложен из тысяч картин - батальных, 
+                            бальных, любовных, бытовых,политических, философских, портретных, пейзажных, 
+                            психологических...</span>
+                        </p>
+                        <p>
+                            Фильм (1965):<br>
+                            <video src="videos\warandpeace.mp4" width=300 controls itemprop="video"></video>
+                        </p>
+                        <img src="images\tolstoy.jpg" alt="Лев Толстой" width=300 itemprop="image">
+                        <p itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            Автор: 
+                            <a href="https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич">
+                                <span itemprop="givenName">Лев</span> 
+                                <span itemprop="additionalName">Николаевич</span> 
+                                <span itemprop="familyName">Толстой</span>
+                            </a><br>
+                            Дата рождения: 
+                            <datetime itemprop="birthDate">16 августа 1828</datetime><br>
+                            Дата смерти: <datetime itemprop="deathDate">7 ноября 1910</datetime><br>
+                            Место рождения: Ясная Поляна, Тульская губерния, Российская империя<br>
+                            Род деятельности: прозаик, публицист, философ<br>
+                        </p>
+                    </article>
+                    <hr>
+                </li>
+                <li>
+                    <article itemscope itemtype="http://schema.org/Book">
+                        <h2 lang="en" itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
+                        <img src="images\hp1.jpg" alt="Гарри Поттер" width=400 itemprop="image">
+                        <p>
+                            Тип: Книга<br>
+                            Издательство: 
+                            <span itemprop="publisher" itemscope itemtype="http://ruschema.org/Organization">
+                                <span itemprop="name">АСТ, Астрель</span>
+                            </span><br>
+                            <abbr title="International Standard Book Number">
+                                ISBN
+                            </abbr>
+                            : <span itemprop="isbn">978-0439708180</span><br>
+                            Год: <datetime itemprop="datePublished">1998 г</datetime><br>
+                            Язык: <span itemprop="inLanguage">English</span><br>
+                            Страниц: <span itemprop="numberOfPages">309</span> стр.<br>
+                            Формат: pdf<br>
+                            Переплет: Мягкий переплет<br>
+                            Дата размещения: <datetime>4 котобря 2015</datetime><br>
+                            Жанр: Fantasy, Adventure, Kids &amp; Family<br>
+                            URL: <a href="http://babulenkin-servant.com/books/potter.pdf">
+                                http://babulenkin-servant.com/books/potter.pdf</a><br>
+                            Описание: <span itemprop="description">Harry Potter has no idea how 
+                            famous he is. That's because he's being raised by his miserable aunt 
+                            and uncle who are terrified Harry will learn that he's really a wizard, 
+                            just as his parents were.</span>
+                        </p>
+                        <p>
+                            Фильм (2001):<br>
+                            <video src="videos\hp1.mp4" width=300 controls itemprop="video">
                                 <track kind="subtitles" src="videos\hp1.vtt" srclang="ru" 
                                     label="Русский" default>
                             </video>
-                        </td>
-                        <td>
-                            <p>
-                                Автор: <a href="https://ru.wikipedia.org/wiki/Роулинг,_Джоан">
-                                    J. K. Rowling</a><br>
-                                Дата рождения: <time>31 июля 1965</time><br>
-                                Дата смерти: –<br>
-                                Место рождения:    Глостершир, Англия<br>
-                                Род деятельности: прозаик<br>
-                                URL: <a href="http://www.jkrowling.com/">jkrowling.com</a><br>
-                                Адрес: 50 Bedford Square, London<br>
-                                Email: <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </article>
+                        </p>
+                        <img src="images\rowling.jpg" alt="Джоан Роулинг" width=300 itemprop="image">
+                        <p itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            Автор: <a href="https://ru.wikipedia.org/wiki/Роулинг,_Джоан">
+                                J. K. <span itemprop="familyName">Rowling</span></a><br>
+                            Дата рождения: <datetime itemprop="birthDate">31 июля 1965</datetime><br>
+                            Дата смерти: –<br>
+                            <section itemprop="birthPlace" itemscope 
+                                itemtype="http://schema.org/PostalAddress">
+                                Место рождения:    <span itemprop="addressRegion">
+                                    Глостершир, Англия</span><br>
+                            </section>
+                            Род деятельности: <span itemprop="jobTitle">прозаик</span><br>
+                            URL: <a href="http://www.jkrowling.com/">jkrowling.com</a><br>
+                            <address>
+                                <section itemprop="address" itemscope 
+                                    itemtype="http://schema.org/PostalAddress">
+                                    Адрес: 
+                                    <span itemprop="streetAddress">50 Bedford Square</span>, 
+                                    <span itemprop="addressRegion">London</span><br>
+                                </section>
+                                Email: 
+                                <span itemprop="email">
+                                    <a href="mailto:info@jkrowlingpr.com">
+                                    info@jkrowlingpr.com</a>
+                                </span>
+                            </address>
+                        </p>
+                    </article>
+                    <hr>
+                </li>
+                <li>
+                    <article itemscope itemtype="http://ruschema.org/Movie">
+                        <h2 itemprop="name">Titanic</h2>
+                        <img src="images\titanic1.jpg" alt="Титаник" width=400 itemprop="image">
+                        <p>
+                            Тип: Фильм<br>
+                            Год: <datetime itemprop="datePublished">1997</datetime><br>
+                            Страна: США<br>
+                            Слоган: «Ничто на Земле не сможет разлучить их»<br>
+                            Режиссер: 
+                            <span itemprop="director" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">Джеймс</span> 
+                                <span itemprop="familyName">Кэмерон</span>
+                            </span><br>
+                            Сценарий: Джеймс Кэмерон<br>
+                            Продюсер: 
+                            <span itemprop="producer" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">Джеймс</span> 
+                                <span itemprop="familyName">Кэмерон</span>
+                            </span>,
+                            <span itemprop="director" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">Джон</span> 
+                                <span itemprop="familyName">Ландау</span>
+                            </span>,
+                            <span itemprop="director" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">Памела</span> 
+                                <span itemprop="familyName">Исли</span>
+                            </span><br>
+                            Оператор: Рассел Карпентер<br>
+                            Композитор:
+                            <span itemprop="musicBy" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">Джеймс</span> 
+                                <span itemprop="familyName">Хорнер</span>
+                            </span><br>
+                            Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
+                            Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
+                            Жанр: драма, мелодрама<br>
+                            Дата размещения: <datetime>1 котобря 2015</datetime><br>
+                            URL: <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                                http://babulenkin-servant.com/films/titanic.mp4</a><br>
+                            Описание: <span itemprop="description">Молодые влюбленные Джек и Роза находят 
+                            друг друга в первом и последнем плавании «непотопляемого» Титаника. Они не могли 
+                            знать, что шикарный лайнер столкнется с айсбергом в холодных водах Северной 
+                            Атлантики, и их страстная любовь превратится в схватку со смертью.</span>
+                        </p>
+                        <video src="videos\titanic.mp4" width=300 controls itemprop="trailer"></video><br>
+                        <img src="images\cameron.jpg" alt="Джеймс Кэмерон" width=300 itemprop="image"><br>
+                        <p itemscope itemtype="http://schema.org/Person">
+                            Автор: 
+                            <a href="https://ru.wikipedia.org/wiki/Кэмерон,_Джеймс">
+                                <span itemprop="givenName">Джеймс</span>
+                                <span itemprop="familyName">Кэмерон</span>
+                            </a><br>
+                            Дата рождения: <datetime itemprop="birthDate">16 августа 1954</datetime><br>
+                            Дата смерти: –<br>
+                            <section itemprop="birthPlace" itemscope 
+                                itemtype="http://schema.org/PostalAddress">
+                                Место рождения: 
+                                <span itemprop="addressRegion">Капускасинг, Онтарио, Канада</span>
+                                <br>
+                            </secton>
+                            Род деятельности: 
+                            <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span>
+                            <br>
+                        </p>
+                    </article>
+                </li>
+            </ul>
             <hr>
-            <article>
-                <h2><li>Titanic</li></h2>
-                <table>
-                    <tr>
-                        <td rowspan=2>
-                            <img src="images\titanic1.jpg" alt="Титаник" width=400>
-                        </td>
-                        <td>
-                            <p>
-                                Тип: Фильм<br>
-                                Год: <time>1997</time><br>
-                                Страна: США<br>
-                                Слоган: «Ничто на Земле не сможет разлучить их»<br>
-                                Режиссер: Джеймс Кэмерон<br>
-                                Сценарий: Джеймс Кэмерон<br>
-                                Продюсер: Джеймс Кэмерон, Джон Ландау, Памела Исли<br>
-                                Оператор: Рассел Карпентер<br>
-                                Композитор: Джеймс Хорнер<br>
-                                Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
-                                Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
-                                Жанр: драма, мелодрама<br>
-                                Дата размещения: <time>1 котобря 2015</time><br>
-                                URL: <a href="http://babulenkin-servant.com/films/titanic.mp4">
-                                    http://babulenkin-servant.com/films/titanic.mp4</a><br>
-                                Описание: Молодые влюбленные Джек и Роза находят друг друга в первом и
-                                последнем плавании «непотопляемого» Титаника. Они не могли знать, что
-                                шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
-                                и их страстная любовь превратится в схватку со смертью.
-                            </p>
-                        </td>
-                        <td>
-                            <img src="images\cameron.jpg" alt="Джеймс Кэмерон" width=300>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <video src="videos\titanic.mp4" width=300 controls>
-                        </td>
-                        <td>
-                            <p>
-                                Автор: <a href="https://ru.wikipedia.org/wiki/Кэмерон,_Джеймс">Джеймс Кэмерон</a><br>
-                                Дата рождения: <time>16 августа 1954</time><br>
-                                Дата смерти: –<br>
-                                Место рождения: Капускасинг, Онтарио, Канада<br>
-                                Род деятельности: продюсер, режиссер, сценарист, актер<br>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </article>
-        </ul>
-        <hr>
-        <h2>Залить на Бабуленькин сервант!</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>
-                        <input type="radio" name="bookorfilm" checked>Книга
-                    </td>
-                    <td>
-                        <input type="radio" name="bookorfilm">Фильм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Издательство">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Год">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="ISBN">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Страна">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Год">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Слоган">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Язык">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Режиссер">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="number" min="0" placeholder="Кол-во страниц">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Сценарий">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Формат">
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Продюсер">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <select name="cover">
-                            <option selected>Вид переплета</option>
-                            <option value="Мягкий">Мягкий</option>
-                            <option value="Твердый">Твердый</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Оператор">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Композитор">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Художник">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Монтаж">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=2>
-                        <input type="text" placeholder="Жанр" size="45%">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=2>
-                        <input type="date" placeholder="Дата размещения" size="45%">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=2>
-                        <input type="url" placeholder="URL" size="45%">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=2>
-                        <input type="textarea" placeholder="Описание" size="45%">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="submit">Отправить</button>
-                    </td>
-                    <td>
-                        <button type="reset">Сбросить</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+            <h2>Залить на Бабуленькин сервант!</h2>
+            <form>
+                <p>
+                    <input type="radio" name="bookorfilm" checked>Книга<br>
+                    <input type="text" placeholder="Издательство" name="bookPublisher" class="book"><br>
+                    <input type="text" placeholder="ISBN" name="bookISBN" class="book"><br>
+                    <input type="date" placeholder="Год" name="bookPublishDate" class="book"><br>
+                    <select name="bookLanguage" class="book">
+                        <option selected>Язык</option>
+                        <option value="ru">Русский</option>
+                        <option value="en">Английский</option>
+                    </select><br>
+                    <input type="number" min="0" placeholder="Кол-во страниц" name="bookPagesAmount" 
+                        class="book"><br>
+                    <input type="text" placeholder="Формат" name="bookExtension" class="book"><br>
+                    <select name="bookCover" class="book">
+                        <option selected>Вид переплета</option>
+                        <option value="Мягкий">Мягкий</option>
+                        <option value="Твердый">Твердый</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="radio" name="bookorfilm">Фильм<br>
+                    <input type="date" placeholder="Год" name="filmPublishDate" class="film"><br>
+                    <input type="text" placeholder="Страна" name="filmCountry" class="film"><br>
+                    <input type="text" placeholder="Слоган" name="filmTagLine"nameclass="film"><br>
+                    <input type="text" placeholder="Режиссер" name="filmDirector" class="film"><br>
+                    <input type="text" placeholder="Сценарий" name="filmScript" class="film"><br>
+                    <input type="text" placeholder="Продюсер" name="filmProducer" class="film"><br>
+                    <input type="text" placeholder="Оператор" name="filmOperator" class="film"><br>
+                    <input type="text" placeholder="Композитор" name="filmComposer" class="film"><br>
+                    <input type="text" placeholder="Художник" name="filmDesigner" class="film"><br>
+                    <input type="text" placeholder="Монтаж" name="filmMounter" name= class="film"><br>
+                </p>
+                <p>Общее:<br>
+                    <input type="text" placeholder="Жанр" name="Genre" class="book film"><br>
+                    <input type="date" placeholder="Дата размещения" name="LoadingDate" class="book film"><br>
+                    <input type="url" placeholder="URL"  name="URL" class="book film"><br>
+                    <input type="textarea" placeholder="Описание" name="description" class="book film"><br>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Сбросить</button>
+                </p>
+            </form>
+        </main>
     </body>
 </html>
