@@ -21,16 +21,18 @@
                 <td>
                     Тип: Книга<br>
                     Издательство: <span itemprop="publisher">АСТ, Астрель</span><br>
-                    ISBN: <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
+                    <abbr title="International Standard Book Number">ISBN</abbr>:
+                    <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
                     Год: <span itemprop="dateCreated">1867 г.</span><br>
                     Тип издания: Авторский сборник<br>
                     Язык: <span itemprop="inLanguage">Русский</span><br>
                     Страниц: <span itemprop="numberOfPages">704 стр.</span><br>
-                    Формат: <span itemprop="bookFormat">ePub</span><br>
+                    Формат: <span itemprop="bookFormat"><abbr title="Electronic Publication">ePub</abbr></span><br>
                     Переплет: Твердый переплет<br>
                     Дата размещения: <span itemprop="datePublished">8 котобря 2015</span><br>
                     Жанр: <span itemprop="genre">Русская классика, Литература 19 века</span><br>
-                    URL: <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                    <abbr title="Uniform Resource Locator">URL</abbr>:
+                    <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
                     http://babulenkin-servant.com/books/war_and_peace.epub</a><br>
                 </td>
                 <td>
@@ -71,15 +73,17 @@
                 <td colspan="2">
                     Тип: Книга<br>
                     Издательство: <span itemprop="publisher">АСТ, Астрель</span><br>
-                    ISBN: <span itemprop="isbn">978-0439708180</span><br>
+                    <abbr title="International Standard Book Number">ISBN</abbr>:
+                    <span itemprop="isbn">978-0439708180</span><br>
                     Год: <span itemprop="dateCreated">1998 г</span><br>
                     Язык: <span itemprop="inLanguage" lang="en">English</span><br>
                     Страниц: <span itemprop="numberOfPages">309 стр.</span><br>
-                    Формат: <span itemprop="bookFormat">PDF</span><br>
+                    Формат: <span itemprop="bookFormat"><abbr title="Portable Document Format">PDF</abbr></span><br>
                     Переплет: Мягкий переплет<br>
                     Дата размещения: <span itemprop="datePublished">4 котобря 2015</span><br>
                     Жанр: <span itemprop="genre" lang="en">Fantasy, Adventure, Kids & Family</span><br>
-                    URL: <a href="http://babulenkin-servant.com/books/potter.pdf">
+                    <abbr title="Uniform Resource Locator">URL</abbr>:
+                    <a href="http://babulenkin-servant.com/books/potter.pdf">
                     http://babulenkin-servant.com/books/potter.pdf</a><br>
                 </td>
                 <td>
@@ -93,7 +97,8 @@
                         Дата смерти: <span itemprop="deathDate">-</span><br>
                         Место рождения: <span itemprop="birthPlace">Глостершир, Англия</span><br>
                         Род деятельности: <span itemprop="jobTitle">прозаик</span><br>
-                        URL: <a itemprop="url" href="jkrowling.com">jkrowling.com</a><br>
+                        <abbr title="Uniform Resource Locator">URL</abbr>:
+                        <a itemprop="url" href="jkrowling.com">jkrowling.com</a><br>
                         <section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                             Адрес:
                             <span itemprop="addressRegion">London</span>,
@@ -123,7 +128,8 @@
                 <td colspan="3">
                     Тип: Фильм<br>
                     Год: <span itemprop="dateCreated">1997</span><br>
-                    Страна: <span itemprop="contentLocation">США</span><br>
+                    Страна: <span itemprop="contentLocation">
+                    <abbr title="Соединенные штаты Америки">США</abbr></span><br>
                     Слоган: <span itemprop="headline"> «Ничто на Земле не сможет разлучить их»</span><br>
                     Режиссер: <span itemprop="director">Джеймс Кэмерон</span><br>
                     Сценарий: <span itemprop="scenario">Джеймс Кэмерон</span><br>
@@ -134,7 +140,8 @@
                     Монтаж: <span itemprop="cutting">Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис</span><br>
                     Жанр: <span itemprop="genre">драма, мелодрама</span><br>
                     Дата размещения: <span itemprop="datePublished">1 котобря 2015</span><br>
-                    URL: <a itemprop="url" href="http://babulenkin-servant.com/films/titanic.mp4">
+                    <abbr title="Uniform Resource Locator">URL</abbr>:
+                    <a itemprop="url" href="http://babulenkin-servant.com/films/titanic.mp4">
                     http://babulenkin-servant.com/films/titanic.mp4</a><br>
                 </td>
                 <td>
@@ -165,9 +172,11 @@
     <hr><hr>
     <table>
         <thead>
-            <th>Добавить новую книгу</th>
-            <th></th>
-            <th>Добавить новый фильм</th>
+            <tr>
+                <th>Добавить новую книгу</th>
+                <th></th>
+                <th>Добавить новый фильм</th>
+            </tr>
         </thead>
         <tr>
             <td>
@@ -176,7 +185,14 @@
                         <table>
                             <tr>
                                 <td><label for="bookName">Название книги:</label></td>
-                                <td><input id="bookName" required></td>
+                                <td><input id="bookName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="isbn">
+                                        <abbr title="International Standard Book Number">ISBN</abbr>:
+                                    </label>
+                                </td>
+                                <td><input id="isbn"></td>
                             </tr>
                             <tr>
                                 <td><label for="publisher">Издательство:</label></td>
@@ -199,8 +215,13 @@
                                 <td><input id="pagesCount"></td>
                             </tr>
                             <tr>
-                                <td><label for="wrapper">Обложка:</label></td>
-                                <td><input id="wrapper"></td>
+                                <td><label for="cover">Обложка для книги</label></td>
+                                <td>
+                                    <select id="cover" name="cover">
+                                        <option>Мягкая</option>
+                                        <option selected>Твёрдая</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td><label for="bookGenre">Жанр книги:</label></td>
@@ -269,7 +290,7 @@
                             </tr>
                             <tr>
                                 <td><label for="birthDate">Дата рождения:</label></td>
-                                <td><input id="birthDate"></td>
+                                <td><input id="birthDate" type="date"></td>
                             </tr>
                             <tr>
                                 <td><label for="deathDate">Дата смерти:</label></td>
@@ -298,7 +319,6 @@
             <td></td>
         </tr>
     </table>
-
 </main>
 </body>
 </html>
