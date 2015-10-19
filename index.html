@@ -66,13 +66,10 @@
                         alt="Война и мир"
                         srcset="img/war-peace.jpg 1x, img/war-peace_300.jpg 300w"><br>
                     <span class="bold">Тип:</span> Книга<br>
-                    <span class="bold">Издательство:</span>
-                    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                        <span itemprop="name">АСТ, Астрель</span>
-                    </span><br>
+                    <span class="bold">Издательство:</span> <span itemprop="publisher">АСТ, Астрель</span><br>
                     <span class="bold">ISBN:</span>
                     <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
-                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1867</span><br> <!--?-->
+                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1867</span><br>
                     <span class="bold">Тип издания:</span>
                     <span itemprop="bookEdition">Авторский сборник</span><br>
                     <span class="bold">Язык:</span>
@@ -95,7 +92,7 @@
                                         http://babulenkin-servant.com/books/war_and_peace.epub
                                         </a><br> <!-- нет типа epub -->
                     <span class="bold">Описание:</span>
-                    <span itemprop="about">Великий роман-эпопея Льва Толстого чудесным образом,
+                    <span itemprop="description">Великий роман-эпопея Льва Толстого чудесным образом,
                     как огромная мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
                     политических, философских, портретных, пейзажных, психологических...</span><br>
                 </p>
@@ -122,10 +119,7 @@
                         alt="Harry Potter and the Sorcerer's Stone"
                         srcset="img/sorcerers-stone.jpg 1x, img/sorcerers-stone_300.jpg 300w"><br>
                     <span class="bold">Тип:</span> Книга<br>
-                    <span class="bold">Издательство:</span>
-                    <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                        <span itemprop="name">АСТ, Астрель</span>
-                    </span><br>
+                    <span class="bold">Издательство:</span> <span itemprop="publisher">АСТ, Астрель</span><br>
                     <span class="bold">ISBN:</span> <span itemprop="isbn">978-0439708180</span><br>
                     <span class="bold">Год:</span> <span itemprop="copyrightYear">1998</span><br>
                     <span class="bold">Язык:</span>
@@ -146,7 +140,7 @@
                                         http://babulenkin-servant.com/books/potter.pdf
                                         </a><br>
                     <span class="bold">Описание:</span>
-                    <span itemprop="about">Harry Potter has no idea how famous he is.
+                    <span itemprop="description">Harry Potter has no idea how famous he is.
                     That's because he's being raised by his miserable aunt and uncle who are terrified
                     Harry will learn that he's really a wizard, just as his parents were.</span><br>
                 </p>
@@ -167,12 +161,7 @@
                                         jkrowling.com
                                         </a><br>
                     <span class="bold">Адрес:</span>
-                    <span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">50 Bedford Square</span>,
-                            <span itemprop="addressLocality">London</span>
-                        </span>
-                    </span><br>
+                    <span itemprop="homeLocation">50 Bedford Square, London</span><br>
                     <span class="bold">Email:</span>
                     <a itemprop="email" href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
                 </p>
@@ -180,22 +169,22 @@
             <article itemscope itemtype="http://schema.org/Movie">
                 <h3 itemprop="name">Titanic</h3>
                 <p>
-                    <video itemprop="trailer" width="640" height="360" controls poster="img/kate-and-leo.jpg">
-                        <track kind="subtitles" src="video/sub.ru.srt" srclang="ru"
-                               label="Русский">
-                        <track kind="subtitles" src="video/sub.en.srt" srclang="en"
-                               label="English">
-                        <source src="video/Честный%20трейлер%20-%20Титаник%20(русская%20озвучка).mp4"
-                                type='video/mp4'>
-                        Элемент video не поддерживается вашим браузером.
-                        <a href="http://www.youtube.com/watch?v=PT97QDLHFd0">Посмотрите на Youtube</a>.
-                    </video><br>
+                    <div itemprop="trailer">
+                        <video itemprop="video" width="640" height="360"
+                               controls poster="img/kate-and-leo.jpg">
+                            <track kind="subtitles" src="video/sub.ru.srt" srclang="ru"
+                                   label="Русский">
+                            <track kind="subtitles" src="video/sub.en.srt" srclang="en"
+                                   label="English">
+                            <source src="video/Честный%20трейлер%20-%20Титаник%20(русская%20озвучка).mp4"
+                                    type='video/mp4'>
+                            Элемент video не поддерживается вашим браузером.
+                            <a href="http://www.youtube.com/watch?v=PT97QDLHFd0">Посмотрите на Youtube</a>.
+                        </video>
+                    </div><br>
                     <span class="bold">Тип:</span> Фильм<br>
                     <span class="bold">Год:</span> <span itemprop="copyrightYear">1997</span><br>
-                    <span class="bold">Страна:</span>
-                    <span property="contentLocation" itemscope itemtype="http://schema.org/Place">
-                        <span itemprop="name">США</span>
-                    </span><br>
+                    <span class="bold">Страна:</span> <span property="contentLocation">США</span><br>
                     <span class="bold">Слоган:</span> «Ничто на Земле не сможет разлучить их»<br>
                     <span class="bold">Режиссер:</span>
                     <span itemprop="director" itemscope itemtype="http://schema.org/Person">
