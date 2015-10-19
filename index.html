@@ -308,7 +308,13 @@
                         и их страстная любовь превратится в схватку со смертью.
                     </dd>
                 </dl>
-                <video itemprop="video" width="400" height="300" poster="titanic_poster.jpg">
+                <video
+                    itemprop="video"
+                    itemscope itemtype="http://schema.org/VideoObject"
+                    width="400"
+                    height="300"
+                    poster="titanic_poster.jpg"
+                >
                     <source src="http://babulenkin-servant.com/media/titanic.mp4" type="video/mp4">
                     <source src="http://babulenkin-servant.com/media/titanic.ogv" type="video/ogg">
                     <track
@@ -318,6 +324,14 @@
                         src="http://babulenkin-servant.com/media/titanic.vtt"
                     >
                     Элемент video не поддерживается вашим браузером.
+                    <span itemprop="name">Титаник.</span>
+                    <span itemprop="description">Грустная история.</span>
+                    <span itemprop="uploadDate">2015-10-01</span>
+                    <img
+                        itemprop="thumbnailUrl"
+                        src="http://babulenkin-servant.com/media/titanic_thumbnail1.jpg"
+                        alt="Сообщение."
+                    >
                     <a href="media/titanic.mp4">
                         Скачайте видео.
                     </a>
@@ -365,17 +379,31 @@
                         <label for="publisherBook">Издательство:</label>
                         <input id="publisherBook" type="text"><br>
                         <label for="isbnBook">ISBN:</label>
-                        <input id="isbnBook" type="text"><br>
+                        <input
+                            id="isbnBook"
+                            type="text"
+                            pattern="\d{1,3}\-(\d{1,6}\-){1,2}\d{1,6}\-\d{1,2}"
+                        ><br>
                         <label for="dateCreated">Год:</label>
-                        <input id="dateCreated" type="date" required><br>
+                        <input id="dateCreated" type="number" required><br>
                         <label for="bookEdition">Тип издания:</label>
                         <input id="bookEdition" type="text" required><br>
                         <label for="languageBook">Язык:</label>
-                        <input id="languageBook" type="text" required><br>
+                        <select size="4" id="languageBook" required>
+                            <option value="russian" selected>Русский</option>
+                            <option value="english">Английский</option>
+                            <option value="french">Французский</option>
+                            <option value="german">Немецкий</option>
+                        </select><br>
                         <label for="bookFormat">Формат:</label>
                         <input id="bookFormat" type="text" required><br>
-                        <label for="genreBook">Жанр:</label>
-                        <input id="genreBook" type="text"><br>
+                        <label>Жанр:</label><br>
+                        <input type="radio" name="group" id="gbAction" value="action">
+                        <label for="gbAction">Боевик</label><br>
+                        <input type="radio" name="group" id="gbDrama" value="drama">
+                        <label for="gbDrama">Драма</label><br>
+                        <input type="radio" name="group" id="gbFantasy" value="fantasy">
+                        <label for="gbFantasy">Фантастика</label><br>
                         <label for="descriptionBook">Описание:</label>
                         <textarea id="descriptionBook" cols="50" rows="10"></textarea>
                     </fieldset>
@@ -405,7 +433,7 @@
                         <label for="typeMovie">Тип:</label>
                         <input id="typeMovie" type="text" required><br>
                         <label for="dateCreatedMovie">Год:</label>
-                        <input id="dateCreatedMovie" type="date" required><br>
+                        <input id="dateCreatedMovie" type="number" required><br>
                         <label for="countryMovie">Страна:</label>
                         <input id="countryMovie" type="text" required><br>
                         <label for="directorMovie">Режиссёр:</label>
@@ -422,8 +450,13 @@
                         <input id="artistMovie" type="text"><br>
                         <label for="editorMovie">Монтаж:</label>
                         <input id="editorMovie" type="text"><br>
-                        <label for="genreMovie">Жанр:</label>
-                        <input id="genreMovie" type="text"><br>
+                        <label>Жанр:</label><br>
+                        <input type="radio" name="group" id="gmAction" value="action">
+                        <label for="gmAction">Боевик</label><br>
+                        <input type="radio" name="group" id="gmDrama" value="drama">
+                        <label for="gmDrama">Драма</label><br>
+                        <input type="radio" name="group" id="gmFantasy" value="fantasy">
+                        <label for="gmFantasy">Фантастика</label><br>
                         <label for="descriptionMovie">Описание:</label>
                         <textarea id="descriptionMovie" cols="50" rows="10"></textarea>
                     </fieldset>
