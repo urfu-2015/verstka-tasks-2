@@ -206,7 +206,8 @@
             <h2>Залить на Бабуленькин сервант!</h2>
             <form>
                 <p>
-                    <input type="radio" name="bookorfilm" checked>Книга<br>
+                    <input type="radio" name="bookorfilm" id="book" checked>
+                    <label for="book">Книга</label><br>
                     <label for="bookPublisher">Издательство:</label>
                     <input type="text" placeholder="Издательство" id="bookPublisher" class="book"><br>
                     <label for="bookISBN">ISBN:</label>
@@ -231,7 +232,8 @@
                     </select>
                 </p>
                 <p>
-                    <input type="radio" name="bookorfilm">Фильм<br>
+                    <input type="radio" name="bookorfilm" id="film">
+                    <label for="film">Фильм</label><br>
                     <label for="filmPublishDate">Дата выхода:</label>
                     <input type="date" placeholder="Год" id="filmPublishDate" class="film"><br>
                     <label for="filmCountry">Страна:</label>
