@@ -5,9 +5,9 @@
         <title>Бабушкин Сервант</title>
     </head>
     <body>
-        <div>
+        <articale>
             <h2>Война и мир.</h2>
-            <img align="left" width="200px" height="270px" src="http://fb2-txt.ru/wp-content/uploads/2015/07/oblogka.jpg" alt="Обложка книги">
+            <img align="left" width="200" height="270" src="http://fb2-txt.ru/wp-content/uploads/2015/07/oblogka.jpg" alt="Обложка книги">
             <p>
                 <strong>Тип:</strong> Книга<br>
                 <strong>Издательство:</strong><abbr title="Атомная Станция Теплоснабжения"> АСТ</abbr>, Астрель<br>
@@ -26,7 +26,7 @@
                 мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
                 политических, философских, портретных, пейзажных, психологических...
             </p>
-            <img align="left" width="80px" height="90px" src="http://briefly.ru/static/authors/tolstoi.jpg">
+            <img align="left" width="80" height="90" src="http://briefly.ru/static/authors/tolstoi.jpg">
             <p>
                 <strong>Автор:</strong> Лев Николаевич Толстой<br>
                 <strong>Дата рождения:</strong> 16 августа 1828<br>
@@ -36,10 +36,10 @@
             </p>
             <h4>Фильм, снятый по этому произведению:</h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/49HJYNJSyts" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div>
+        </article>
+        <article>
             <h2>Harry Potter and the Sorcerer's Stone.</h2>
-            <img align="left" width="200px" height="235px" src="http://images.contentful.com/7h71s48744nc/xL3Qo6cMYEc9q3zH4RZn8c/8b25aaaea57999cc602ac2b9c88ed8db/harry-potter-and-the-sorcerers-stone-cover-image" alt="Cover of book">
+            <img align="left" width="200" height="235" src="http://images.contentful.com/7h71s48744nc/xL3Qo6cMYEc9q3zH4RZn8c/8b25aaaea57999cc602ac2b9c88ed8db/harry-potter-and-the-sorcerers-stone-cover-image" alt="Cover of book">
             <p>
                 <strong>Тип:</strong> Книга<br>
                 <strong>Издательство:</strong><abbr title="Атомная Станция Теплоснабжения"> АСТ</abbr>, Астрель<br>
@@ -57,7 +57,7 @@
                 being raised by his miserable aunt and uncle who are terrified Harry will
                 learn that he's really a wizard, just as his parents were.
             </p>
-            <img align="left" width="130px" height="145px" src="http://www.ctv.by/sites/default/files/Rowling%2075.jpg"
+            <img align="left" width="130" height="145" src="http://www.ctv.by/sites/default/files/Rowling%2075.jpg"
             <p>
                 <strong>Автор:</strong> J. K. Rowling<br>
                 <strong>Дата рождения:</strong> <date datetime="1965-07-31">31 июля 1965</date><br>
@@ -68,10 +68,11 @@
                 <strong>Адрес:</strong> 50 Bedford Square, London<br>
                 <strong>Email:</strong> info@jkrowlingpr.com
             </p>
-        </div>
-        <div>
+            <audio src="http://www.litres.ru/pages/download_prew/?file=6137355" type="audio/mp3" controls></audio>
+        </article>
+        <article>
             <h2>Titanic</h2>
-            <img align="left" width="200px" height="305px" src="https://my-hit.org/storage/1239235_500x800x250.jpg" alt="Постер фильма">
+            <img align="left" width="200" height="305" src="http://www.kinonews.ru/insimgs/shotimg/shotimg18751_9.jpg" alt="Постер фильма">
             <p>
                 <strong>Тип:</strong> Фильм<br>
                 <strong>Год:</strong> <date datetime="1997-01-01">1997</date><br>
@@ -100,10 +101,14 @@
                 <strong>Место рождения:</strong> Капускасинг, Онтарио, Канада<br>
                 <strong>Род деятельности:</strong> продюсер, режиссер, сценарист, актер<br>
             </p>
-        </div>
-        <div>
+            <video controls poster="http://img5a.flixcart.com/image/poster/p/m/e/titanic-emp900589-small-original-imadkbp5szn92xzf.jpeg" width="440" height="290">
+                <source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.ogg" type="video/mp4">
+                <track kind="subtitles" srclang="en" src="titanic_sub.vtt" label="English" default />
+             </video>
+        </article>
+        <section>
             <h2>Добавьте ваш фильм или книгу =) !</h2>
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="" method="POST">
                 <label for="type">Тип произведения:</label><br>
                 <input id="type" type="radio" name="type" checked>Книга
                 <input type="radio" name="type">Фильм<br>
@@ -180,6 +185,6 @@
                 <input id="author_photo" name="author_photo" type="url"><br>
                 <input type="button" value="Отправить">
             </form>
-        </div>
+        </section>
     </body>
-<html>
+</html>
