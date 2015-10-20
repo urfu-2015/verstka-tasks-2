@@ -176,16 +176,16 @@
             <legend>Добавить книгу </legend>
                     <fieldset>
                         <legend>Информация о книге</legend>
-                            <input placeholder="Название" name="nameBook" required><br>
-                            <input placeholder="Издательство" name="bookEdition" required ><br>
-                            <input placeholder="Год" name="year" maxlength="4" required><br>
+                            <input placeholder="Название" name="nameBook" value="" required><br>
+                            <input placeholder="Издательство" name="bookEdition" value="" required ><br>
+                            <input placeholder="Год" name="year" value="" maxlength="4" required><br>
                             <label for="language">Выберите язык</label>
                             <select id="language" name="language" required>
                             <option>Русский</option>
                             <option selected>Английский</option>
                             </select><br>
                             <label for="number">Количество страниц</label>
-                            <input id="number" name="number" type="number" value="0" max="10000" required><br>
+                            <input id="number" name="number" type="number" value="5" max="10" required><br>
                             <label for="cover">Переплет</label>
                             <select id="cover" name="cover">
                                 <option>Мягкий</option>
@@ -203,23 +203,23 @@
                             </select><br>  
                             <label for="date">Дата размещения</label>
                             <input id="date" name="date" type="date" value="2015-10-12" max="2015-10-17"><br>
-                            <input placeholder="Жанр" name="genre"><br>
+                            <input placeholder="Жанр" name="genre" value=""><br>
                             <label for="url">URL</label>
-                            <input id="url" placeholder="url" name="url" type="url"><br>
+                            <input id="url" placeholder="url" name="url" type="url" value=""><br>
                     </fieldset>
                     <fieldset>
                         <legend>Информация об авторе </legend>
-                            <input placeholder="Автор" name="author" required><br>
+                            <input placeholder="Автор" name="author" value="" required><br>
                             <label for="date">Дата рождения</label>
                             <input id="date" name="date" type="date" value="2015-10-12" max="2015-10-17" required><br>
                             <label for="date">Дата смерти</label>
-                            <input id="date" name="date" type="date" max="2015-10-17"><br>
-                            <input placeholder="Место рождения" name="place" required><br>
-                            <input placeholder="Род деятельности" name="jobTitle" required><br>
-                            <input id="url" placeholder="url" name="url" type="url" required><br>
-                            <input placeholder="Адрес" name="address"><br>
+                            <input id="date" name="date" type="date" value="" max="2015-10-17"><br>
+                            <input placeholder="Место рождения" name="place" value="" required><br>
+                            <input placeholder="Род деятельности" name="jobTitle" value="" required><br>
+                            <input id="url" placeholder="url" name="url" type="url" value="" required><br>
+                            <input placeholder="Адрес" name="address" value=""><br>
                             <label for="email">Электронная почта автора</label><br>
-                            <input id="email" placeholder="email" name="email" type="email"><br>
+                            <input id="email" placeholder="email" name="email" type="email" value=""><br>
                     </fieldset>
         <p><input type="submit"></p>
         </fieldset>
@@ -229,40 +229,40 @@
             <legend>Добавить фильм  </legend>
                 <fieldset>
                     <legend>Информация о фильме  </legend>
-                        <input placeholder="Название" name="nameFilm" required><br>
-                        <input placeholder="Слоган" name="slog" ><br>
-                        <input placeholder="Год" name="year" maxlength="4" required><br>
+                        <input placeholder="Название" name="nameFilm" value="" required><br>
+                        <input placeholder="Слоган" name="slog" value=""><br>
+                        <input placeholder="Год" name="year" value="" maxlength="4" required><br>
                         <label for="language">Выберите язык</label>
                         <select id="language" name="language" required>
                            <option>Русский</option>
                            <option selected>Английский</option>
                         </select><br>
-                        <input placeholder="Режиссер" name="namePeg" required><br>
-                        <input placeholder="Сценарий" name="nameSc" required><br>
-                        <input placeholder="Продюсер" name="namePr" required><br>
-                        <input placeholder="Оператор" name="nameOp" required><br>
-                        <input placeholder="Композитор" name="nameKo" required><br>
-                        <input placeholder="Художник" name="nameX" required><br>
-                        <input placeholder="Монтаж" name="nameM" required><br>
+                        <input placeholder="Режиссер" name="namePeg" value="" required><br>
+                        <input placeholder="Сценарий" name="nameSc" value="" required><br>
+                        <input placeholder="Продюсер" name="namePr" value="" required><br>
+                        <input placeholder="Оператор" name="nameOp" value="" required><br>
+                        <input placeholder="Композитор" name="nameKo" value="" required><br>
+                        <input placeholder="Художник" name="nameX" value="" required><br>
+                        <input placeholder="Монтаж" name="nameM" value="" required><br>
                         <label for="date">Дата размещения</label>
                         <input id="date" name="date" type="date" value="2015-10-12" max="2015-10-17" required><br>
-                        <input placeholder="Жанр" name="genre" ><br>
+                        <input placeholder="Жанр" name="genre" value=""><br>
                         <label for="url">URL</label>
-                        <input id="url" placeholder="url" name="url" type="url" required><br>
+                        <input id="url" placeholder="url" name="url" type="url" value="" required><br>
                 </fieldset>
                 <fieldset>
                     <legend>Информация об авторе </legend>
-                        <input placeholder="Автор" name="author" required><br>
+                        <input placeholder="Автор" name="author" value="" required><br>
                         <label for="date">Дата рождения</label>
                         <input id="date" name="date" type="date" value="2015-10-12" max="2015-10-17" required><br>
                         <label for="date">Дата смерти</label>
-                        <input id="date" name="date" type="date" max="2015-10-17"><br>
-                        <input placeholder="Место рождения" name="place" required><br>
-                        <input placeholder="Род деятельности" name="jobTitle" required><br>
-                        <input id="url" placeholder="url" name="url" type="url"><br>
-                        <input placeholder="Адрес" name="address"><br>
+                        <input id="date" name="date" type="date" value="" max="2015-10-17"><br>
+                        <input placeholder="Место рождения" name="place" value="" required><br>
+                        <input placeholder="Род деятельности" name="jobTitle" value="" required><br>
+                        <input id="url" placeholder="url" name="url" type="url" value=""><br>
+                        <input placeholder="Адрес" name="address" value=""><br>
                         <label for="email">Электронная почта автора</label><br>
-                        <input id="email" placeholder="email" name="email" type="email"><br>
+                        <input id="email" placeholder="email" name="email" type="email" value=""><br>
                 </fieldset>
         <p><input type="submit"></p>
         </fieldset>

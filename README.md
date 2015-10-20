@@ -22,7 +22,7 @@
 Проверить HTML можно и вручную:
 ```sh
 # Устанавливаем проверяльщик
-npm install
+npm install sh
 
 # Проверяем
 npm test
