@@ -23,7 +23,7 @@
             text-align: center;
         }
 
-        span.bold {
+        .label {
             font-weight: bold;
         }
 
@@ -35,13 +35,7 @@
             float: left;
             margin-right: 10px;
             margin-bottom: 10px;
-            height: 200px
-        }
-
-        .cover {
-            float: left;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            height: 250px
         }
 
         .star {
@@ -61,109 +55,116 @@
                 <p>
                     <img
                         itemprop="image"
-                        class="cover"
                         src="img/war-peace.jpg"
                         alt="Война и мир"
-                        srcset="img/war-peace.jpg 1x, img/war-peace_300.jpg 300w"><br>
-                    <span class="bold">Тип:</span> Книга<br>
-                    <span class="bold">Издательство:</span> <span itemprop="publisher">АСТ, Астрель</span><br>
-                    <span class="bold">ISBN:</span>
-                    <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
-                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1867</span><br>
-                    <span class="bold">Тип издания:</span>
-                    <span itemprop="bookEdition">Авторский сборник</span><br>
-                    <span class="bold">Язык:</span>
-                    <span itemprop="inLanguage" content="ru">Русский</span><br>
-                    <span class="bold">Страниц:</span> <span itemprop="numberOfPages">704</span> стр.<br>
-                    <span class="bold">Формат:</span> ePub<br>
-                    <span class="bold">Переплет:</span>
-                    <span itemprop="bookFormat" itemscope itemtype="http://schema.org/Paperback">
-                        Твердый переплет
-                    </span><br>
-                    <span class="bold">Дата размещения:</span>
-                    <time datetime="2015-10-08">8 котобря 2015</time><br>
-                    <span class="bold">Жанр:</span>
-                    <span itemprop="genre">Русская классика, Литература 19 века</span><br>
-                    <span class="bold">URL:</span> <a
-                                        itemprop="url"
-                                        href="/books/war_and_peace.epub"
-                                        type="application/epub+zip"
-                                        title="Скачать 'Войну и мир'" download>
-                                        http://babulenkin-servant.com/books/war_and_peace.epub
-                                        </a><br> <!-- нет типа epub -->
-                    <span class="bold">Описание:</span>
-                    <span itemprop="description">Великий роман-эпопея Льва Толстого чудесным образом,
-                    как огромная мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
-                    политических, философских, портретных, пейзажных, психологических...</span><br>
+                        srcset="img/war-peace.jpg 1x, img/war-peace_300.jpg 300w">
+                    <dl>
+                        <dt class="label">Тип:</dt> <dd>Книга</dd>
+                        <dt class="label">Издательство:</dt> <dd itemprop="publisher">АСТ, Астрель</dd>
+                        <dt class="label">ISBN:</dt>
+                        <dd itemprop="isbn">5-17-006400-4,978-5-17-006400-7</dd>
+                        <dt class="label">Год:</dt> <dd itemprop="copyrightYear">1867</dd>
+                        <dt class="label">Тип издания:</dt>
+                        <dd itemprop="bookEdition">Авторский сборник</dd>
+                        <dt class="label">Язык:</dt>
+                        <dd itemprop="inLanguage" content="ru">Русский</dd>
+                        <dt class="label">Страниц:</dt> <dd itemprop="numberOfPages">704</dd> стр.
+                        <dt class="label">Формат:</dt> <dd>ePub</dd>
+                        <dt class="label">Переплет:</dt>
+                        <dd itemprop="bookFormat" itemscope itemtype="http://schema.org/Paperback">
+                            Твердый переплет</dd>
+                        <dt class="label">Дата размещения:</dt>
+                        <dd><time datetime="2015-10-08">8 котобря 2015</time></dd>
+                        <dt class="label">Жанр:</dt>
+                        <dd itemprop="genre">Русская классика, Литература 19 века</dd>
+                        <dt class="label">URL:</dt> <dd><a
+                                            itemprop="url"
+                                            href="/books/war_and_peace.epub"
+                                            type="application/epub+zip"
+                                            title="Скачать 'Войну и мир'" download>
+                                            http://babulenkin-servant.com/books/war_and_peace.epub
+                                            </a></dd>
+                        <dt class="label">Описание:</dt>
+                        <dd itemprop="description">Великий роман-эпопея Льва Толстого чудесным образом,
+                        как огромная мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
+                        политических, философских, портретных, пейзажных, психологических...</dd>
+                    </dl>
                 </p>
                 <p itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <img itemprop="image" class="photo" src="img/tolstoi.jpg" alt="Лев Николаевич">
-                    <span class="bold">Автор:</span> <span itemprop="name">Лев Николаевич Толстой</span><br>
-                    <span class="bold">Дата рождения:</span>
-                    <time itemprop="birthDate" datetime="1828-08-16">16 августа 1828</time><br>
-                    <span class="bold">Дата смерти:</span>
-                    <time itemprop="deathDate" datetime="1910-11-07">7 ноября 1910</time><br>
-                    <span class="bold">Место рождения:</span>
-                    <span itemprop="birthPlace">Ясная Поляна, Тульская губерния, Российская империя</span><br>
-                    <span class="bold">Род деятельности:</span>
-                    <span itemprop="jobTitle">прозаик, публицист, философ</span>
+                    <dl>
+                        <dt class="label">Автор:</dt> <dd itemprop="name">Лев Николаевич Толстой</dd>
+                        <dt class="label">Дата рождения:</dt>
+                        <dd><time itemprop="birthDate" datetime="1828-08-16">16 августа 1828</time></dd>
+                        <dt class="label">Дата смерти:</dt>
+                        <dd><time itemprop="deathDate" datetime="1910-11-07">7 ноября 1910</time></dd>
+                        <dt class="label">Место рождения:</dt>
+                        <dd itemprop="birthPlace">Ясная Поляна, Тульская губерния, Российская империя</dd>
+                        <dt class="label">Род деятельности:</dt>
+                        <dd itemprop="jobTitle">прозаик, публицист, философ</dd>
+                    </dl>
                 </p>
             </article>
-            <article itemscope itemtype="http://schema.org/Book">
+            <article itemscope itemtype="http://schema.org/Book" translate="no">
                 <h3 itemprop="name">Harry Potter and the Sorcerer's Stone</h3>
                 <p>
                     <img
                         itemprop="image"
-                        class="cover"
                         src="img/sorcerers-stone.jpg"
                         alt="Harry Potter and the Sorcerer's Stone"
-                        srcset="img/sorcerers-stone.jpg 1x, img/sorcerers-stone_300.jpg 300w"><br>
-                    <span class="bold">Тип:</span> Книга<br>
-                    <span class="bold">Издательство:</span> <span itemprop="publisher">АСТ, Астрель</span><br>
-                    <span class="bold">ISBN:</span> <span itemprop="isbn">978-0439708180</span><br>
-                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1998</span><br>
-                    <span class="bold">Язык:</span>
-                    <span itemprop="inLanguage" content="en">English</span><br>
-                    <span class="bold">Страниц:</span> <span itemprop="numberOfPages">309</span> стр.<br>
-                    <span class="bold">Формат:</span> pdf<br>
-                    <span class="bold">Переплет:</span>
-                    <span itemprop="bookFormat" href="http://schema.org/Paperback">Мягкий переплет</span><br>
-                    <span class="bold">Дата размещения:</span>
-                    <time datetime="2015-10-04">4 котобря 2015</time><br>
-                    <span class="bold">Жанр:</span>
-                    <span itemprop="genre">Fantasy, Adventure, Kids & Family</span><br>
-                    <span class="bold">URL:</span> <a
-                                        itemprop="url"
-                                        href="/books/potter.pdf"
-                                        type="application/pdf"
-                                        title="Скачать 'Harry Potter and the Sorcerer's Stone'" download>
-                                        http://babulenkin-servant.com/books/potter.pdf
-                                        </a><br>
-                    <span class="bold">Описание:</span>
-                    <span itemprop="description">Harry Potter has no idea how famous he is.
-                    That's because he's being raised by his miserable aunt and uncle who are terrified
-                    Harry will learn that he's really a wizard, just as his parents were.</span><br>
+                        srcset="img/sorcerers-stone.jpg 1x, img/sorcerers-stone_300.jpg 300w">
+                    <dl>
+                        <dt class="label">Тип:</dt> <dd>Книга</dd>
+                        <dt class="label">Издательство:</dt> <dd itemprop="publisher">АСТ, Астрель</dd>
+                        <dt class="label">ISBN:</dt> <dd itemprop="isbn">978-0439708180</dd>
+                        <dt class="label">Год:</dt> <dd itemprop="copyrightYear">1998</dd>
+                        <dt class="label">Язык:</dt>
+                        <dd itemprop="inLanguage" content="en">English</dd>
+                        <dt class="label">Страниц:</dt> <dd itemprop="numberOfPages">309</dd> стр.
+                        <dt class="label">Формат:</dt> <dd>pdf</dd>
+                        <dt class="label">Переплет:</dt>
+                        <dd itemprop="bookFormat" itemscope="http://schema.org/Paperback">Мягкий переплет</dd>
+                        <dt class="label">Дата размещения:</dt>
+                        <dd><time datetime="2015-10-04">4 котобря 2015</time></dd>
+                        <dt class="label">Жанр:</dt>
+                        <dd itemprop="genre">Fantasy, Adventure, Kids & Family</dd>
+                        <dt class="label">URL:</dt> <dd><a
+                                            itemprop="url"
+                                            href="/books/potter.pdf"
+                                            type="application/pdf"
+                                            title="Скачать 'Harry Potter and the Sorcerer's Stone'" download>
+                                            http://babulenkin-servant.com/books/potter.pdf
+                                            </a></dd>
+                        <dt class="label">Описание:</dt>
+                        <dd itemprop="description">Harry Potter has no idea how famous he is.
+                        That's because he's being raised by his miserable aunt and uncle who are terrified
+                        Harry will learn that he's really a wizard, just as his parents were.</dd>
+                    </dl>
                 </p>
                 <p itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <img itemprop="image" class="photo" src="img/rowling.jpg" alt="J. K.">
-                    <span class="bold">Автор:</span> <span itemprop="name">J. K. Rowling</span><br>
-                    <span class="bold">Дата рождения:</span>
-                    <time datetime="1965-07-31">31 июля 1965</time><br>
-                    <span class="bold">Дата смерти:</span> –<br>
-                    <span class="bold">Место рождения:</span>
-                    <span itemprop="birthPlace">Глостершир, Англия</span><br>
-                    <span class="bold">Род деятельности:</span>
-                    <span itemprop="jobTitle">прозаик</span><br>
-                    <span class="bold">URL:</span> <a
-                                        itemprop="url"
-                                        href="http://jkrowling.com"
-                                        title="Официальный сайт">
-                                        jkrowling.com
-                                        </a><br>
-                    <span class="bold">Адрес:</span>
-                    <span itemprop="homeLocation">50 Bedford Square, London</span><br>
-                    <span class="bold">Email:</span>
-                    <a itemprop="email" href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                    <dl>
+                        <dt class="label">Автор:</dt> <dd itemprop="name">J. K. Rowling</dd>
+                        <dt class="label">Дата рождения:</dt>
+                        <dd><time itemprop="birthDate" datetime="1965-07-31">31 июля 1965</time></dd>
+                        <dt class="label">Дата смерти:</dt> <dd>–</dd>
+                        <dt class="label">Место рождения:</dt>
+                        <dd itemprop="birthPlace">Глостершир, Англия</dd>
+                        <dt class="label">Род деятельности:</dt>
+                        <dd itemprop="jobTitle">прозаик</dd>
+                        <dt class="label">URL:</dt> <dd><a
+                                            itemprop="url"
+                                            href="http://jkrowling.com"
+                                            title="Официальный сайт">
+                                            jkrowling.com
+                                            </a></dd>
+                        <dt class="label">Адрес:</dt>
+                        <dd itemprop="homeLocation">50 Bedford Square, London</dd>
+                        <dt class="label">Email:</dt>
+                        <dd>
+                            <a itemprop="email" href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                        </dd>
+                    </dl>
                 </p>
             </article>
             <article itemscope itemtype="http://schema.org/Movie">
@@ -181,58 +182,63 @@
                             Элемент video не поддерживается вашим браузером.
                             <a href="http://www.youtube.com/watch?v=PT97QDLHFd0">Посмотрите на Youtube</a>.
                         </video>
-                    </div><br>
-                    <span class="bold">Тип:</span> Фильм<br>
-                    <span class="bold">Год:</span> <span itemprop="copyrightYear">1997</span><br>
-                    <span class="bold">Страна:</span> <span property="contentLocation">США</span><br>
-                    <span class="bold">Слоган:</span> «Ничто на Земле не сможет разлучить их»<br>
-                    <span class="bold">Режиссер:</span>
-                    <span itemprop="director" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name">Джеймс Кэмерон</span>
-                    </span><br>
-                    <span class="bold">Сценарий:</span>
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name">Джеймс Кэмерон</span>
-                    </span><br>
-                    <span class="bold">Продюсер:</span>
-                    <span itemprop="producer" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name">Джеймс Кэмерон</span>,
-                        <span itemprop="name">Джон Ландау</span>,
-                        <span itemprop="name">Памела Исли</span>
-                    </span><br>
-                    <span class="bold">Оператор:</span> Рассел Карпентер<br>
-                    <span class="bold">Композитор:</span>
-                    <span itemprop="musicBy" itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name">Джеймс Хорнер</span>
-                    </span><br>
-                    <span class="bold">Художник:</span> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
-                    <span class="bold">Монтаж:</span> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
-                    <span class="bold">Жанр:</span> <span itemprop="genre">драма, мелодрама</span><br>
-                    <span class="bold">Дата размещения:</span>
-                    <time datetime="2015-10-01">1 котобря 2015</time><br>
-                    <span class="bold">URL:</span> <a
-                                        itemprop="url"
-                                        href="/films/titanic.mp4"
-                                        type="video/mp4"
-                                        title="Скачать 'Титаник'" download>
-                                        http://babulenkin-servant.com/films/titanic.mp4
-                                        </a><br>
-                    <span class="bold">Описание:</span>
-                    <span itemprop="about">Молодые влюбленные Джек и Роза находят друг друга
-                    в первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что
-                    шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
-                    и их страстная любовь превратится в схватку со смертью.</span><br>
+                    </div>
+                    <dl>
+                        <dt class="label">Тип:</dt> <dd>Фильм</dd>
+                        <dt class="label">Год:</dt> <dd itemprop="copyrightYear">1997</dd>
+                        <dt class="label">Страна:</dt> <dd property="contentLocation">США</dd>
+                        <dt class="label">Слоган:</dt> <dd>«Ничто на Земле не сможет разлучить их»</dd>
+                        <dt class="label">Режиссер:</dt>
+                        <dd itemprop="director" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">Джеймс Кэмерон</span>
+                        </dd>
+                        <dt class="label">Сценарий:</dt>
+                        <dd itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">Джеймс Кэмерон</span>
+                        </dd>
+                        <dt class="label">Продюсер:</dt>
+                        <dd itemprop="producer" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">Джеймс Кэмерон</span>,
+                            <span itemprop="name">Джон Ландау</span>,
+                            <span itemprop="name">Памела Исли</span>
+                        </dd>
+                        <dt class="label">Оператор:</dt> <dd>Рассел Карпентер</dd>
+                        <dt class="label">Композитор:</dt>
+                        <dd itemprop="musicBy" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">Джеймс Хорнер</span>
+                        </dd>
+                        <dt class="label">Художник:</dt> <dd>Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли</dd>
+                        <dt class="label">Монтаж:</dt>
+                        <dd>Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис</dd>
+                        <dt class="label">Жанр:</dt> <dd itemprop="genre">драма, мелодрама</dd>
+                        <dt class="label">Дата размещения:</dt>
+                        <dd><time datetime="2015-10-01">1 котобря 2015</time></dd>
+                        <dt class="label">URL:</dt> <dd><a
+                                            itemprop="url"
+                                            href="/films/titanic.mp4"
+                                            type="video/mp4"
+                                            title="Скачать 'Титаник'" download>
+                                            http://babulenkin-servant.com/films/titanic.mp4
+                                            </a></dd>
+                        <dt class="label">Описание:</dt>
+                        <dd itemprop="about">Молодые влюбленные Джек и Роза находят друг друга
+                        в первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                        шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
+                        и их страстная любовь превратится в схватку со смертью.</dd>
+                    </dl>
                 </p>
                 <p itemprop="director" itemscope itemtype="http://schema.org/Person">
                     <img itemprop="image" class="photo" src="img/cameron.jpg" alt="Джеймс">
-                    <span class="bold">Автор:</span> <span itemprop="name">Джеймс Кэмерон</span><br>
-                    <span class="bold">Дата рождения:</span>
-                    <time itemprop="birthDate" datetime="1954-08-16">16 августа 1954</time><br>
-                    <span class="bold">Дата смерти:</span> –<br>
-                    <span class="bold">Место рождения:</span>
-                    <span itemprop="birthPlace">Капускасинг, Онтарио, Канада</span><br>
-                    <span class="bold">Род деятельности:</span>
-                    <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span>
+                    <dl>
+                        <dt class="label">Автор:</dt> <dd itemprop="name">Джеймс Кэмерон</dd>
+                        <dt class="label">Дата рождения:</dt>
+                        <dd><time itemprop="birthDate" datetime="1954-08-16">16 августа 1954</time></dd>
+                        <dt class="label">Дата смерти:</dt> <dd>–</dd>
+                        <dt class="label">Место рождения:</dt>
+                        <dd itemprop="birthPlace">Капускасинг, Онтарио, Канада</dd>
+                        <dt class="label">Род деятельности:</dt>
+                        <dd itemprop="jobTitle">продюсер, режиссер, сценарист, актер</dd>
+                    </dl>
                 </p>
             </article>
         </section>
@@ -277,7 +283,7 @@
                     <tr>
                         <td><label for="url">URL</label></td>
                         <td>
-                            <input id="url" name="url" value="" form="myform" required>
+                            <input id="url" name="url" type="url" form="myform" required>
                             <span class="star"> *</span>
                         </td>
                     </tr>
