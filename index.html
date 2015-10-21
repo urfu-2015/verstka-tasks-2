@@ -8,12 +8,12 @@
     <body>
         <h1>Бабуленькин сервант</h1>
         <main>
-            <article itemscope itemtype="http://schema.org/Book">
-                <header>
+            <article>
+                <header itemscope itemtype="http://schema.org/Book">
                     <h2 itemprop="name">Война и мир.</h2>
                     <img itemprop="image" src="http://www.1812panorama.ru/i/oblogka.jpg" width="210" alt="Обложка" title="Обложка книги">
                 </header>
-                <section>
+                <section itemscope itemtype="http://schema.org/Book">
                     <dl>
                         <dt>Тип:</dt>
                         <dd>Книга</dd>
@@ -36,14 +36,14 @@
                         <dt>Переплет:</dt>
                         <dd>Твердый переплет</dd>
                         <dt>Дата размещения:</dt>
-                        <dd><time itemprop="datePublished" datetime"2015-11-08">8 ноября 2015</time></dd>
+                        <dd><time itemprop="datePublished" datetime="2015-11-08">2015-11-08</time></dd>
                         <dt>Жанр:</dt>
                         <dd itemprop="genre">Русская классика, Литература 19 века</dd>
                         <dt>
                            <abbr title="Uniform Resource Locator">URL</abbr>:
                         </dt>
                         <dd>
-                            <a itemprop="url" href="http://babulenkin-servant.com/books/war_and_peace.epub">Скачать книгу в формате epub</a>
+                            <a itemprop="url" href="babulenkin-servant.com/books/war_and_peace.epub">Скачать книгу в формате epub</a>
                         </dd>
                         <dt>Описание:</dt>
                         <dd itemprop="description">
@@ -53,9 +53,7 @@
                         </dd>
                     </dl>
                 </section>
-            </article>
-            <article itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <section>                    
+                <section itemprop="author" itemscope itemtype="http://schema.org/Person">                    
                     <img itemprop="image" src="http://tmblagodat.ru/wp-content/uploads/2013/06/Leo_Tolstoy_portrait.jpg" width="210" alt="Лев Толстой" title="Лев Толстой">
                     <dl>
                         <dt>Автор:</dt>
@@ -64,9 +62,9 @@
                             <span itemprop="familyName">Толстой</span>
                         </dd>
                         <dt>Дата рождения:</dt>
-                        <dd><time datetime"1828-08-16" itemprop="birthDate">16 августа 1828</time></dd>
+                        <dd><time datetime="1828-08-16" itemprop="birthDate">1828-08-16</time></dd>
                         <dt>Дата смерти:</dt>
-                        <dd itemprop="deathDate"><time datetime"1910-11-07">7 ноября 1910</time></dd>
+                        <dd itemprop="deathDate"><time datetime="1910-11-07">1910-11-07</time></dd>
                         <dt>Место рождения:</dt>
                         <dd itemprop="homeLocation">Ясная Поляна, Тульская губерния, Российская империя</dd>
                         <dt>Род деятельности:</dt>
@@ -75,15 +73,15 @@
                 </section>
             </article>
 
-            <article itemprop="author" itemscope itemtype="http://schema.org/Book">
-                <header>
+            <article>
+                <header itemprop="author" itemscope itemtype="http://schema.org/Book">
                     <h2 itemprop="name" lang="en">Harry Potter and the Sorcerer's Stone.</h2>
                     <img src="http://loveread.ws/img/photo_books/2317.jpg" alt="Обложка книги" title="Гарри Поттер и Философский камень">
                 </header>
-                <section>
+                <section itemprop="author" itemscope itemtype="http://schema.org/Book">
                     <dl>
                         <dt>Тип:</dt>
-                        <dd itemprop="type">Книга</dd>
+                        <dd>Книга</dd>
                         <dt>Издательство:</dt>
                         <dd itemprop="publisher">АСТ, Астрель</dd>
                         <dt>
@@ -95,36 +93,34 @@
                         <dt>Язык:</dt>
                         <dd itemprop="inLanguage">English</dd>
                         <dt>Страниц:</dt>
-                        <dd itemprop="numberOfPages">309 стр.</dd>
+                        <dd><span itemprop="numberOfPages">309</span>стр.</dd>
                         <dt>Формат:</dt>
                         <dd itemprop="bookFormat">
                             <abbr title="Portable Document Format">pdf</abbr>
                         </dd>
                         <dt>Переплет:</dt>
-                        <dd itemprop="bookCover">Мягкий переплет</dd>
+                        <dd>Мягкий переплет</dd>
                         <dt>Дата размещения:</dt>
-                        <dd itemprop="datePublished"><time datetime"2015-11-04">4 котобря 2015</time></dd>
+                        <dd itemprop="datePublished"><time datetime="2015-11-04">2015-11-04</time></dd>
                         <dt>Жанр:</dt>
                         <dd itemprop="genre">Fantasy, Adventure, Kids & Family</dd>
                         <dt>
                             <abbr title="Uniform Resource Locator">URL</abbr>:
                         </dt>
                         <dd itemprop="url">
-                            <a itemprop="url" href="http://babulenkin-servant.com/books/potter.pdf">
+                            <a itemprop="url" href="babulenkin-servant.com/books/potter.pdf">
                                 скачать книгу в формате <abbr title="Portable Document Format">pdf</abbr>
                             </a>
                         </dd>
                         <dt>Описание:</dt>
-                        <dd itemprop="description">
+                        <dd itemprop="description" lang="en">
                             Harry Potter has no idea how famous he is. That's because he's
                             being raised by his miserable aunt and uncle who are terrified Harry will
                             learn that he's really a wizard, just as his parents were.
                         </dd>
                     </dl>
                 </section>
-            </article>
-            <article>
-                <section>
+                <section itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <img itemprop="image" src="http://icdn.lenta.ru/images/2013/07/15/19/20130715192329054/pic_e256ad3d4d04ee7417ef5b7c490f3328.jpg" alt="J. K.Rowling" width="300" title="J. K. Rowling">
                     <dl>
                         <dt>Автор:</dt>
@@ -134,9 +130,9 @@
                             <span itemprop="familyName">Rowling</span>
                         </dd>
                         <dt>Дата рождения:</dt>
-                        <dd itemprop="birthDate"><time datetime"1965-07-31">31 июля 1965</time></dd>
+                        <dd itemprop="birthDate"><time datetime="1965-07-31">1965-07-31</time></dd>
                         <dt>Дата смерти:</dt>
-                        <dd itemprop="deathDate">&ndash;</dd>
+                        <dd>&ndash;</dd>
                         <dt>Место рождения:</dt>
                         <dd itemprop="homeLocation">Глостершир, Англия</dd>
                         <dt>Род деятельности:</dt>
@@ -148,7 +144,7 @@
                             <a itemprop="url" href="http://jkrowling.com">Перейти на сайт автора</a>
                         </dd>
                         <dt>Адрес:</dt>
-                        <dd itemprop="address">50 Bedford Square, London</dd>
+                        <dd>50 Bedford Square, London</dd>
                         <dt>Email:</dt>
                         <dd>
                             <address>
@@ -159,21 +155,21 @@
                 </section>
             </article>
 
-            <article itemprop="movie" itemscope itemtype="http://schema.org/Movie">
-                <header>
+            <article>
+                <header itemprop="movie" itemscope itemtype="http://schema.org/Movie">
                     <h2 itemprop="name">Titanic.</h2>           
                     <video width="560" controls poster="http://www.kinonews.ru/insimgs/shotimg/shotimg18751_9.jpg">
                         <source src="http://babulenkin-servant.com/media/titanic.mp4" frameborder="0" allowfullscreen>   
                     </video>           
                 </header>
-                <section>
+                <section itemprop="movie" itemscope itemtype="http://schema.org/Movie">
                     <dl>
                         <dt>Тип:</dt>
-                        <dd itemprop="type">Фильм</dd>
+                        <dd>Фильм</dd>
                         <dt>Год:</dt>
                         <dd itemprop="dateCreated">1997</dd>
                         <dt>Страна:</dt>
-                        <dd itemprop="address">
+                        <dd>
                             <abbr title="Соединенные Штаты Америки">США</abbr>
                         </dd>
                         <dt>Слоган:</dt>
@@ -183,27 +179,27 @@
                         <dt>Режиссер:</dt>
                         <dd itemprop="director">Джеймс Кэмерон</dd>
                         <dt>Сценарий:</dt>
-                        <dd itemprop="scenarist">Джеймс Кэмерон</dd>
+                        <dd>Джеймс Кэмерон</dd>
                         <dt>Продюсер:</dt>
                         <dd itemprop="producer">Джеймс Кэмерон, Джон Ландау, Памела Исли</dd>
                         <dt>Оператор:</dt>
-                        <dd itemprop="operator">Рассел Карпентер</dd>
+                        <dd>Рассел Карпентер</dd>
                         <dt>Композитор:</dt>
                         <dd itemprop="musicBy">Джеймс Хорнер</dd>
                         <dt>Художник:</dt>
-                        <dd itemprop="artist">Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли</dd>
+                        <dd>Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли</dd>
                         <dt>Монтаж:</dt>
                         <dd itemprop="editor">Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис</dd>
                         <dt>Жанр:</dt>
                         <dd itemprop="genre">драма, мелодрама</dd>
                         <dt>Дата размещения:</dt>
-                        <dd itemprop="datePublished"><time datetime"2015-11-01">1 котобря 2015</time></dd>
+                        <dd itemprop="datePublished"><time datetime="2015-11-01">2015-11-01</time></dd>
                         <dt>
                             <abbr title="Uniform Resource Locator">URL</abbr>:
                         </dt>
-                        <dd itemprop="url">
+                        <dd>
                             <address>
-                                <a itemprop="url" href="http://babulenkin-servant.com/films/titanic.mp4">
+                                <a itemprop="url" href="babulenkin-servant.com/films/titanic.mp4">
                                 скачать фильм в формате <abbr title="MPEG-4 Part 14">mp4</abbr>
                                 </a>
                             </address>
@@ -217,9 +213,7 @@
                         </dd>
                     </dl>
                 </section>
-            </article>
-            <article itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <section>
+                <section itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <img src="http://womenpassion.net/images/stories/zvezdy-zar/James%20Cameron2.jpg" width="210" alt="Режиссер" title="Режиссер фильма" >
                     <dl>
                         <dt>Автор:</dt>
@@ -228,9 +222,9 @@
                             <span itemprop="familyName">Кэмерон</span>
                         </dd>
                         <dt>Дата рождения:</dt>
-                        <dd itemprop="birthDate"><time datetime"1954-09-16">16 августа 1954</time></dd>
+                        <dd itemprop="birthDate"><time datetime="1954-09-16">1954-09-16</time></dd>
                         <dt>Дата смерти:</dt>
-                        <dd itemprop="deathDate">&ndash;</dd>
+                        <dd>&ndash;</dd>
                         <dt>Место рождения:</dt>
                         <dd itemprop="homeLocation">Капускасинг, Онтарио, Канада</dd>
                         <dt>Род деятельности:</dt>
@@ -242,60 +236,60 @@
 
         <h2>Форма для книги.</h2>
         <form>
-            <input type="text" placeholder="Название" required><br>
-            <input placeholder="Издательство" type="text"><br>
-            <input type="number" placeholder="ISBN"><br>
-            <input type="date" placeholder="Год" required><br>
-            <select name="cover">
+            <input name="name" type="text" placeholder="Название" required><br>
+            <input name="publisher" placeholder="Издательство" type="text"><br>
+            <input name="isbn" type="number" placeholder="ISBN"><br>
+            <input name="year" type="date" placeholder="Год" required><br>
+            <select multiple name="cover">
                 <option selected>Русский</option>
                 <option>Английский</option>
             </select><br>                    
-            <input type="number" placeholder="Число страниц" min="1" required><br>                       
+            <input name="pages" type="number" placeholder="Число страниц" min="1" required><br>                       
             <label for="cover">Переплет:</label>
-            <input id="cover" name="cover" placeholder="Переплет" type="radio" value="Мягкая">
+            <input name"cover" id="cover" name="cover" placeholder="Переплет" type="radio" value="Мягкая">
             <label for"cover">Мегкий</label>
-            <input name="cover" type="radio" value="Твёрдая">
-            <label for"cover">Твердый</label><br>
-            <input name="date" placeholder="Дата размещения" type="date" value="2015-10-12" max="2015-10-17"><br>
+            <input name="cover" id="cover" type="radio" value="Твёрдая">
+            <label for="cover">Твердый</label><br>
+            <input name="date" placeholder="Дата размещения" type="date" value="гггг-мм-дд" max="2015-10-17"><br>
             <input type="text" placeholder="Формат" required><br>
-            <input type="text" placeholder="Жанр"><br>
+            <input name="genre" type="text" placeholder="Жанр"><br>
             <textarea placeholder="Введите описание произведения" cols="50" rows="10"></textarea><br>
             <label for="audio">Аудио версия книги</label>
-            <input id="audio" name="audio"  type="file" value="" accept="audio/mpeg,audio/ogg,audio/wav"><br>
+            <input name ="audio" id="audio" name="audio"  type="file" value="" accept="audio/mpeg,audio/ogg,audio/wav"><br>
 
-            <input placeholder="Автор" type="text" required><br>
-            <input placeholder="Дата размещения" type="date" required><br>
-            <input placeholder="Дата смерти" type="date"><br>
-            <input placeholder="Место смерти" type="text" required><br>
-            <input placeholder="Род деятельности" type="text" required><br>
+            <input name="Author" placeholder="Автор" type="text" required><br>
+            <input name="dateOfBirth" placeholder="Дата рождения" type="date" value="гггг-мм-дд" required><br>
+            <input name="dateOfDeath" placeholder="Дата смерти" value="гггг-мм-дд" type="date"><br>
+            <input name="placeOfDeath" placeholder="Место смерти"  type="text" required><br>
+            <input name="occupation" placeholder="Род деятельности" type="text" required><br>
             <button type="submit" autofocus>Отправить форму</button>
             <button type="reset">Сбросить форму</button>
         </form>
         <h2>Форма для видео</h2>
         <form>
-            <input placeholder="Название" type="text" required><br>
-            <input placeholder="Дата" type="date" required><br>
-            <input placeholder="Страна" type="text" required><br>
-            <input placeholder="Слоган" type="text" required><br>
-            <input placeholder="Режиссер" type="text" required><br>
-            <input placeholder="Сценарий" type="text" required><br>
-            <input placeholder="Продюсер" type="text" required><br>
-            <input placeholder="Оператор" type="text" required><br>
-            <input placeholder="Композитор" type="text" required><br>
-            <input placeholder="Художник" type="text" required><br>
-            <input placeholder="Монтаж" type="text" required><br>
-            <input placeholder="Жанр" type="text" required><br>
-            <input placeholder="Дата размещения" name="date" type="date" value="2015-10-12" max="2015-10-17"><br>
-            <input placeholder="URL" type="text"><br>
+            <input name="name" placeholder="Название" type="text" required><br>
+            <input name="date" placeholder="Дата" type="date" value="гггг-мм-дд" required><br>
+            <input name="country" placeholder="Страна" type="text" required><br>
+            <input name="tagline" placeholder="Слоган" type="text" required><br>
+            <input name="produser" placeholder="Режиссер" type="text" required><br>
+            <input name="screenplay" placeholder="Сценарий" type="text" required><br>
+            <input name="produserr" placeholder="Продюсер" type="text" required><br>
+            <input name="operator" placeholder="Оператор" type="text" required><br>
+            <input name="composer" placeholder="Композитор" type="text" required><br>
+            <input name="painter" placeholder="Художник" type="text" required><br>
+            <input name="installation" placeholder="Монтаж" type="text" required><br>
+            <input name="genre" placeholder="Жанр" type="text" required><br>
+            <input name="dateOfPublusher" placeholder="Дата размещения"  name="date" type="date" value="гггг-мм-дд" max="2015-10-17"><br>
+            <input name="URL" placeholder="URL" type="url"><br>
             <textarea placeholder="Введите описание фильма" cols="50" rows="10"></textarea><br>
             <label for="trailer">Добавить трейлер</label>
             <input name="trailer" id="trailer" type="file" accept="video/mp4,video/avi,video/quicktime"><br>
 
-            <input placeholder="Автор" type="text" required><br>
-            <input placeholder="Дата рождения" type="date" required><br>
-            <input placeholder="Дата смерти" type="date"><br>
-            <input placeholder="Место смерти" type="text" required><br>
-            <input placeholder="Род деятельности" type="text" required><br>
+            <input name="author" placeholder="Автор" type="text" required><br>
+            <input name="dateOfBirth" placeholder="Дата рождения" value="гггг-мм-дд" type="date" required><br>
+            <input name="DateofDeath" placeholder="Дата смерти" value="гггг-мм-дд" type="date"><br>
+            <input name="placeOfDeath" placeholder="Место смерти" type="text" required><br>
+            <input name="occupation" placeholder="Род деятельности" type="text" required><br>
             <button type="submit" autofocus>Отправить форму</button>
             <button type="reset">Сбросить форму</button>
         </form>
