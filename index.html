@@ -60,13 +60,8 @@
                             Дата смерти: 
                             <time itemprop="deathDate" datetime="1910-11-07">7 ноября 1910</time><br>
                             Место рождения: 
-                            <span itemprop="birthPlace" itemscope itemtype="http://schema.org/Place">
-                                <span itemprop="address" itemscope 
-                                    itemtype="http://schema.org/PostalAddress">
-                                    <span itemprop="addressRegion">
-                                        Ясная Поляна, Тульская губерния, Российская империя
-                                    </span>
-                                </span>
+                            <span itemprop="birthPlace">
+                                Ясная Поляна, Тульская губерния, Российская империя
                             </span><br>
                             Род деятельности: 
                             <span itemprop="jobTitle">прозаик, публицист, философ</span><br>
@@ -118,13 +113,9 @@
                             Дата рождения: 
                             <time itemprop="birthDate" datetime="1965-07-31">31 июля 1965</time><br>
                             Дата смерти: –<br>
-                            <section itemprop="birthPlace" itemscope 
-                                itemtype="http://schema.org/Place">
-                                Место рождения:    
-                                <span itemprop="address">
-                                    Глостершир, Англия
-                                </span>
-                            </section><br>
+                            <span itemprop="birthPlace">
+                                Место рождения: Глостершир, Англия
+                            </span><br>
                             Род деятельности: <span itemprop="jobTitle">прозаик</span><br>
                             URL: <a href="http://www.jkrowling.com/">jkrowling.com</a><br>
                             <address>
@@ -136,7 +127,7 @@
                                 </section>
                                 Email: 
                                 <span itemprop="email">
-                                    <a href="mailto:info@jkrowlingpr.com">
+                                    <a href="mailto:info@jkrowlingpr.com" itemprop="url">
                                     info@jkrowlingpr.com</a>
                                 </span>
                             </address>
@@ -152,7 +143,7 @@
                             Тип: Фильм<br>
                             Год: <time itemprop="dateCreated" datetime="1997">1997</time><br>
                             Страна: США<br>
-                            Слоган: «Ничто на Земле не сможет разлучить их»<br>
+                            <span itemprop="headline">Слоган: «Ничто на Земле не сможет разлучить их»</span><br>
                             Режиссер: 
                             <span itemprop="director">Джеймс Кэмерон</span><br>
                             Сценарий: Джеймс Кэмерон<br>
@@ -186,15 +177,9 @@
                             Дата рождения: 
                             <time itemprop="birthDate" datetime="1954-08-16">16 августа 1954</time><br>
                             Дата смерти: –<br>
-                            <span itemprop="birthPlace" itemscope 
-                                itemtype="http://schema.org/Place">
-                                <span itemprop="address" itemscope 
-                                    itemtype="http://schema.org/PostalAddress">
-                                    Место рождения: 
-                                    <span itemprop="addressRegion">Капускасинг, Онтарио, Канада</span>
-                                    <br>
-                                </span>
-                            </span>
+                            <span itemprop="birthPlace">
+                                Место рождения: Капускасинг, Онтарио, Канада
+                            </span><br>
                             Род деятельности: 
                             <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span>
                             <br>
@@ -257,7 +242,18 @@
                 </p>
                 <p>Общее:<br>
                     <label for="genre">Жанр:</label>
-                    <input type="text" placeholder="Жанр" id="genre" class="book film"><br>
+                    <select multiple size="3">
+                        <option>Мелодрама</option>
+                        <option>Фантастика</option>
+                        <option>Фэнтези</option>
+                        <option>Драма</option>
+                        <option>Комедия</option>
+                        <option>Трагедия</option>
+                        <option>Боевик</option>
+                        <option>Поэзия</option>
+                        <option>Приключения</option>
+                        <option>Для детей</option>
+                    </select><br>
                     <label for="loadingDate">Дата размещения:</label>
                     <input type="date" placeholder="Дата размещения" id="loadingDate" class="book film"><br>
                     <label for="URL">URL:</label>
