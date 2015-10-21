@@ -3,53 +3,59 @@
     <head>
         <meta charset="utf-8">
         <title>Бабуленькин сервант</title>
-        <style>
-            li
-            {
-                list-style-type: none;
-            }
-        </style>
     </head>
     <body>
-        <header><h1>Бабуленькин сервант</h1></header>
+        <header>
+            <h1>Бабуленькин сервант</h1>
+        </header>
         <main>
             <section>
                 <article itemscope itemtype="http://schema.org/Book">
-                    <header><h2><span itemprop="name">Война и мир</span></h2></header>
+                    <header>
+                        <h2><span itemprop="name">Война и мир</span></h2>
+                    </header>
                     <main>
-                        <ul>
+                        <ul type="none">
                             <li>Тип: Книга</li>
-                            <li itemprop="publisher">Издательство: АСТ, Астрель</li>
-                            <li itemprop="isbn">
-                                <abbr title="International Standard Book Number">
-                                    ISBN</abbr>: 5-17-006400-4,978-5-17-006400-7
+                            <li><span itemprop="publisher">АСТ, Астрель</span></li>
+                            <li>
+                               <abbr title="International Standard Book Number">ISBN</abbr>:
+                               <span itemprop="isbn">
+                                   5-17-006400-4,978-5-17-006400-7
+                               </span>
                             </li>
-                            <li itemprop="dateCreated">Год: 1867 г</li>
+                            <li>Год: <span itemprop="dateCreated">1867</span> г</li>
                             <li>Тип издания: Авторский сборник</li>
-                            <li itemprop="inLanguage">Язык: Русский</li>
-                            <li itemprop="numberOfPages">Страниц: 704 стр.</li>
-                            <li itemprop="bookFormat">Формат: ePub</li>
+                            <li>Яык: <span itemprop="inLanguage">Русский</span></li>
+                            <li>Страниц: <span itemprop="numberOfPages">704</span> стр.</li>
+                            <li>Формат: <span itemprop="bookFormat">ePub</span></li>
                             <li>Переплет: Твердый переплет</li>
                             <li>Дата размещения: <time>8 котобря 2015</time></li>
-                            <li itemprop="genre">Жанр: Русская классика, Литература 19 века</li>
-                            <li itemprop="url">
+                            <li>Жанр: <span itemprop="genre">Русская классика, Литература 19 века</span></li>
+                            <li>
                                 URL:
-                                <a type="url" href="http://babulenkin-servant.com/books/war_and_peace.epub">
-                                    http://babulenkin-servant.com/books/war_and_peace.epub
-                                </a>
+
+                                    <a type="url"
+                                        href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                                        <span itemprop="url">
+                                            http://babulenkin-servant.com/books/war_and_peace.epub
+                                        </span>
+                                    </a>
+
                             </li>
-                            <li itemprop="description">
+                            <li>
                                 Описание:
+                                <p itemprop="description">
                                 Великий роман-эпопея Льва Толстого чудесным образом, как огромная
                                 мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
                                 политических, философских, портретных, пейзажных, психологических...
+                                </p>
                             </li>
                         </ul>
                         <audio controls>
                             <source
                                 src="http://audiobook-online.com/wp-content/uploads/2013/07/00138.mp3"
-                                type="audio/mpeg"
-                            >
+                                type="audio/mpeg">
                             Тег audio не поддерживается вашим браузером.
                             <a href="http://audiobook-online.com/wp-content/uploads/2013/07/00138.mp3">
                                 Скачайте аудиокнигу
@@ -60,29 +66,38 @@
                             title="Война и мир"
                             alt="Война и мир"
                             src="http://royallib.com/data/images/87/cover_87012.jpg"
-                            height="400"
-                        >
-                        <ul itemscope itemtype="http://schema.org/Person">
-                            <li itemprop="author">
+                            height="400">
+                        <ul itemscope itemtype="http://schema.org/Person" type="none">
+                            <li>
                                 Автор:
-                                <span itemprop="givenName">Лев</span>
-                                <span itemprop="addictionalName">Николаевич</span>
-                                <span itemprop="familyName">Толстой</span>
+                                <span itemprop="author">
+                                    <span itemprop="givenName">Лев</span>
+                                    <span itemprop="additionalName">Николаевич</span>
+                                    <span itemprop="familyName">Толстой</span>
+                                </span>
                             </li>
-                            <li itemprop="bitrhDate">Дата рождения: <time>16 августа 1828</time></li>
-                            <li itemprop="deathDate">Дата смерти: <time>7 ноября 1910</time></li>
-                            <li itemprop="birthPlace">
+                            <li>
+                                Дата рождения: <span itemprop="birthDate"><time>1828-08-16</time></span>
+                            </li>
+                            <li>
+                                Дата смерти: <span itemprop="deathDate"><time>1910-11-7</time></span>
+                            </li>
+                            <li>
                                 Место рождения:
-                                Ясная Поляна, Тульская губерния, Российская империя
+                                <span  itemprop="birthPlace">
+                                    Ясная Поляна, Тульская губерния, Российская империя
+                                </span>
                             </li>
-                            <li itemprop="jobTitle">Род деятельности: прозаик, публицист, философ</li>
+                            <li>
+                                Род деятельности:
+                                <span itemprop="jobTitle">прозаик, публицист, философ</span>
+                            </li>
                         </ul>
                         <img
                             title="Л.Н. Толстой"
                             alt="Л.Н. Толстой"
                             src="http://tmblagodat.ru/wp-content/uploads/2013/06/Leo_Tolstoy_portrait.jpg"
-                            width="300"
-                        >
+                            width="300">
                     </main>
                 </article>
                 <article itemscope itemtype="http://schema.org/Book">
@@ -92,28 +107,34 @@
                         </h2>
                     </header>
                     <main>
-                        <ul>
+                        <ul type="none">
                             <li>Тип: Книга</li>
-                            <li itemprop="publisher">Издательство: АСТ, Астрель</li>
-                            <li itemprop="isbn">ISBN: 978-0439708180</li>
-                            <li itemprop="dateCreated">Год: 1998 г</li>
-                            <li itemprop="inLanguage">Язык: English</li>
-                            <li itemprop="numberOfPages">Страниц: 309 стр.</li>
-                            <li itemprop="bookFormat">Формат: pdf</li>
+                            <li>Издательство: <span itemprop="publisher">АСТ, Астрель</span></li>
+                            <li>ISBN: <span itemprop="isbn">978-0439708180</span></li>
+                            <li>Год: <span itemprop="dateCreated">1998</span> г</li>
+                            <li>Язык: <span itemprop="inLanguage">English</span></li>
+                            <li>Страниц: <span itemprop="numberOfPages">309</span> стр.</li>
+                            <li>Формат: <span itemprop="bookFormat">pdf</span></li>
                             <li>Переплет: Мягкий переплет</li>
                             <li>Дата размещения: <time>4 котобря 2015</time></li>
-                            <li itemprop="genre">Жанр: Fantasy, Adventure, Kids &amp; Family</li>
-                            <li itemprop="url">
+                            <li>
+                                Жанр: <span itemprop="genre">Fantasy, Adventure, Kids &amp; Family</span>
+                            </li>
+                            <li>
                                 URL:
                                 <a type="url" href="http://babulenkin-servant.com/books/potter.pdf">
-                                    http://babulenkin-servant.com/books/potter.pdf
+                                    <span itemprop="url">
+                                        http://babulenkin-servant.com/books/potter.pdf
+                                    </span>
                                 </a>
                             </li>
-                            <li itemprop="description">
+                            <li>
                                 Описание:
-                                Harry Potter has no idea how famous he is. That's because he's
-                                being raised by his miserable aunt and uncle who are terrified Harry will
-                                learn that he's really a wizard, just as his parents were.
+                                <p itemprop="description">
+                                    Harry Potter has no idea how famous he is. That's because he's
+                                    being raised by his miserable aunt and uncle who are terrified Harry will
+                                    learn that he's really a wizard, just as his parents were.
+                                </p>
                             </li>
                         </ul>
                         <img
@@ -121,112 +142,129 @@
                             alt="Harry Potter and the Sorcerer's Stone"
                             src="https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg"
                             width="300"
-                            translate="no"
-                        >
+                            translate="no">
                         <br>
-                        <video
-                            width="440"
-                            height="270"
-                            controls
-                            poster="http://www.woodtheater.org/wp-content/uploads/2015/09/Harry-Potter-and-the-Sorcerers-Stone-movie-poster.jpg"
-                        >
-                            <source
-                                src="http://www.dailymotion.com/cdn/H264-320x240/video/x1i6hf4.mp4?auth=1445190748-2562-wdycyid3-f5b189a7b1902851e427e465e54c2be6"
-                                type="video/mp4"
-                            >
-                            Тег video не поддерживается вашим браузером.
-                            <a href="http://www.dailymotion.com/cdn/H264-320x240/video/x1i6hf4.mp4?auth=1445190748-2562-wdycyid3-f5b189a7b1902851e427e465e54c2be6">
-                                Скачайте трейлер
-                            </a>
-                        </video>
-                        <ul itemscope itemtype="http://schema.org/Person">
-                            <li itemprop="author">
-                                Автор: J. K.<span itemprop="familyName">Rowling</span>
+                        <ul itemscope itemtype="http://schema.org/Person" type="none">
+                            <li>
+                                <span  itemprop="author">
+                                    Автор: J. K.<span itemprop="familyName">Rowling</span>
+                                </span>
                             </li>
-                            <li itemprop="birthDate">Дата рождения: <time>31 июля 1965</time></li>
-                            <li itemprop="deathDate">Дата смерти: –</li>
-                            <li itemprop="birthPlace">Место рождения: Глостершир, Англия</li>
-                            <li itemprop="jobTitle">Род деятельности: прозаик</li>
-                            <li itemprop="url">
+                            <li>
+                                Дата рождения: <span itemprop="birthDate"><time>1965-07-31</time></span>
+                            </li>
+                            <li>Дата смерти: –</li>
+                            <li>Место рождения: <span itemprop="birthPlace">Глостершир, Англия</span></li>
+                            <li>Род деятельности: <span itemprop="jobTitle">прозаик</span></li>
+                            <li>
                                 URL:
-                                <a type="url" href="http://jkrowling.com" target="_blank">jkrowling.com</a>
+                                <a type="url" href="http://jkrowling.com" target="_blank">
+                                     <span itemprop="url">jkrowling.com</span>
+                                </a>
                             </li>
-                            <li itemprop="address">Адрес:<address>50 Bedford Square, London</address></li>
-                            <li itemprop="email">Email:
-                                <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                            <li>
+                                Адрес:
+                                <span itemprop="address">
+                                    <address>50 Bedford Square, London</address>
+                                </span>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="mailto:info@jkrowlingpr.com">
+                                    <span itemprop="email">info@jkrowlingpr.com</span>
+                                </a>
                             </li>
                         </ul>
                         <img
                             title="J.K. Rowling"
                             alt="J.K. Rowling"
                             src="http://i.telegraph.co.uk/multimedia/archive/02351/JK-Rowling_2348615_2351361a.jpg"
-                            height="300"
-                        >
+                            height="300">
                     </main>
                 </article>
                 <article itemscope itemtype="http://schema.org/Movie">
-                    <header><h2><span itemprop="name" translate="no">Titanic</span></h2></header>
+                    <header>
+                        <h2><span itemprop="name" translate="no">Titanic</span></h2>
+                    </header>
                     <main>
-                        <ul>
+                        <ul type="none">
                             <li>Тип: Фильм</li>
-                            <li itemprop="dateCreated">Год: 1997</li>
+                            <li>Год: <span itemprop="dateCreated">1997</span></li>
                             <li>Страна: США</li>
                             <li>Слоган: «Ничто на Земле не сможет разлучить их»</li>
-                            <li itemprop="director">Режиссер: Джеймс Кэмерон</li>
+                            <li>Режиссер: <span itemprop="director">Джеймс Кэмерон</span></li>
                             <li>Сценарий: Джеймс Кэмерон</li>
-                            <li itemprop="producer">Продюсер:Джеймс Кэмерон, Джон Ландау, Памела Исли</li>
+                            <li>
+                                Продюсер:
+                                <span  itemprop="producer">
+                                    Джеймс Кэмерон, Джон Ландау, Памела Исли
+                                </span>
+                            </li>
                             <li>Оператор: Рассел Карпентер</li>
-                            <li itemprop="musicBy">Композитор: Джеймс Хорнер</li>
+                            <li>Композитор: <span itemprop="musicBy">Джеймс Хорнер</span></li>
                             <li>Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли</li>
                             <li>Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис</li>
-                            <li itemprop="genre">Жанр: драма, мелодрама</li>
+                            <li>Жанр: <span itemprop="genre">драма, мелодрама</span></li>
                             <li>Дата размещения: <time>1 котобря 2015</time></li>
                             <li>
                                 URL:
                                 <a type="url" href="http://babulenkin-servant.com/films/titanic.mp4">
-                                    http://babulenkin-servant.com/films/titanic.mp4
+                                    <span itemprop="url">
+                                        http://babulenkin-servant.com/films/titanic.mp4
+                                    </span>
                                 </a>
+
                             </li>
-                            <li itemprop="description">
+                            <li>
                                 Описание:
-                                Молодые влюбленные Джек и Роза находят друг друга в первом и
-                                последнем плавании «непотопляемого» Титаника. Они не могли знать, что
-                                шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
-                                и их страстная любовь превратится в схватку со смертью.
+                                <span itemprop="description">
+                                    Молодые влюбленные Джек и Роза находят друг друга в первом и
+                                    последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                                    шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
+                                    и их страстная любовь превратится в схватку со смертью.
+                                </span>
                             </li>
                         </ul>
                         <video
                             width="440" height="270" controls
-                            poster="http://2.topten.su/images/192/2.jpg"
-                        >
+                            poster="http://2.topten.su/images/192/2.jpg">
                             <source
                                 src="http://cache-default06h.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-95323.mp4"
-                                type="video/mp4"
-                            >
+                                type="video/mp4">
                             Тег video не поддерживается вашим браузером.
                             <a href="http://cache-default06h.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-95323.mp4">
                                 Скачайте трейлер
                             </a>
                             <track kind="subtitles" src="titanic.vtt" srclang="ru">
                         </video>
-                        <ul itemscope="Person">
-                            <li itemprop="author">
-                                Автор: <span itemprop="givenName">Джеймс</span>
-                                <span itemprop="familyName">Кэмерон</span>
+                        <ul itemscope itemtype="http://schema.org/Person" type="none">
+                            <li>
+                                Автор:
+                                <span itemprop="author">
+                                    <span itemprop="givenName">Джеймс</span>
+                                    <span itemprop="familyName">Кэмерон</span>
+                                </span>
                             </li>
-                            <li itemprop="birthDate">Дата рождения: <time>16 августа 1954</time></li>
-                            <li itemprop="deathDate">Дата смерти: –</li>
-                            <li itemprop="birthPlace">Место рождения: Капускасинг, Онтарио, Канада</li>
-                            <li itemprop="jobTitle">
-                                Род деятельности: продюсер, режиссер, сценарист, актер
+                            <li>
+                                Дата рождения:
+                                <span itemprop="birthDate"><time>1954-08-16</time></span>
+                            </li>
+                            <li>Дата смерти: -</li>
+                            <li>
+                                Место рождения:
+                                <span itemprop="birthPlace">Капускасинг, Онтарио, Канада</span>
+                            </li>
+                            <li>
+                                <span itemprop="jobTitle">
+                                    Род деятельности: продюсер, режиссер, сценарист, актер
+                                </span>
                             </li>
                         </ul>
                         <img
                             alt="Джеймс Кэмерон"
                             title="Джеймс Кэмерон"
                             src="http://media9.fast-torrent.ru/media/files/s3/px/kr/133275968035504389.jpg"
-                            width="300"
-                        >
+                            width="300">
                     </main>
                 </article>
             </section>
