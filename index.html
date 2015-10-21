@@ -10,7 +10,7 @@
             <h1>Бабуленькин сервант</h1>
         </header>
         <main>
-            <table itemprop="mainEntity" itemscope itemtype="http://schema.org/Book">
+            <table itemscope itemtype="http://schema.org/Book">
                 <thead>
                     <tr>
                         <th colspan="3"><h1 itemprop="name">Война и мир.</h1></th>
@@ -29,12 +29,12 @@
                         <td>
                             <dl>
                                 <dt>Тип:</dt>
-                                <dd itemprop="about">Книга</dd>
+                                <dd itemscope itemtype="http://schema.org/Book">Книга</dd>
                                 <dt>Издательство:</dt>
                                 <dd
                                     itemprop="publisher"
                                     itemtype="http://schema.org/Organization"
-                                    itemscope="">
+                                    itemscope>
                                     АСТ, Астрель
                                 </dd>
                                 <dt><abbr title="Международный стандартный номер книги">ISBN:</abbr></dt>
@@ -120,7 +120,7 @@
                     </tr>
                 </tfoot>
             </table>
-            <table  itemprop="mainEntity" itemscope itemtype="http://schema.org/Book">
+            <table itemscope itemtype="http://schema.org/Book">
                 <thead>
                     <tr>
                         <th colspan="3"><h1 itemprop="name">Harry Potter and the Sorcerer's Stone</h1></th>
@@ -139,12 +139,12 @@
                         <td>
                             <dl>
                                 <dt>Тип:</dt>
-                                <dd itemprop="about">Книга</dd>
+                                <dd itemscope itemtype="http://schema.org/Book">Книга</dd>
                                 <dt>Издательство:</dt>
                                 <dd
                                     itemprop="publisher"
                                     itemtype="http://schema.org/Organization"
-                                    itemscope="">
+                                    itemscope>
                                     АСТ, Астрель
                                 </dd>
                                 <dt><abbr title="Международный стандартный номер книги">ISBN:</abbr></dt>
@@ -182,8 +182,6 @@
                                 <dd itemprop="name">J. K. Rowling</dd>
                                 <dt>Дата рождения:</dt>
                                 <dd itemprop="birthDate">31 июля 1965</dd>
-                                <dt>Дата смерти:</dt>
-                                <dd itemprop="deathDate">–</dd>
                                 <dt>Место рождения:</dt>
                                 <dd itemprop="birthPlace">Глостершир, Англия</dd>
                                 <dt>Род деятельности:</dt>
@@ -256,7 +254,7 @@
                         <td>
                             <dl>
                                 <dt>Тип:</dt>
-                                <dd itemprop="about">Фильм</dd>
+                                <dd itemscope itemtype="http://schema.org/Movie">Фильм</dd>
                                 <dt>Год:</dt>
                                 <dd itemprop="datePublished" content="1998">1998 г</dd>
                                 <dt>Страна:</dt>
@@ -316,8 +314,6 @@
                                 <dd itemprop="name">Джеймс Кэмерон</dd>
                                 <dt>Дата рождения:</dt>
                                 <dd itemprop="birthDate">16 августа 1954</dd>
-                                <dt>Дата смерти:</dt>
-                                <dd itemprop="deathDate">–</dd>
                                 <dt>Место рождения:</dt>
                                 <dd itemprop="birthPlace">Капускасинг, Онтарио, Канада</dd>
                                 <dt>Род деятельности:</dt>
@@ -393,12 +389,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="date">Дата публикации</label><br>
-                                <input id="date" name="date" type="date" value="2015-10-14" max="2015-10-17">
+                                <label for="dateBook">Дата публикации</label><br>
+                                <input id="dateBook" name="date" type="date" value="2015-10-14" max="2015-10-17">
                             </td>
                             <td>
-                                <label for="date">Дата публикации</label><br>
-                                <input id="date" name="date" type="date" value="2015-10-14" max="2015-10-17">
+                                <label for="dateMovie">Дата публикации</label><br>
+                                <input id="dateMovie" name="date" type="date" value="2015-10-14" max="2015-10-17">
                             </td>
                         </tr>
                         <tr>
