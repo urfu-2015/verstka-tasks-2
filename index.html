@@ -1,3 +1,276 @@
-<html>
-    <!-- Ваш замечательный код -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Бабушкин сервант</title>
+        <style>
+            body
+            {
+                padding-left: 10px;
+            }
+
+            td
+            {
+                padding: 10px;  /*Чтобы лучше смотрелось*/
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>Популярное в Бабуленькином серванте</h1>
+            <article>
+                <h2>Война и Мир</h2>
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <img src="images\war.jpg" width="300" alt="War and Peace" title="War and Peace">
+                        </td>
+                        <td width="500" rowspan="2" itemscope itemtype="http://schema.org/Book">
+                            Тип: Книга<br>
+                            Издательство: <span itemprop="publisher">АСТ, Астрель</span><br>
+                            ISBN: <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
+                            Год: <time itemprop="dateCreated" datetime="1867">1867</time> г.<br>
+                            Тип издания: Авторский сборник<br>
+                            Язык: <span itemprop="inLanguage">Русский</span><br>
+                            Страниц: <span itemprop="numberOfPages">704</span> стр.<br>
+                            Формат: <span itemprop="bookFormat">ePub</span><br>
+                            Переплет: Твердый переплет<br>
+                            Дата размещения: <time itemprop="datePublished" datetime="2015-10-13">
+                            13 октября 2015</time><br>
+                            Жанр: <span itemprop="genre">Русская классика, Литература 19 века</span><br>
+                            URL: <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                            электронная версия</a><br>
+                            Описание: <span itemprop="description"><br>
+                            Великий роман-эпопея Льва Толстого чудесным образом, как огромная
+                            мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
+                            политических, философских, портретных, пейзажных, психологических...</span>
+                        </td>
+                        <td>
+                            <img src="images\lev.jpg" width="220" alt="Photo of L.N.Tolstoy" 
+                            title="L.N.Tolstoy">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <address itemscope itemtype="http://schema.org/Person">
+                                Автор: <span itemprop="givenName">Лев</span> 
+                                Николаевич <span itemprop="familyName">Толстой</span><br>
+                                Дата рождения: <time itemprop="birthDate" datetime="1828-08-16">
+                                16 августа 1828</time><br>
+                                Дата смерти: <time itemprop="deathDate" datetime="1910-11-07">
+                                7 ноября 1910</time><br>
+                                Место рождения: <span itemprop="birthPlace">Ясная Поляна, Тульская 
+                                губерния, Российская империя</span><br>
+                                Род деятельности: <span itemprop="jobTitle">прозаик, публицист, 
+                                философ</span>
+                            </address>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h2>Harry Potter and the Sorcerer's Stone</h2>
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <img src="images\potter.jpg" width="300" alt="Harry Potter" 
+                            title="Harry Potter and the Sorcerer's Stone">
+                        </td>
+                        <td width="500" rowspan="2" itemscope itemtype="http://schema.org/Book">
+                            Тип: Книга<br>
+                            Издательство: <span itemprop="publisher">АСТ, Астрель</span><br>
+                            ISBN: <span itemprop="isbn">978-0439708180</span><br>
+                            Год: <time itemprop="dateCreated">1998</time> г.<br>
+                            Язык: <span itemprop="inLanguage">English</span><br>
+                            Страниц: <span itemprop="numberOfPages">309</span> стр.<br>
+                            Формат: <span itemprop="bookFormat">pdf</span><br>
+                            Переплет: Мягкий переплет<br>
+                            Дата размещения: <time itemprop="datePublished" datetime="2015-10-04">
+                            4 октября 2015</time><br>
+                            Жанр: <span itemprop="genre">Fantasy, Adventure, Kids & Family</span><br>
+                            URL: <a href="http://babulenkin-servant.com/books/potter.pdf">
+                            электронная версия</a><br>
+                            Описание: <span itemprop="description" lang="en"><br>
+                            Harry Potter has no idea how famous he is. That's because he's
+                            being raised by his miserable aunt and uncle who are terrified Harry will
+                            learn that he's really a wizard, just as his parents were.</span>
+                        </td>
+                        <td>
+                            <img src="images\jkrowling.jpg" width="220" alt="Photo of J. K. Rowling" 
+                            title="J. K. Rowling">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <address itemscope itemtype="http://schema.org/Person">
+                                Автор: <span itemprop="givenName">J. K. </span> 
+                                <span itemprop="familyName">Rowling</span><br>
+                                Дата рождения: <time itemprop="birthDate" datetime="1965-07-31">
+                                31 июля 1965 года</time><br>
+                                Дата смерти: &ndash;<br>
+                                Место рождения: <span itemprop="birthPlace">Глостершир, Англия</span><br>
+                                Род деятельности: <span itemprop="jobTitle">прозаик</span><br>
+                                URL: <a href="http://www.jkrowling.com/">jkrowling.com</a>
+                                Адрес: <span itemprop="address">50 Bedford Square, London</span><br>
+                                Email: <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                            </address>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h2>Titanic</h2>
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <img src="images\titanic.jpg" width="300" alt="Titanic" title="Titanic">
+                        </td>
+                        <td width="500" rowspan="2" itemscope itemtype="http://schema.org/Movie">
+                            Тип: Фильм<br>
+                            Год: <time itemprop="datePublished">1997</time><br>
+                            Страна: <span itemprop="contentLocation">США</span><br>
+                            Слоган: «Ничто на Земле не сможет разлучить их»<br>
+                            Режиссер: <span = itemprop="director">Джеймс Кэмерон</span><br>
+                            Сценарий: <span itemprop="author">Джеймс Кэмерон<span><br>
+                            Продюсер: <span itemprop="producer">Джеймс Кэмерон, Джон Ландау, 
+                            Памела Исли</span><br>
+                            Оператор: <span itemprop="provider">Рассел Карпентер</span><br>
+                            Композитор: <span itemprop="musicBy">Джеймс Хорнер</span><br>
+                            Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
+                            Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
+                            Жанр: <span itemprop="genre">драма, мелодрама</span><br>
+                            Дата размещения: <time itemprop="datePublished" datetime="2015-10-01">
+                            1 октября 2015</time><br>
+                            URL: <span itemprop="video">
+                            <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                            смотреть онлайн</a></span><br>
+                            Описание: <span itemprop="description"><br>
+                            Молодые влюбленные Джек и Роза находят друг друга в первом и
+                            последнем плавании «непотопляемого» Титаника. Они не могли знать, что
+                            шикарный лайнер столкнется с айсбергом в холодных водах Северной 
+                            Атлантики, и их страстная любовь превратится в схватку со смертью.</span>
+                        </td>
+                        <td>
+                            <img src="images\kemeron1.jpg" width="220" alt="Photo of James Cameron" 
+                            title="James Cameron">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <address itemscope itemtype="http://schema.org/Person">
+                                Автор: <span itemprop="givenName">Джеймс</span> 
+                                <span itemprop="familyName">Кэмерон</span><br>
+                                Дата рождения: <time itemprop="birthDate" datetime="1954-08-16">
+                                16 августа 1954</time><br>
+                                Дата смерти: &ndash;<br>
+                                Место рождения: <span itemprop="birthPlace">Капускасинг, Онтарио, 
+                                Канада</span><br>
+                                Род деятельности: <span itemprop="jobTitle">продюсер, режиссер, 
+                                сценарист, актер</span>
+                            </address>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video width="300" src="video\titanic.mp4" controls></video>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </main>
+        <footer>
+            <h2>Добавление книги или фильма:</h2>
+            <form method="post">
+                <fieldset>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <label for="book">Книга</label>
+                                    <input type="radio" id="book" name="type" checked>
+                                </th>
+                                <th>
+                                    <label for="movie">Фильм</label>
+                                    <input type="radio" id="movie" name="type">
+                                </th>
+                                <th>
+                                    <label for="description">Описание:</label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" required placeholder="Название">
+                                </td>
+                                <td>
+                                    <input type="date" required placeholder="Год">
+                                </td>
+                                <td rowspan="7">
+                                    <textarea rows="14" cols="50" id="description"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Издательство">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Жанр">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="ISBN">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Страна">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Язык">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Режиссер">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Кол-во страниц">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Формат">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Информация об авторе:</legend>
+                    <p>
+                        <label for="author">Автор:</label>
+                        <input type="text" id="author" required>
+                    </p>
+                    <p>
+                        <label for="date_time">Дата рождения:</label>
+                        <input type="date" id="date_time" required>
+                    </p>
+                    <p>
+                        <label for="place">Место рождения:</label>
+                        <input type="text" id="place">
+                    </p>
+                    <p>
+                        <label for="activity">Род деятельности:</label>
+                        <input type="text" id="activity">
+                    </p>
+                    <p>
+                        <label for="post">Email:</label>
+                        <input type="email" id="post">
+                    </p>
+                </fieldset>
+                <input type="submit" value="Отправить">
+            </form>
+        </footer>
+    </body>
 </html>
