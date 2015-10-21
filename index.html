@@ -10,11 +10,11 @@
         <h1>Бабушкин сундук</h1>
     </header>
     <main>
-         <table>
-             <caption>Война и мир.</caption>
+         <table itemscope itemtype="http://schema.org/Book">
+             <caption itemprop="name">Война и мир.</caption>
              <tr>
                  <td colspan="2">
-                     <img src="http://storage_01.startwish.ru/images/48/a7/3499/f51c51842039fa2c366d4a8120c79bc24231_c.jpg"
+                     <img itemprop="image" src="http://storage_01.startwish.ru/images/48/a7/3499/f51c51842039fa2c366d4a8120c79bc24231_c.jpg"
                           alt="Война и мир">
                  </td>
              </tr>
@@ -24,31 +24,31 @@
              </tr>
              <tr>
                  <th>Издательство:</th>
-                 <td>АСТ, Астрель</td>
+                 <td itemprop="publisher">АСТ, Астрель</td>
              </tr>
              <tr>
                  <th>ISBN:</th>
-                 <td>5-17-006400-4,978-5-17-006400-7</td>
+                 <td itemprop="isbn">5-17-006400-4,978-5-17-006400-7</td>
              </tr>
              <tr>
                  <th>Год:</th>
-                 <td>1867 г</td>
+                 <td  itemprop="datePublished">1867 г</td>
              </tr>
              <tr>
                  <th>Тип издания:</th>
-                 <td>Авторский сборник</td>
+                 <td itemprop="bookEdition">Авторский сборник</td>
              </tr>
              <tr>
                  <th>Язык:</th>
-                 <td>Русский</td>
+                 <td itemprop="inLanguage" content="ru-RU">Русский</td>
              </tr>
              <tr>
                  <th>Страниц:</th>
-                 <td>704 стр.</td>
+                 <td itemprop="numberOfPages">704 стр.</td>
              </tr>
              <tr>
                  <th>Формат:</th>
-                 <td>ePub</td>
+                 <td itemprop="bookFormat">ePub</td>
              </tr>
              <tr>
                  <th>Переплет:</th>
@@ -56,51 +56,71 @@
              </tr>
              <tr>
                  <th>Дата размещения:</th>
-                 <td>8 котобря 2015</td>
+                 <td>
+                     <time datetime="2015-10-08">8 котобря 2015</time>
+                 </td>
              </tr>
              <tr>
                  <th>Жанр:</th>
-                 <td>Русская классика, Литература 19 века</td>
+                 <td itemprop="genre">Русская классика, Литература 19 века</td>
              </tr>
              <tr>
                  <th>URL:</th>
                  <td>
-                     <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                     <a itemprop="url" href="http://babulenkin-servant.com/books/war_and_peace.epub">
                          http://babulenkin-servant.com/books/war_and_peace.epub</a>
                  </td>
              </tr>
              <tr>
                  <th>Описание:</th>
-                 <td>Великий роман-эпопея Льва Толстого чудесным образом, как огромная<br>
+                 <td itemprop="description">Великий роман-эпопея Льва Толстого чудесным образом, как огромная<br>
                      мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,<br>
                      политических, философских, портретных, пейзажных, психологических...</td>
              </tr>
+         </table>
+         <table itemscope itemtype="http://schema.org/Person">
              <tr>
                  <th>Автор:</th>
-                 <td>Лев Николаевич Толстой</td>
+                 <td>
+                     <span itemprop="author">
+                         <span itemprop="givenName">Лев</span>
+                         <span itemprop="additionalName">Николаевич</span>
+                         <span itemprop="familyName">Толстой</span>
+                     </span>
+                 </td>
+             </tr>
+             <tr>
+                 <td colspan="2">
+                     <img itemprop="image" src="http://cs.pikabu.ru/images/big_size_comm/2013-06_4/13713934067576.jpg"
+                          alt="Лев Николаевич">
+                 </td>
              </tr>
              <tr>
                  <th>Дата рождения:</th>
-                 <td>16 августа 1828</td>
+                 <td itemprop="birthDate">
+                     <time datetime="1828-08-16">16 августа 1828</time>
+                 </td>
              </tr>
              <tr>
                  <th>Дата смерти:</th>
-                 <td>7 ноября 1910</td>
+                 <td itemprop="deathDate">
+                     <time datetime="1910-11-07">7 ноября 1910</time>
+                 </td>
              </tr>
              <tr>
                  <th>Место рождения:</th>
-                 <td>Ясная Поляна, Тульская губерния, Российская империя</td>
+                 <td itemprop="birthPlace">Ясная Поляна, Тульская губерния, Российская империя</td>
              </tr>
              <tr>
-                 <th>Род деятельности:</th>
+                 <th itemprop="jobTitle">Род деятельности:</th>
                  <td>прозаик, публицист, философ</td>
              </tr>
          </table>
-         <table>
+         <table itemscope itemtype="http://schema.org/Book">
              <caption>Harry Potter and the Sorcerer's Stone</caption>
              <tr>
                  <td colspan="2">
-                     <img src="http://www.pureimaginationblog.com/wp-content/uploads/2012/02/31028211-202x300.jpg"
+                     <img itemprop="image" src="http://www.pureimaginationblog.com/wp-content/uploads/2012/02/31028211-202x300.jpg"
                           alt="Garry Potter">
                  </td>
              </tr>
@@ -110,27 +130,27 @@
              </tr>
              <tr>
                  <th>Издательство:</th>
-                 <td>АСТ, Астрель</td>
+                 <td itemprop="publisher">АСТ, Астрель</td>
              </tr>
              <tr>
                  <th>ISBN:</th>
-                 <td>978-0439708180</td>
+                 <td itemprop="isbn">978-0439708180</td>
              </tr>
              <tr>
                  <th>Год:</th>
-                 <td>1998 г</td>
+                 <td itemprop="datePublished">1998 г</td>
              </tr>
              <tr>
                  <th>Язык:</th>
-                 <td>English</td>
+                 <td itemprop="inLanguage" content="en-GB">English</td>
              </tr>
              <tr>
                  <th>Страниц:</th>
-                 <td>309 стр.</td>
+                 <td itemprop="numberOfPages">309 стр.</td>
              </tr>
              <tr>
                  <th>Формат:</th>
-                 <td>pdf</td>
+                 <td itemprop="bookFormat">pdf</td>
              </tr>
              <tr>
                  <th>Переплет:</th>
@@ -138,64 +158,80 @@
              </tr>
              <tr>
                  <th>Дата размещения:</th>
-                 <td>4 котобря 2015</td>
+                 <td>
+                     <time datetime="2015-10-04">4 котобря 2015</time>
+                 </td>
              </tr>
              <tr>
                  <th>Жанр:</th>
-                 <td>Fantasy, Adventure, Kids & Family</td>
+                 <td itemprop="genre">Fantasy, Adventure, Kids & Family</td>
              </tr>
              <tr>
                  <th>URL:</th>
-                 <td>http://babulenkin-servant.com/books/potter.pdf</td>
+                 <td itemprop="url">http://babulenkin-servant.com/books/potter.pdf</td>
              </tr>
              <tr>
                  <th>Описание:</th>
-                 <td>Harry Potter has no idea how famous he is. That's because he's<br>
+                 <td itemprop="description">Harry Potter has no idea how famous he is. That's because he's<br>
                      being raised by his miserable aunt and uncle who are terrified Harry will<br>
                      learn that he's really a wizard, just as his parents were.</td>
              </tr>
+         </table>
+        <table itemscope itemtype="http://schema.org/Person">
              <tr>
                  <th>Автор:</th>
-                 <td>J. K. Rowling</td>
+                 <td itemprop="author">
+                     <span itemprop="givenName">J.</span>
+                     <span itemprop="additionalName">K.</span>
+                     <span itemprop="familyName">Rowling</span>
+                 </td>
              </tr>
+            <tr>
+                <td colspan="2">
+                    <img itemprop="image" src="http://potterland.ru/uploads/posts/2008-12/1228452717_276127935.jpg"
+                         alt="J. K. Rowling">
+                </td>
+            </tr>
              <tr>
                  <th>Дата рождения:</th>
-                 <td>31 июля 1965</td>
+                 <td itemprop="birthDate">
+                     <time datetime="1965-07-31">31 июля 1965</time>
+                 </td>
              </tr>
              <tr>
                  <th>Дата смерти:</th>
-                 <td>–</td>
+                 <td itemprop="deathDate">–</td>
              </tr>
              <tr>
                  <th>Место рождения:</th>
-                 <td>Глостершир, Англия</td>
+                 <td itemprop="birthPlace">Глостершир, Англия</td>
              </tr>
              <tr>
                  <th>Род деятельности:</th>
-                 <td>прозаик</td>
+                 <td itemprop="jobTitle">прозаик</td>
              </tr>
              <tr>
                  <th>URL:</th>
-                 <td><a href="http://jkrowling.com">jkrowling.com</a></td>
+                 <td><a itemprop="url" href="http://jkrowling.com">jkrowling.com</a></td>
              </tr>
              <tr>
                  <th>Адрес:</th>
-                 <td>50 Bedford Square, London</td>
+                 <td itemprop="address">50 Bedford Square, London</td>
              </tr>
              <tr>
                  <th>Email:</th>
-                 <td>info@jkrowlingpr.com</td>
+                 <td itemprop="email">info@jkrowlingpr.com</td>
              </tr>
          </table>
-        <table>
-            <caption>Titanic</caption>
+        <table itemscope itemtype="http://schema.org/Movie">
+            <caption itemprop="name">Titanic</caption>
             <tr>
                 <th>Тип:</th>
                 <td>Фильм</td>
             </tr>
             <tr>
                 <th>Год:</th>
-                <td>1997</td>
+                <td itemprop="datePublished">1997</td>
             </tr>
             <tr>
                 <th>Страна:</th>
@@ -207,15 +243,15 @@
             </tr>
             <tr>
                 <th>Режиссер:</th>
-                <td>Джеймс Кэмерон</td>
+                <td itemprop="director">Джеймс Кэмерон</td>
             </tr>
             <tr>
                 <th>Сценарий:</th>
-                <td>Джеймс Кэмерон</td>
+                <td itemprop="editor">Джеймс Кэмерон</td>
             </tr>
             <tr>
                 <th>Продюсер:</th>
-                <td>Джеймс Кэмерон, Джон Ландау, Памела Исли</td>
+                <td itemprop="producer">Джеймс Кэмерон, Джон Ландау, Памела Исли</td>
             </tr>
             <tr>
                 <th>Оператор:</th>
@@ -223,7 +259,7 @@
             </tr>
             <tr>
                 <th>Композитор:</th>
-                <td>Джеймс Хорнер</td>
+                <td itemprop="musicBy">Джеймс Хорнер</td>
             </tr>
             <tr>
                 <th>Художник:</th>
@@ -235,11 +271,13 @@
             </tr>
             <tr>
                 <th>Жанр:</th>
-                <td>драма, мелодрама</td>
+                <td itemprop="genre">драма, мелодрама</td>
             </tr>
             <tr>
                 <th>Дата размещения:</th>
-                <td>1 котобря 2015</td>
+                <td>
+                    <time datetime="2015-10-01">1 котобря 2015</time>
+                </td>
             </tr>
             <tr>
                 <th>URL:</th>
@@ -249,38 +287,52 @@
             </tr>
             <tr>
                 <th>Описание:</th>
-                <td>Молодые влюбленные Джек и Роза находят друг друга в первом и<br>
+                <td  itemprop="about">Молодые влюбленные Джек и Роза находят друг друга в первом и<br>
                     последнем плавании «непотопляемого» Титаника. Они не могли знать, что<br>
                     шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,<br>
                     и их страстная любовь превратится в схватку со смертью.</td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8536J4n20xA" allowfullscreen></iframe>
+                    <iframe itemprop="video" width="560" height="315" src="https://www.youtube.com/embed/8536J4n20xA" allowfullscreen></iframe>
+                </td>
+            </tr>
+            </table>
+            <table itemscope itemtype="http://schema.org/Person">
+            <tr>
+                <th>Автор:</th>
+                <td itemprop="author">
+                    <span itemprop="givenName">Джеймс</span>
+                    <span itemprop="familyName">Кэмерон</span>
+                </td>
+            </tr>
+                <tr>
+                    <td colspan="2">
+                        <img itemprop="image"
+                             src="http://www.golddisk.ru/people_photos/17/1727/big/1727_162c5d0d43b4c41a33281edefe16aece.jpg"
+                             alt="Джеймс Кэмерон">
+                    </td>
+                </tr>
+            <tr>
+                <th>Дата рождения:</th>
+                <td itemprop="birthDate">
+                    <time datetime="1954-08-16">16 августа 1954</time>
                 </td>
             </tr>
             <tr>
-                <th>Автор:</th>
-                <td>Джеймс Кэмерон</td>
-            </tr>
-            <tr>
-                <th>Дата рождения:</th>
-                <td>16 августа 1954</td>
-            </tr>
-            <tr>
                 <th>Дата смерти:</th>
-                <td>–</td>
+                <td itemprop="deathDate">–</td>
             </tr>
             <tr>
                 <th>Место рождения:</th>
-                <td>Капускасинг, Онтарио, Канада</td>
+                <td itemprop="birthPlace">Капускасинг, Онтарио, Канада</td>
             </tr>
             <tr>
                 <th>Род деятельности:</th>
-                <td>продюсер, режиссер, сценарист, актер</td>
+                <td itemprop="jobTitle">продюсер, режиссер, сценарист, актер</td>
             </tr>
         </table>
-        <form>
+        <form method="post">
             <label for="type">Тип произведения:</label>
             <input id="type" type="radio" name="type" checked>Книга
             <input type="radio" name="type">Фильм
@@ -395,4 +447,3 @@
     <footer></footer>
 </body>
 </html>
-
