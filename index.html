@@ -31,7 +31,7 @@
                             Название: <span itemprop="name">Война и мир</span>
                             Тип: Книга<br>
                             Издательство: <span itemprop="publisher">АСТ, Астрель</span><br>
-                            ISBN: <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span><br>
+                            ISBN: <span itemprop="isbn">5-17-006400-4</span>,<span itemprop="isbn">978-5-17-006400-7</span><br>
                             Год: <span itemprop="dateCreated">1867</span> г<br>
                             Тип издания: <span itemprop="additionalType">Авторский сборник</span><br>
                             Язык: <span itemprop="inLanguage">Русский</span><br>
@@ -39,7 +39,7 @@
                             Формат: <span itemprop="bookFormat">ePub</span><br>
                             Переплет: Твердый переплет<br>
                             Дата размещения: <time>8 котобря 2015</time><br>
-                            Жанр: <span itemprop="genre">Русская классика, Литература 19 века</span><br>
+                            Жанр: <span itemprop="genre">Русская классика</span>, <span itemprop="genre">Литература 19 века</span><br>
                             URL: <a href="http://babulenkin-servant.com/books/war_and_peace.epub" download
                                     type="application/epub+zip">Ссылка</a><br>
                             Описание: <span itemprop="description">Великий роман-эпопея Льва Толстого чудесным образом, как огромная
@@ -59,7 +59,7 @@
                             Формат: <span itemprop="bookFormat">pdf</span><br>
                             Переплет: Мягкий переплет<br>
                             Дата размещения: <time>4 котобря 2015</time><br>
-                            Жанр: <span itemprop="genre">Fantasy, Adventure, Kids & Family</span><br>
+                            Жанр: <span itemprop="genre">Fantasy</span>, <span itemprop="genre">Adventure</span>, <span itemprop="genre">Kids</span> & <span itemprop="genre">Family</span></span><br>
                             URL: <a href="http://babulenkin-servant.com/books/potter.pdf" download
                                     type="application/pdf">Ссылка</a><br>
                             Описание: <span itemprop="description">Harry Potter has no idea how famous he is. That's because he's
@@ -81,7 +81,7 @@
                             Композитор: <span itemprop="musicBy">Джеймс Хорнер</span><br>
                             Художник: Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
                             Монтаж: Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
-                            Жанр: <span itemprop="genre">драма, мелодрама</span><br>
+                            Жанр: <span itemprop="genre">драма</span>, <span> itemprop="genre">мелодрама</span><br>
                             Дата размещения: <time>1 котобря 2015</time><br>
                             URL: <a href="http://babulenkin-servant.com/films/titanic.mp4" download
                                     type="video/mp4">Ссылка</a><br>
@@ -111,7 +111,7 @@
                             Дата смерти: <span itemprop="deathDate"><time>7 ноября 1910</time></span><br>
                             Место рождения: <address><span itemprop="birthPlace">Ясная Поляна, Тульская губерния,
                             Российская империя</span></address><br>
-                            Род деятельности: <span itemprop="jobTitle">прозаик, публицист, философ</span>
+                            Род деятельности: <span itemprop="jobTitle">прозаик</span>, <span itemprop="jobTitle">публицист</span>, <span itemprop="jobTitle">философ</span>
                         </section>
                     </td>
                     <td>
@@ -132,7 +132,8 @@
                             Дата рождения: <span itemprop="birthDate"><time>16 августа 1954</time></span><br>
                             Дата смерти: –<br>
                             Место рождения: <span itemprop="birthPlace"><address>Капускасинг, Онтарио, Канада</address></span><br>
-                            Род деятельности: <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span>
+                            Род деятельности: <span itemprop="jobTitle">продюсер</span>, <span itemprop="jobTitle">режиссер</span>,
+                            <span itemprop="jobTitle">сценарист</span>, <span itemprop="jobTitle">актер</span>
                         </section>
                     </td>
                 </tr>
@@ -156,14 +157,14 @@
         <form method="post" action="add">
             <strong>Информация о книге или фильме</strong>
             <label for="title">Название книги или фильма</label>
-            <input id="title" name="title" type="text" multiple><br>
+            <input id="title" name="title" type="text" required><br>
             <label for="description">Описание книги или фильма</label>
-            <textarea id="description" name="description"></textarea><br>
+            <textarea id="description" name="description" required></textarea><br>
             <span>Тип</span><br>
             <input name="type" type="radio" value="Книга">Книга<br>
             <input name="type" type="radio" value="Фильм">Фильм<br>
             <label for="genre"></label>
-            <input id="genre" name="genre" type="text" multiple><br>
+            <input id="genre" name="genre" type="text" required><br>
             <label for="url">URL</label>
             <input id="url" name="url" type="url"><br>
             <label for="other">Прочее</label>
@@ -171,19 +172,19 @@
 
             <strong>Информация об авторе</strong><br>
             <label for="a_name">Имя</label>
-            <input id="a_name" name="a_name" type="text" multiple><br>
+            <input id="a_name" name="a_name" type="text" required><br>
             <label for="a_bd">Дата рождения</label>
-            <input id="a_bd" name="a_bd" type="date" multiple><br>
+            <input id="a_bd" name="a_bd" type="date"><br>
             <label for="a_bp">Место рождения</label>
-            <input id="a_bp" name="a_bp" type="text" multiple><br>
+            <input id="a_bp" name="a_bp" type="text"><br>
             <label for="a_dd">Дата смерти</label>
-            <input id="a_dd" name="a_dd" type="date" multiple><br>
+            <input id="a_dd" name="a_dd" type="date"><br>
             <label for="a_dp">Место смерти</label>
-            <input id="a_dp" name="a_dp" type="text" multiple><br>
+            <input id="a_dp" name="a_dp" type="text"><br>
             <label for="a_addr">Адрес</label>
-            <input id="a_addr" name="a_addr" type="text" multiple><br>
+            <input id="a_addr" name="a_addr" type="text"><br>
             <label for="a_w">Род деятельности</label>
-            <input id="a_w" name="a_w" type="text" multiple><br>
+            <input id="a_w" name="a_w" type="text"><br>
             <label for="a_mail">Email</label>
             <input id="a_mail" name="a_mail" type="email" multiple><br>
             <label for="a_other">Другое</label>
