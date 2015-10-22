@@ -1,3 +1,554 @@
+<!DOCTYPE html>
 <html>
-    <!-- Ваш замечательный код -->
+<html lang="ru">
+    <head>
+        <title>Бабуленькин сервант</title>
+        <meta charset = "UTF-8">
+    </head>
+    <body>
+        <h1>Бабуленькин сервант</h1>
+        <section itemscope itemtype="http://schema.org/Book">
+            <table width="700" height="600" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th colspan="2">
+                        <h2><span itemprop="name">Война и мир</span></h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="12">
+                        <img src="http://static.librebook.ru/uploads/pics/01/58/329.jpg" 
+                        height="450" width="330" alt="Война и Мир">
+                    </td>
+                    <td>
+                        <span style="font-weight:600">Тип:</span> <span itemprop="type">Книга</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Издательство:</span>
+                        <span itemprop="publisher">АСТ, Астрель</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="International Standard Book Number, Международный стандартный книжный 
+                        номер"><span style="font-weight:600">ISBN:</span></abbr>
+                        <span itemprop="isbn">5-17-006400-4,978-5-17-006400-7</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Год:</span>
+                        <span intemprop="datePublished"><time>1867</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Тип издания:</span>
+                        <span itemprop="bookEdition">Авторский сборник</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Язык:</span>
+                        <span itemprop="inLanguage">Русский</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Страниц:</span>
+                        <span itemprop="numberOfPages">704</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Формат:</span>
+                        <span itemprop="bookFormat">ePub</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Переплет:</span>
+                        <span itemprop="binding">Твердый переплет</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата размещения:</span>
+                        <span itemprop="dateCreated"><time datetime="2015-10-08">8 котобря 2015</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Жанр:</span>
+                        <span itemprop="genre">Русская классика, Литература 19 века</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">URL:</span>
+                        <span itemprop="url"><a href="http://babulenkin-servant.com/books/war_and_peace.epub"
+                        download type="application/ePub">
+                        babulenkin-servant.com/books/war_and_peace.epub</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="font-weight:600">Описание:</span>
+                        <p>Великий роман-эпопея Льва Толстого чудесным образом, как огромная мозаика, 
+                            сложен из тысяч картин - батальных, бальных, любовных, бытовых, политических, 
+                            философских, портретных, пейзажных, психологических...</p>
+                    </td>
+                </tr>
+                    <td colspan="2">
+                        <p>По книге также снят фильм, информацию о нём вы можете узнать 
+                            <a href="http://www.kinopoisk.ru/film/38898/">тут</a><br>
+                            Послушать аудиконигу вы можете 
+                            <a href="http://www.audioknigi-online.com/voiyna_i_mir.html">тут</a></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section itemscope itemtype="http://schema.org/Person">
+            <table width="700" height="400" cellpadding="5"  cellspacing="0">
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Автор:</span>
+                        <span itemprop="givenName">Лев Николаевич Толстой</span>
+                    </td>
+                    <td rowspan="5">
+                        <img src="http://anarchy.kalarupa.com/wp-content/uploads/anarchy/Tolstoy1.jpg" 
+                            width="300" height="390" alt="Лев Николаевич Толстой">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата рождения:</span>
+                        <span itemprop="birthDate"><time datetime="1828-08-16">16 августа 1828</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата смерти:</span>
+                        <span itemprop="deathDate"><time datetime="1910-11-07">7 ноября 1910</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Место рождения:</span>
+                        <span itemprop="birthPlace">Ясная Поляна, Тульская губерния,
+                        Российская империя</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Род деятельности:</span>
+                        <span itemprop="jubTitle">прозаик</span>,
+                        <span itemprop="jubTitle">публицист</span>,
+                        <span itemprop="jubTitle">философ</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section itemscope itemtype="http://schema.org/Book">
+            <table width="700" height="600" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th colspan="2">
+                        <h2><span itemprop="name" lang="en" translate="yes">
+                            Harry Potter and the Sorcerer's Stone</span></h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="11">
+                        <img src="http://www.marshall.edu/library/bannedbooks/Images/harrypotter1.jpg"
+                         height="450" width="330" alt="Harry Potter and the Sorcerer's Stone">
+                    </td>
+                    <td>
+                        <span style="font-weight:600">Тип:</span> <span itemprop="type">Книга</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Издательство:</span>
+                        <span itemprop="publisher">АСТ, Астрель</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="International Standard Book Number, Международный стандартный книжный 
+                        номер"><span style="font-weight:600">ISBN:</span></abbr> 
+                        <span itemprop="isbn">978-0439708180</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Год:</span>
+                        <span intemprop="datePublished"><time>1998</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Язык:</span> <span itemprop="inLanguage">English</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Страниц:</span>
+                        <span itemprop="numberOfPages">309</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Формат:</span> <span itemprop="bookFormat">pdf</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Переплет:</span>
+                        <span itemprop="binding">Мягкий переплет</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата размещения:</span>
+                        <span itemprop="dateCreated"><time datetime="2015-10-04">4 котобря 2015</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Жанр:</span>
+                        <span itemprop="genre" lang="en" translate="yes">Fantasy</span>,
+                        <span itemprop="genre" lang="en" translate="yes"> Adventure</span>,
+                        <span itemprop="genre" lang="en" translate="yes"> Kids & Family</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">URL:</span>
+                        <span itemprop="url"><a href="http://babulenkin-servant.com/books/potter.pdf"
+                        download type="application/pdf">
+                        http://babulenkin-servant.com/books/potter.pdf</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="font-weight:600">Описание:</span>
+                        <p lang="en" translate="yes">Harry Potter has no idea how famous he is. That's 
+                            because he's being raised by his miserable aunt and uncle who are terrified 
+                            Harry will learn that he's really a wizard, just as his parents were.</p>
+                    </td>
+                </tr>
+                    <td colspan="2">
+                        <p>По книге также снят фильм, информацию о нём вы можете узнать 
+                            <a href="http://www.kinopoisk.ru/film/689/">тут</a><br>
+                            Послушать аудиокнигу вы можете 
+                            <a href="http://www.audioknigi-online.com/filosofskiiy_kamen.html">тут</a></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section itemscope itemtype="http://schema.org/Person">
+            <table width="700" height="400" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Автор:</span>
+                        <span itemprop="givenName">J. K. Rowling</span>
+                    </td>
+                    <td rowspan="8">
+                        <img src="http://ic.pics.livejournal.com/daria_mare/16711818/182554/182554_600.jpg" 
+                        width="300" height="390" alt="J.K.Rowling">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата рождения:</span>
+                        <span itemprop="birthDate"><time datetime="1965-07-31">31 июля 1965</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата смерти:</span> <span itemprop="deathDate">-</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Место рождения:</span>
+                        <span itemprop="birthPlace">Глостершир, Англия</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Род деятельности:</span>
+                        <span itemprop="jubTitle">прозаик</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">URL:</span>
+                        <span itemprop="url"><a href="http://www.jkrowling.com/">jkrowling.com</a></span>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Адрес:</span>
+                        <span itemprop="adress" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="adressRegion">London</span>
+                            <span itemprop="streetAdress">Bedford Square, 50</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Email:</span>
+                        <span itemprop="email"><a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section itemscope itemtype="http://schema.org/Movie">
+            <table width="700" height="600" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th colspan="2">
+                        <h2><span itemprop="name">Titanic</span></h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan="14">
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/1/1b/Titanic_3D_Poster.jpg" 
+                        heigh="450" width="330" alt="Titanic">
+                    </td>
+                    <td>
+                        <span style="font-weight:600">Тип:</span> Фильм
+                    </td>
+                 </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Слоган:</span>
+                        <span itemprop="headline">Ничто на Земле не сможет разлучить их</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Год:</span>
+                        <span itemprop="datePublished"><time>1997</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Страна:</span>
+                        <span itemprop="contentLocation">США</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Режиссёр:</span>
+                        <span itemprop="director">Джеймс Кэмерон</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Сценарий:</span>
+                        <span itemprop="author">Джеймс Кэмерон</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Продюсер:</span>
+                        <span itemprop="producer">Джеймс Кэмерон</span>,
+                        <span itemprop="producer">Джон Ландау</span>,
+                        <span itemprop="producer">Памела Исли</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Оператор:</span>
+                        <span itemprop="provider">Рассел Карпентер</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Композитор:</span>
+                        <span itemprop="musicBy">Джеймс Хорнер</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Художники:</span>
+                        Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Монтаж:</span>
+                        Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата размещения:</span>
+                        <span itemprop="datePublished"><time datetime="2015-10-01">
+                        1 котобря 2015</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Жанр:</span>
+                        <span itemprop="genre">Драма</span>,
+                        <span itemprop="genre">мелодрама</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">URL:</span>
+                        <span itemprop="url"><a href="http://babulenkin-servant.com/films/titanic.mp4" 
+                        download type="application/mp4">
+                        http://babulenkin-servant.com/films/titanic.mp4</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="font-weight:600">Описание:</span>
+                        <p>Молодые влюбленные Джек и Роза находят друг друга в первом и последнем плавании
+                            «непотопляемого» Титаника. Они не могли знать, что шикарный лайнер столкнется с
+                            айсбергом в холодных водах Северной Атлантики, и их страстная любовь превратится
+                            в схватку со смертью.</p>
+                        <iframe width="680" height="420" src="https://www.youtube.com/embed/zCy5WQ9S4c0" 
+                        frameborder="0" allowfullscreen>
+                        </iframe>
+                        <video width="680" height="420" controls
+                        poster="http://www.kinonews.ru/insimgs/shotimg/shotimg18751_9.jpg">
+                            <source src="http://kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-95325.mp4" 
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            Элемент video не поддерживается вашим браузером.
+                            <a href="http://kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-95325.mp4">
+                            Скачайте видео</a>
+                        </video>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section itemscope itemtype="http://schema.org/Person">
+            <table width="700" height="400" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Автор:</span>
+                        <span itemprop="givenName">Джеймс Кэмерон</span>
+                    </td>
+                    <td rowspan="5">
+                        <img src="http://st.kp.yandex.net/images/actor_iphone/iphone360_27977.jpg" 
+                        width="260" height="390" alt="Джеймс Кэмерон">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата рождения:</span>
+                        <span itemprop="birthDate"><time datetime="1954-08-16">16 августа 1954</time></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Дата смерти:</span> <span itemprop="deathDate">-</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Место рождения:</span>
+                        <span itemprop="birthPlace">Капускасинг, Онтарио, Канада</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight:600">Род деятельности:</span>
+                        <span itemprop="jubTitle">продюсер</span>,
+                        <span itemprop="jubTitle">режиссёр</span>,
+                        <span itemprop="jubTitle">сценарист</span>,
+                        <span itemprop="jubTitle">актёр</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <table width="800" height="800" cellpadding="5" cellspacing="0">
+            <tr>
+                <td>
+                    <h2>Добавить фильм</h2>
+                </td>
+                <td>
+                    <h2>Добавить книгу</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <p><input placeholder="Название" type="text" required></p>
+                        <p><input placeholder="Год" type="number" min="0" size="4" required></p>
+                        <p><input placeholder="Страна" type="text"></p>
+                        <p><input placeholder="Слоган" type="text"></p>
+                        <p><input placeholder="Режиссёр" type="text" required></p>
+                        <p><input placeholder="Сценарист" type="text" required></p>
+                        <p><input placeholder="Продюсер" type="text" required></p>
+                        <p><input placeholder="Оператор" type="text"></p>
+                        <p><input placeholder="Композитор" type="text"></p>
+                        <p><input placeholder="Художник" type="text"></p>
+                        <p><input placeholder="Монтаж" type="text"></p>
+                        <p><input placeholder="Жанр" type=""></p>
+                        <p>Дата размещения:</p>
+                        <p><input type="date" required></p>
+                        <p><input placeholder="URL" type="url" required></p>
+                        <p><br><textarea placeholder="Описание" cols="40" rows="3"></textarea></p>
+                        <h3>Добавить информацию о режиссёре</h3>
+                        <p><input placeholder="имя, фамилия, отчество" type="text" required></p>
+                        <p>Дата рождения:</p>
+                        <p><input type="date"></p>
+                        <p>Дата смерти:</p>
+                        <p><input type="date"></p>
+                        <p><input placeholder="Место рождения" type="text"></p>
+                        <p><input placeholder="Род деятельности" type="text"></p>
+                        <p><input placeholder="URL" type="url"></p>
+                        <p><input placeholder="Адрес" type="text"></p>
+                        <p><input placeholder="Email" type="email"></p>
+                        <p><input type="submit" value="Добавить"></p>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <p><input placeholder="Название" type="text" required></p>
+                        <p><input placeholder="Издательство" type="text"></p>
+                        <p><input placeholder="ISBN" type="text"></p>
+                        <p><input placeholder="Год" type="number" min="0" required></p>
+                        <p><input placeholder="Тип издания" type="text"></p>
+                        <p><input placeholder="Язык" type="text"  required></p>
+                        <p><input placeholder="Количество страниц" type="number" min="0" required></p>
+                        <p>Формат:</p>
+                        <p><select>
+                                <option disabled>Формат:</option>
+                                <option selected value="pdf">pdf</option>
+                                <option value="epub">ePub</option>
+                                <option value="DjVu">DjVu</option>
+                                <option value="fb2">fb2</option>
+                            </select></p>
+                        <p>Переплет:</p>
+                        <p><input name="type" type="radio" value="limpBinding">Мягкий</p>
+                        <p><input name="type" type="radio" value="hardCover">Твердый</p>
+                        <p>Дата размещения:</p>
+                        <p><input type="date" required></p>
+                        <p><input placeholder="Жанр" type="text" required></p>
+                        <p><input placeholder="URL" type="url" required></p>
+                        <p><br><textarea placeholder="Описание" cols="40" rows="3"></textarea></p>
+                        <h3>Добавить информацию об авторе книги</h3>
+                        <p><input placeholder="имя, фамилия, отчество" type="text" required></p>
+                        <p>Дата рождения:</p>
+                        <p><input type="date"></p>
+                        <p>Дата смерти:</p>
+                        <p><input type="date"></p>
+                        <p><input placeholder="Место рождения" type="text"></p>
+                        <p><input placeholder="Род деятельности" type="text"></p>
+                        <p><input placeholder="URL" type="url"></p>
+                        <p><input placeholder="Адрес" type="text"></p>
+                        <p><input placeholder="Email" type="email"></p>
+                        <p><input type="submit" value="Добавить"></p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
