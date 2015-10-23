@@ -36,16 +36,17 @@
                             <dt>Переплет</dt>
                             <dd>Твердый переплет</dd>
                             <dt>Дата размещения</dt>
-                            <dd>
-                                <time itemprop="datePublished">
-                                    8 котобря 2015
-                                </time>
+                            <dd itemprop="datePublished">
+                                8 котобря 2015
                             </dd>
                             <dt>Жанр</dt>
                             <dd itemprop="genre">Русская классика, Литература 19 века</dd>
                             <dt>URL</dt>
                             <dd>
-                                <a href="http://babulenkin-servant.com/books/war_and_peace.epub" itemprop="url" download>
+                                <a href="http://babulenkin-servant.com/books/war_and_peace.epub"
+                                itemprop="url" 
+                                type="application/epub+zip"
+                                download>
                                     http://babulenkin-servant.com/books/war_and_peace.epub
                                 </a>
                             </dd>  
@@ -77,7 +78,9 @@
                                 <audio controls>
                                     <source src="http://www.mp3prikol.ru/mp3/music/titanic.mp3" type="audio/mp3">
                                     Аудио не поддерживается.
-                                    <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp3" download>Скачайте</a> его.
+                                    <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp3"
+                                    type="audio/mpeg"
+                                    download>Скачайте</a> его.
                                 </audio>
                             </article>
                         </section>
@@ -88,7 +91,7 @@
                         <img itemprop="image" src="https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg" alt="" />
                     </td>
                     <td>
-                        <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
+                        <h2 itemprop="name" lang="en">Harry Potter and the Sorcerer's Stone</h2>
                         <dl>
                             <dt>Тип</dt>
                             <dd>Книга</dd>
@@ -109,16 +112,17 @@
                             <dt>Переплет</dt>
                             <dd>Мягкий переплет</dd>
                             <dt>Дата размещения</dt>
-                            <dd>
-                                <time itemprop="datePublished">
-                                    4 котобря 2015
-                                </time>
+                            <dd itemprop="datePublished">
+                                4 котобря 2015
                             </dd>
                             <dt>Жанр</dt>
                             <dd itemprop="genre">Fantasy, Adventure, Kids & Family</dd>
                             <dt>URL</dt>
                             <dd>
-                                <a href="http://babulenkin-servant.com/books/potter.pdf" itemprop="url" download>
+                                <a href="http://babulenkin-servant.com/books/potter.pdf" 
+                                type="application/pdf"
+                                itemprop="url" 
+                                download>
                                     http://babulenkin-servant.com/books/war_and_peace.epub
                                 </a>
                             </dd>  
@@ -150,7 +154,9 @@
                                 <audio controls>
                                     <source src="http://www.mp3prikol.ru/mp3/music/titanic.mp3" type="audio/mpeg">
                                     Аудио не поддерживается.
-                                    <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp3" download>Скачайте</a> его.
+                                    <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp3"
+                                    type="audio/mpeg"
+                                    download>Скачайте</a> его.
                                 </audio>
                             </article>
                         </section>
@@ -162,7 +168,9 @@
                             <source src="http://www.mp3prikol.ru/mp3/music/titanic.mp4" type="video/mp4" />
                             <track label="English" kind="subtitles" srclang="en" src="http://www.mp3prikol.ru/mp3/music/titanic.vtt" default />
                             Видео не поддерживается.
-                            <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp4" download>Скачайте</a> его.                    
+                            <a href="http://www.mp3prikol.ru/mp3/music/titanic.mp4" 
+                            type="video/mp4"
+                            download>Скачайте</a> его.                    
                         </video>
                     </td>
                     <td>
@@ -193,14 +201,15 @@
                             <dt>Жанр</dt>
                             <dd itemprop="genre">драма, мелодрама</dd>
                             <dt>Дата размещения</dt>
-                            <dd>
-                                <time itemprop="datePublished">
-                                    1 котобря 2015
-                                </time>
+                            <dd itemprop="datePublished">
+                                1 котобря 2015
                             </dd>
                             <dt>URL</dt>
                             <dd>
-                                <a href="http://babulenkin-servant.com/films/titanic.mp4" itemprop="url" download>
+                                <a href="http://babulenkin-servant.com/films/titanic.mp4" 
+                                itemprop="url" 
+                                type="video/mp4"
+                                download>
                                     http://babulenkin-servant.com/films/titanic.mp4
                                 </a>
                             </dd>
@@ -244,7 +253,7 @@
                 <header>
                     <h2>Книга:</h2>
                 </header>
-                <form>
+                <form action="addbook" method="post">
                     <div>
                         <label for="book-name">Название:</label>
                         <input type="text" id="book-name" name="name" required>
@@ -282,6 +291,21 @@
                         <input type="number" id="book-pages" name="pages">
                     </div>
                     <div>
+                        <label for="book-covertype">Переплет:</label>
+                        <select id="book-covertype" name="covertype">
+                            <option value="hard">Твердый</option>
+                            <option value="soft">Мягкий</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="book-сover">Обложка:</label>
+                        <input type="file" id="book-сover" name="cover" accept="image/*">
+                    </div>
+                    <div>
+                        <label for="book-file">Файл для скачивания:</label>
+                        <input type="file" id="book-file" name="file">
+                    </div>
+                    <div>
                         <label for="book-url">URL:</label>
                         <input type="url" id="book-url" name="url">
                     </div>
@@ -299,7 +323,7 @@
                 <header>
                     <h2>Фильм:</h2>
                 </header>
-                <form>
+                <form action="addfilm" method="post">
                     <div>
                         <label for="film-name">Название:</label>
                         <input type="text" id="film-name" name="name" required>
@@ -335,6 +359,14 @@
                     <div>
                         <label for="film-length">Продолжительность (в минутах):</label>
                         <input type="number" id="film-length" name="length">
+                    </div>
+                    <div>
+                        <label for="film-cover">Обложка:</label>
+                        <input type="file" id="film-cover" name="cover" accept="image/*">
+                    </div>
+                    <div>
+                        <label for="film-file">Файл для скачивания:</label>
+                        <input type="file" id="film-file" name="file">
                     </div>
                     <div>
                         <label for="film-url">URL:</label>
