@@ -12,8 +12,10 @@
                     <header>
                         <h2 itemprop="name">Война и мир</h2>
                     </header>
-                    <img src="images/warAndPeaceIcon.jpg" itemprop="image"
-                         alt="War and peace book icon" height="300px">
+                    <img src="images/warAndPeaceIcon.jpg"
+                         srcset="images/warAndPeaceIcon.jpg, images/warAndPeaceIconSmall.jpg 400w"
+                         itemprop="image"
+                         alt="War and peace book icon">
                     <div>
                         <em>Тип:</em>Книга<br>
                         <em>Издательство:</em><span itemprop="publisher">АСТ, Астрель</span>
@@ -23,7 +25,7 @@
                         </em>
                         <span itemprop="isbn">5-17-006400-4</span>,
                         <span itemprop="isbn">978-5-17-006400-7</span>
-                        </br>
+                        <br>
                         <em>Год:</em><time itemprop="dateCreated">1867</time>г<br>
                         <em>Тип издания:</em><span itemprop="bookEdition">Авторский сборник</span><br>
                         <em>Язык:</em><span itemprop="inLanguage">Русский</span><br>
@@ -48,7 +50,7 @@
                             политических, философских, портретных, пейзажных, психологических...
                         </span>
                         <br>
-                        <em itemscope itemtype="http://schema.org/Audiobook">Аудиокнига:</em>
+                        <em>Аудиокнига:</em>
                         <em>
                             <a href="http://audioknigi.club/tolstoy-lev-voyna-i-mir-prudovskiy-ilya" itemprop="url">
                                 http://audioknigi.club/tolstoy-lev-voyna-i-mir-prudovskiy-ilya
@@ -57,7 +59,9 @@
                         <em>Фильм:</em>Да
                     </div>
                     <div itemprop="author"  itemscope itemtype="http://schema.org/Person">
-                        <img src="images/tolstoy.jpg" itemprop="image" alt="Lev Tolstoy" height="250px"><br>
+                        <img src="images/tolstoy.jpg"
+                             srcset="images/tolstoy.jpg, images/tolstoySmall.jpg 400w"
+                             itemprop="image" alt="Lev Tolstoy"><br>
                         <em>Автор:</em>
                         <span itemprop="givenName">Лев</span>
                         Николаевич
@@ -84,8 +88,11 @@
                     <header>
                         <h2><span itemprop="name" lang="en">Harry Potter and the Sorcerer's Stone</span></h2>
                     </header>
-                    <img src="images/HarryPotterBook.jpg" itemprop="image"
-                         alt="Harry Potter book icon" height="300px">
+                    <img src="images/HarryPotterBook.jpg"
+                         srcset="images/HarryPotterBook.jpg, images/HarryPotterBookSmall.jpg 400w"
+                         itemprop="image"
+                         alt="Harry Potter book icon"
+                         >
                     <div>
                         <em>Тип:</em>Книга<br>
                         <em>Издательство:</em><span itemprop="publisher">АСТ, Астрель</span><br>
@@ -114,12 +121,9 @@
                             learn that he's really a wizard, just as his parents were.
                         </span>
                         <br>
-                        <em itemscope itemtype="http://schema.org/Audiobook">Аудиокнига:</em>
-                        <a href="https://soundcloud.com/pottermore/
-                        +harry-potter-and-the-philosophers-stone-stephen-fry-audio-book" itemprop="url">
-                            https://soundcloud.com/pottermore/
-                            harry-potter-and-the-philosophers-stone-stephen-fry-audio-book
-                        </a>
+                        <em>Аудиокнига:</em>
+                        (отрывок)
+                        <audio src="HPchapter1.mp3" controls></audio>
                         <br>
                         <em>Фильм:</em>Да<br>
                         <em>Трейлер к фильму:</em><br>
@@ -131,10 +135,12 @@
                     </video>
                     <br>
                     <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <img src="images/rowling.jpeg" itemprop="image" alt="J.K.Rowling" height="250px"><br>
-                        <em>Автор:</em><span itemprop="author" lang="en">J.K.Rowling</span><br>
+                        <img src="images/rowling.jpeg"
+                             srcset="images/rowling.jpeg, images/rowlingSmall.jpeg 400w"
+                             itemprop="image" alt="J.K.Rowling"><br>
+                        <em>Автор:</em>J.K.<span itemprop="familyName" lang="en">Rowling</span><br>
                         <em>Дата рождения:</em><time itemprop="birthDate">1965-07-31</time><br>
-                        <em>Дата смерти:</em><span itemprop="deathDate">-</span>
+                        <em>Дата смерти:</em>-
                         <br>
                         <em itemprop="birthPlace">Место рождения:</em>
                         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -161,9 +167,10 @@
                     <header>
                         <h2><span itemprop="name">Titanic</span></h2>
                     </header>
-                    <video width="460" height="315" controls poster="images/titanicIcon.jpg">
+                    <video itemprop="trailer" width="460" height="315" controls poster="images/titanicIcon.jpg">
+                        <track kind="subtitles" src="videos/subtitles.vtt" srclang="ru" label="Русский" default>
                         <source src="videos/titanicTrailer.mp4"
-                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                type='video/mp4' itemprop="video">
                         Элемент video не поддерживается вашим браузером.
                     </video>
                     <div>
@@ -204,10 +211,15 @@
                         </span>
                     </div>
                     <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <img src="images/cameron.jpg" itemprop="image" alt="James Cameron" height="250px"><br>
-                        <em>Автор:</em><span itemprop="author">Джеймс Кэмерон</span><br>
+                        <img src="images/cameron.jpg"
+                             srcset="images/cameron.jpg images/cameronSmall.jpg 400w"
+                             itemprop="image" alt="James Cameron"><br>
+                        <em>Автор:</em>
+                        <span itemprop="name">Джеймс</span>
+                        <span itemprop="familyName">Кэмерон</span>
+                        <br>
                         <em>Дата рождения:</em><time itemprop="birthDate">1954-08-16</time><br>
-                        <em>Дата смерти:</em><span itemprop="deathDate">-</span>
+                        <em>Дата смерти:</em>-
                         <br>
                         <em itemprop="birthPlace">Место рождения:</em>
                         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
