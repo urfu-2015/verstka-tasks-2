@@ -307,10 +307,12 @@
             <label for="audio">Аудио версия книги</label>
             <input id="audio" name="audio" type="file" value="" accept="image/jpeg,image/png,image/gif"><br>
             <label for="picture">Обложка книги</label>
-            <input id="picture" name="picture" type="image" value=""><br>
-            <label for="cover">Тип переплета</label>
-            <input id="cover" name="cover" type="radio" value="Мягкая">
-            <input name="cover" type="radio" value="Твёрдая"><br>
+            <input id="picture" name="picture" type="file" accept="image/*"><br>
+            <label>Тип переплета:</label>
+            <label for="soft-cover">Мягкий</label>
+            <input id="soft-cover" name="cover" type="radio" value="Мягкая">
+            <label for="hard-cover">Твердый</label>
+            <input id="hard-cover" name="cover" type="radio" value="Твёрдая"><br>
             <label for="date">Дата публикации</label>
             <input id="date" name="date" type="date" value="2015-10-12" max="2015-10-17"><br>
             <label for="email">Электронная почта автора</label>
@@ -331,12 +333,10 @@
             <input id="title_m" name="title" placeholder="Война и мир"><br>
             <label for="author_m">Автор</label>
             <input id="author_m" name="author" placeholder="Джеймс Кэмерон"><br>
-            <label for="author">Автор</label>
-            <input id="Сценарий" name="author" placeholder="Джеймс Кэмерон"><br>
             <label for="video">Трейлер</label>
             <input id="video" name="video" type="file" accept="video/*"><br>
             <label for="picture_m">Постер</label>
-            <input id="picture_m" name="picture" type="image" value=""><br>
+            <input id="picture_m" name="picture" type="file" accept="image/*"><br>
             <label for="operator">Оператор</label>
             <input id="operator" name="author" placeholder="Рассел Карпентер"><br>
             <label for="plot">Композитор</label>
