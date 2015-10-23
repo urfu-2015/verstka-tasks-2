@@ -10,9 +10,10 @@
     <meta property="og:image" content="http://s1.iconbird.com/ico/1012/EcommerceBusinessIcons/w96h961350823043filecabinet96x96.png">
     <meta property="og:title" content="Бабуленькин Сервант.">
     <meta property="og:description" content="Только здесь все книги и фильмы из старого серванта!">
-    <script type="text/javascript">
-        function coverChange(sel){
-            var val = (sel.value || sel.options[sel.selectedIndex].value);
+    <script>
+        function onCoverChange(){
+            var cover = document.getElementById('cover');
+            var val = cover.value || cover.options[sel.selectedIndex].value;
             if (val === 'Book') {
                 document.getElementById('addBook').style.cssText = '';
                 document.getElementById('addFilm').style.cssText = 'position: absolute; top: -9999px';
@@ -25,10 +26,10 @@
 </head>
 <body>
     <main>
-        <article class="info">
+        <article>
             <table itemscope="" itemtype="http://schema.org/Book" width="100%">
                 <caption>
-                    <h3 itemprop="name">Война и мир.</h3>
+                    <h3 itemprop="name" translate="no">Война и мир.</h3>
                 </caption>
                 <tr>
                     <td rowspan="12" width="256px">
@@ -78,7 +79,7 @@
                 </tr>
                 <tr>
                     <td>Дата размещения:</td>
-                    <td>
+                    <td itemprop="datePublished">
                         <time datetime="2015-10-08">8 октября 2015</time>
                     </td>
                 </tr>
@@ -89,7 +90,7 @@
                 <tr>
                     <td>URL:</td>
                     <td itemprop="url">
-                        <a href="http://babulenkin-servant.com/books/war_and_peace.epub">
+                        <a href="http://babulenkin-servant.com/books/war_and_peace.epub" download>
                             http://babulenkin-servant.com/books/war_and_peace.epub
                         </a>
                     </td>
@@ -109,12 +110,13 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <table class="author" itemprop="author" width="100%">
+                        <table class="author" itemprop="author" itemscope itemtype="http://schema.org/Person" width="100%">
                             <tr>
                                 <td width="128px">
                                     <img
                                         src="http://kursktv.ru/sites/default/files/be8c3d7e8775c554522f12c6e8c632c7a65d1d16.jpg"
                                         alt="Лев Николаевич Толстой"
+                                        itemprop="image"
                                         width="128px"
                                     >
                                 </td>
@@ -136,15 +138,17 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <audio src="kdsjkldg.ru/wap.mp3" preload controls></audio>
+                        <audio preload controls>
+                            <source src="kdsjkldg.ru/wap.mp3" type="audio/mpeg">
+                        </audio>
                     </td>
                 </tr>
             </table>
         </article>
-        <article class="info">
+        <article>
             <table itemscope="" itemtype="http://schema.org/Book" width="100%">
                 <caption>
-                    <h3 itemprop="name">Harry Potter and the Sorcerer's Stone.</h3>
+                    <h3 itemprop="name" translate="no">Harry Potter and the Sorcerer's Stone.</h3>
                 </caption>
                 <tr>
                     <td rowspan="12" width="256px">
@@ -194,7 +198,7 @@
                 </tr>
                 <tr>
                     <td>Дата размещения:</td>
-                    <td>
+                    <td itemprop="datePublished">
                         <time datetime="2015-10-04">4 октября 2015</time>
                     </td>
                 </tr>
@@ -205,7 +209,7 @@
                 <tr>
                     <td>URL:</td>
                     <td itemprop="url">
-                        <a href="http://babulenkin-servant.com/books/potter.pdf">
+                        <a href="http://babulenkin-servant.com/books/potter.pdf" download>
                             http://babulenkin-servant.com/books/potter.pdf
                         </a>
                     </td>
@@ -225,12 +229,13 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <table class="author" itemprop="author" width="100%">
+                        <table class="author" itemprop="author" itemscope itemtype="http://schema.org/Person" width="100%">
                             <tr>
                                 <td width="128px">
                                     <img
                                         src="http://www.ekonomikibris.com/images/galeri/6646853.jpg"
                                         alt="J. K. Rowling"
+                                        itemprop="image"
                                         width="128px"
                                     >
                                 </td>
@@ -255,15 +260,17 @@ Email: info@jkrowlingpr.com
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <audio src="kdsjkldg.ru/wap.mp3" preload controls></audio>
+                        <audio preload controls>
+                            <source src="kdsjkldg.ru/hpf.mp3" type="audio/mpeg">
+                        </audio>
                     </td>
                 </tr>
             </table>
         </article>
-        <article class="info">
+        <article>
             <table itemscope="" itemtype="http://schema.org/Movie" width="100%">
                 <caption>
-                    <h3 itemprop="name">Titanic.</h3>
+                    <h3 itemprop="name" translate="no">Titanic.</h3>
                 </caption>
                 <tr>
                     <td rowspan="14" width="256px">
@@ -325,14 +332,14 @@ Email: info@jkrowlingpr.com
                 </tr>
                 <tr>
                     <td>Дата размещения:</td>
-                    <td>
+                    <td itemprop="datePublished">
                         <time datetime="2015-10-01">1 октября 2015</time>
                     </td>
                 </tr>
                 <tr>
                     <td>URL:</td>
                     <td itemprop="url">
-                        <a href="http://babulenkin-servant.com/films/titanic.mp4">
+                        <a href="http://babulenkin-servant.com/films/titanic.mp4" download>
                             http://babulenkin-servant.com/films/titanic.mp4
                         </a>
                     </td>
@@ -353,12 +360,13 @@ Email: info@jkrowlingpr.com
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <table class="author" itemprop="author" width="100%">
+                        <table class="author" itemprop="author" itemscope itemtype="http://schema.org/Person" width="100%">
                             <tr>
                                 <td width="128px">
                                     <img
                                         src="http://lichnosti.net/photos/973/12148441714.jpg"
                                         alt="Джеймс Кэмерон"
+                                        itemprop="image"
                                         width="128px"
                                     >
                                 </td>
@@ -380,7 +388,9 @@ Email: info@jkrowlingpr.com
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <video src="http://babulenkin-servant.com/films/titanic.mp4" preload controls></video>
+                        <video preload controls>
+                            <source src="http://babulenkin-servant.com/films/titanic.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
                     </td>
                 </tr>
             </table>
@@ -389,7 +399,7 @@ Email: info@jkrowlingpr.com
     <section>
         <form action="index.html" method="POST">
             <label for="cover">Тип:</label>
-            <select id="cover" name="cover" onChange="coverChange(this)">
+            <select id="cover" name="cover" onChange="onCoverChange()">
                 <option value="Book" selected>Книга</option>
                 <option value="Film">Фильм</option>
             </select><br>
@@ -409,7 +419,10 @@ Email: info@jkrowlingpr.com
                 <label for="bookFormat">Формат:</label>
                 <input id="bookFormat" name="bookFormat" required><br>
                 <label for="bookCover">Переплет:</label>
-                <input id="bookCover" name="bookCover" required><br>
+                <select id="bookCover" name="bookCover">
+                    <option value="0" selected>твердый</option>
+                    <option value="1">мягкий</option>
+                </select><br>
             </div>
             <div id="addFilm" style="position: absolute; top: -9999px">
                 <label for="country">Страна:</label>
@@ -429,6 +442,8 @@ Email: info@jkrowlingpr.com
                 <label for="cutting">Монтаж:</label>
                 <input id="cutting" name="cutting" required><br>
             </div>
+            <label for="datePublished">Дата публикации:</label>
+            <input id="datePublished" name="datePublished" required type="date"><br>
             <label for="genre">Жанр:</label>
             <input id="genre" name="genre" required><br>
             <label for="url">URL:</label>
@@ -436,7 +451,7 @@ Email: info@jkrowlingpr.com
             <label for="description">Описание:</label>
             <textarea id="description" name="description" required></textarea><br>
             <label for="authorUrl">Картинка автора:</label>
-            <input id="authorUrl" name="authorUrl" required><br>
+            <input id="authorUrl" name="authorUrl" required type="file" value="" accept="image/jpeg,image/png,image/gif"><br>
             <label for="authorText">Про автора:</label>
             <textarea id="authorText" name="authorText" required></textarea><br>
             <button type="submit">Добавить</button>
