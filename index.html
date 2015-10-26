@@ -42,8 +42,8 @@
                         <article>
                             <img src="http://velikielyudi.ru/wp-content/uploads/2013/04/Lev_Tolstoy.jpg" height="300">
                             <br><strong>Автор:</strong> Лев Николаевич Толстой<br>
-                            <strong>Дата рождения:</strong><time datetime="1828-08-16"> 16 августа 1828</time><br>
-                            <strong>Дата смерти</strong><time datetime="1910-11-07"> 7 ноября 1910</time> <br>
+                            <strong>Дата рождения:</strong> <time datetime="1828-08-16">16 августа 1828</time><br>
+                            <strong>Дата смерти:</strong> <time datetime="1910-11-07">7 ноября 1910</time> <br>
                             <strong>Место рождения:</strong> Ясная Поляна, Тульская губерния, Российская империя<br>
                             <strong>Род деятельности:</strong> прозаик, публицист, философ<br>
                         </article>
@@ -61,7 +61,7 @@
                         <img src="http://j.livelib.ru/boocover/1000332023/o/dee8/J.K.Rowling__Harry_Potter_and_the_Sorcerers_Stone.jpeg"
                              height="300">
                         <article>
-                            <strong>Тип</strong>: Книга<br>
+                            <strong>Тип:</strong> Книга<br>
                             <strong>Издательство:</strong> АСТ, Астрель<br>
                             <strong>ISBN:</strong> 978-0439708180<br>
                             <strong>Год:</strong> 1998 г<br>
@@ -82,11 +82,11 @@
                             <img src="http://www.onelifesuccess.net/wp-content/uploads/2014/01/jk-rowling-official-portrait.jpg"
                                  height="300">
                             <br><strong>Автор:</strong> J. K. Rowling<br>
-                            <strong>Дата рождения:</strong><time datetime="1965-06-31"> 31 июля 1965</time><br>
-                            <strong>Дата смерти</strong> -</time> <br>
+                            <strong>Дата рождения:</strong> <time datetime="1965-06-31">31 июля 1965</time><br>
+                            <strong>Дата смерти</strong> -<br>
                             <strong>Место рождения:</strong> Глостершир, Англия<br>
                             <strong>Род деятельности:</strong> прозаик<br>
-                            <strong>URL:</strong><a href="jkrowling.com"> jkrowling.com</a><br>
+                            <strong>URL:</strong> <a href="jkrowling.com">jkrowling.com</a><br>
                             <strong>Адрес:</strong> <address>50 Bedford Square, London</address><br>
                             <strong>Email:</strong> <address>info@jkrowlingpr.com</address>
                         </article>
@@ -105,7 +105,7 @@
                             <source src="https://youtu.be/qFjyxJ21VJY">
                         </video>
                         <article>
-                            <strong>Тип</strong>: Фильм<br>
+                            <strong>Тип:</strong> Фильм<br>
                             <strong>Год:</strong> 1997 г<br>
                             <strong>Страна:</strong> США<br>
                             <strong>Слоган:</strong> <q>Ничто на Земле не сможет разлучить их</q><br>
@@ -117,7 +117,7 @@
                             <strong>Художник:</strong> Питер Ламонт, Мартин Лэйн, Чарльз Дуайт Ли<br>
                             <strong>Монтаж:</strong> Конрад Бафф IV, Джеймс Кэмерон, Ричард А. Харрис<br>
                             <strong>Жанр:</strong> драма, мелодрама<br>
-                            <strong>Дата размещения:</strong><time datetime="2015-10-1"> 1 октября 2015</time><br>
+                            <strong>Дата размещения:</strong> <time datetime="2015-10-1">1 октября 2015</time><br>
                             <strong>URL:</strong> <a href="http://babulenkin-servant.com/films/titanic.mp4">http://babulenkin-servant.com/films/titanic.mp4</a><br>
                             <strong>Описание:</strong> Молодые влюбленные Джек и Роза находят друг друга в первом и
                             последнем плавании «непотопляемого» Титаника. Они не могли знать, что
@@ -130,8 +130,8 @@
                             <img src="http://www.yugopolis.ru/data/mediadb/2383/0000/0536/53607/466x10000_out__.jpg"
                                  height="300">
                             <br><strong>Автор:</strong> Джеймс Кэмерон<br>
-                            <strong>Дата рождения:</strong><time datetime="1954-08-16"> 16 августа 1954</time><br>
-                            <strong>Дата смерти</strong> -</time> <br>
+                            <strong>Дата рождения:</strong> <time datetime="1954-08-16">16 августа 1954</time><br>
+                            <strong>Дата смерти</strong> -<br>
                             <strong>Место рождения:</strong> Капускасинг, Онтарио, Канада<br>
                             <strong>Род деятельности:</strong> продюсер, режиссер, сценарист, актер<br>
                         </article>
@@ -155,8 +155,14 @@
                 <div align="center"><label for="picture">Обложка</label></div>
                 <div align="center"><input name="picture" type="file"></div>
                 <br>
-                <div align="center"><label for="additionalInfo">Дополнительная информация</label> </div>
-                <div align="center"><input name="AdditionalInfo" id="additionalInfo" type="text"> </div>
+                <div align="center"><label for="author">Автор</label></div>
+                <div align="center"><input name="author" id="author" type="text"></div>
+                <br>
+                <div align="center"><label for="info">Информация об авторе</label></div>
+                <div align="center"><textarea name="info" id="info" type="text" cols="50" rows="10"></textarea></div>
+                <br>
+                <div align="center"><label for="additional">Доп. информация о книге/фильме</label></div>
+                <div align="center"><textarea name="additional" id="additional" type="text" cols="50" rows="10"></textarea></div>
                 <br>
                 <div align="center"><button type="submit">Отправить</button></div>
             </form>
