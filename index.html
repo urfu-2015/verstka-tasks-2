@@ -12,9 +12,9 @@
         </header>
         <section>
             <hr>
-            <article>
-                <h2>Война и мир</h2>
-                <img src="warandpeace.jpg" alt="Обложка книги 'Война и Мир'" height="400">
+            <article itemscop  itemtype="http://schema.org/Book">
+                <h2 itemprop="name">Война и мир</h2>
+                <img src="warandpeace.jpg" alt="Обложка книги 'Война и Мир'" height="400" itemprop="image">
                 <table>
                     <tbody>
                         <tr>
@@ -23,15 +23,17 @@
                         </tr>
                         <tr>
                             <td>Издательство:</td>
-                            <td>АСТ, Астрель</td>
+                            <td itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+                                АСТ, Астрель
+                            </td>
                         </tr>
                         <tr>
                             <td>ISBN:</td>
-                            <td>5-17-006400-4,978-5-17-006400-7</td>
+                            <td itemprop="isbn">5-17-006400-4,978-5-17-006400-7</td>
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td>1867 г</td>
+                            <td itemprop="copyrightYear">1867 г</td>
                         </tr>
                         <tr>
                             <td>Тип издания:</td>
@@ -39,15 +41,15 @@
                         </tr>
                         <tr>
                             <td>Язык:</td>
-                            <td>Русский</td>
+                            <td itemprop="inLanguage" content="ru">Русский</td>
                         </tr>
                         <tr>
                             <td>Страниц:</td>
-                            <td>704 стр.</td>
+                            <td><span itemprop="numberOfPages">704</span> стр.</td>
                         </tr>
                         <tr>
                             <td>Формат:</td>
-                            <td>ePub</td>
+                            <td itemprop="bookFormat">ePub</td>
                         </tr>
                         <tr>
                             <td>Переплет:</td>
@@ -59,7 +61,7 @@
                         </tr>
                         <tr>
                             <td>Жанр:</td>
-                            <td>Русская классика, Литература 19 века</td>
+                            <td itemprop="genre">Русская классика, Литература 19 века</td>
                         </tr>
                         <tr>
                             <td>URL:</td>
@@ -71,7 +73,7 @@
                         </tr>
                         <tr>
                             <td>Описание:</td>
-                            <td>
+                            <td itemprop="description">
                                 Великий роман-эпопея Льва Толстого чудесным образом, как огромная
                                 мозаика, сложен из тысяч картин - батальных, бальных, любовных, бытовых,
                                 политических, философских, портретных, пейзажных, психологических...
@@ -80,7 +82,7 @@
                         <tr>
                             <td>Аудиокнига (отрывок):</td>
                             <td>
-                                <audio controls>
+                                <audio controls itemprop="audio">
                                     <source src="warandpeace.mp3" type="audio/mpeg">
                                 </audio>
                             </td>
@@ -88,37 +90,43 @@
                     </tbody>
                 </table>
                 <br>
-                <img src="levtolstoi.jpg" alt="Лев Николаевич Толстой" height="400">
-                <table>
+                <imgsrc="levtolstoi.jpg" alt="Лев Николаевич Толстой" height="400">
+                <table itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <tbody>
                         <tr>
                             <td>Автор:</td>
-                            <td>Лев Николаевич Толстой</td>
+                            <td itemprop="name">Лев Николаевич Толстой</td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td>16 августа 1828</td>
+                            <td itemprop="birthDate">16 августа 1828</td>
                         </tr>
                         <tr>
-                            <td>Дата смерти:</td>
+                            <td itemprop="deathDate">Дата смерти:</td>
                             <td>7 ноября 1910</td>
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
-                            <td>Ясная Поляна, Тульская губерния, Российская империя</td>
+                            <td itemprop="birthPlace">
+                                Ясная Поляна, Тульская губерния, Российская империя
+                            </td>
                         </tr>
                         <tr>
                             <td>Род деятельности:</td>
-                            <td>прозаик, публицист, философ</td>
+                            <td itemprop="jobTitle">прозаик, публицист, философ</td>
                         </tr>
                     </tbody>
                 </table>
             </article>
 
             <hr>
-            <article>
-                <h2>Harry Potter and the Sorcerer's Stone</h2>
-                <img src="hpstone.jpg" alt="Обложка книги 'Harry Potter and the Sorcerer's Stone'" height="400">
+            <article itemscop itemtype="http://schema.org/Book">
+                <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
+                <img
+                    src="hpstone.jpg"
+                    alt="Обложка книги 'Harry Potter and the Sorcerer's Stone'"
+                    height="400"
+                    itemprop="image">
                 <table>
                     <tbody>
                         <tr>
@@ -127,27 +135,29 @@
                         </tr>
                         <tr>
                             <td>Издательство:</td>
-                            <td>АСТ, Астрель</td>
+                            <td itemprop="publisher" itemscop itemtype="http://schema.org/Organization">
+                                АСТ, Астрель
+                            </td>
                         </tr>
                         <tr>
                             <td>ISBN:</td>
-                            <td>978-0439708180</td>
+                            <td itemprop="isbn">978-0439708180</td>
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td>1998 г</td>
+                            <td itemprop="copyrightYear">1998 г</td>
                         </tr>
                         <tr>
                             <td>Язык:</td>
-                            <td>English</td>
+                            <td itemprop="inLanguage" content="en">English</td>
                         </tr>
                         <tr>
                             <td>Страниц:</td>
-                            <td>309 стр.</td>
+                            <td><span itemprop="numberOfPages">309</span> стр.</td>
                         </tr>
                         <tr>
                             <td>Формат:</td>
-                            <td>pdf</td>
+                            <td itemprop="bookFormat">pdf</td>
                         </tr>
                         <tr>
                             <td>Переплет:</td>
@@ -159,7 +169,7 @@
                         </tr>
                         <tr>
                             <td>Жанр:</td>
-                            <td>Fantasy, Adventure, Kids &amp; Family</td>
+                            <td itemprop="genre">Fantasy, Adventure, Kids &amp; Family</td>
                         </tr>
                         <tr>
                             <td>URL:</td>
@@ -171,7 +181,7 @@
                         </tr>
                         <tr>
                             <td>Описание:</td>
-                            <td>
+                            <td itemprop="description">
                                 Harry Potter has no idea how famous he is. That's because he's
                                 being raised by his miserable aunt and uncle who are terrified Harry will
                                 learn that he's really a wizard, just as his parents were.
@@ -180,7 +190,7 @@
                         <tr>
                             <td>Аудиокнига (отрывок):</td>
                             <td>
-                                <audio controls>
+                                <audio controls  itemprop="audio">
                                     <source src="harrypotter.mp3" type="audio/mpeg">
                                 </audio>
                             </td>
@@ -189,15 +199,15 @@
                 </table>
                 <br>
                 <img src="Rowling.jpg" alt="J. K. Rowling" height="400">
-                <table>
+                <table itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <tbody>
                         <tr>
                             <td>Автор:</td>
-                            <td>J. K. Rowling</td>
+                            <td itemprop="name">J. K. Rowling</td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td>31 июля 1965</td>
+                            <td itemprop="birthDate">31 июля 1965</td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
@@ -205,11 +215,11 @@
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
-                            <td>Глостершир, Англия</td>
+                            <td itemprop="BirthPlace">Глостершир, Англия</td>
                         </tr>
                         <tr>
                             <td>Род деятельности:</td>
-                            <td>прозаик</td>
+                            <td itemprop="jobTitle">прозаик</td>
                         </tr>
                         <tr>
                             <td>URL:</td>
@@ -219,12 +229,14 @@
                         </tr>
                         <tr>
                             <td>Адрес:</td>
-                            <td>50 Bedford Square, London</td>
+                            <td itemprop="address">50 Bedford Square, London</td>
                         </tr>
                         <tr>
                             <td>Email:</td>
                             <td>
-                                <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                                <a itemprop="email" href="mailto:info@jkrowlingpr.com">
+                                    info@jkrowlingpr.com
+                                </a>
                             </td>
                         </tr>
                     </tbody>
@@ -232,9 +244,9 @@
             </article>
 
             <hr>
-            <article>
-                <h2>Titanic</h2>
-                <video height="400" poster="titanic.jpg" controls>
+            <article itemscope itemtype="http://schema.org/Movie">
+                <h2 itemprop="name">Titanic</h2>
+                <video itemprop="trailer" height="400" poster="titanic.jpg" controls>
                     <track kind="subtitles" src="titanik.vtt" srclang="ru" label="Русский" default>
                     <source
                         src="http://cache-ekt03.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-119770.mp4"
@@ -249,7 +261,7 @@
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td>1997 г</td>
+                            <td itemprop="copyrightYear">1997 г</td>
                         </tr>
                         <tr>
                             <td>Страна:</td>
@@ -263,23 +275,27 @@
                         </tr>
                         <tr>
                             <td>Режиссер:</td>
-                            <td>Джеймс Кэмерон</td>
+                            <td itemprop="director">Джеймс Кэмерон</td>
                         </tr>
                         <tr>
                             <td>Сценарий:</td>
-                            <td>Джеймс Кэмерон</td>
+                            <td itemprop="author">Джеймс Кэмерон</td>
                         </tr>
                         <tr>
                             <td>Продюсер:</td>
-                            <td>Джеймс Кэмерон, Джон Ландау, Памела Исли</td>
+                            <td>
+                                <span itemprop="producer">Джеймс Кэмерон</span>,
+                                <span itemprop="producer">Джон Ландау</span>,
+                                <span  itemprop="producer">Памела Исли</span>
+                            </td>
                         </tr>
                         <tr>
                             <td>Оператор:</td>
-                            <td>Рассел Карпентер</td>
+                            <td itemprop="provider">Рассел Карпентер</td>
                         </tr>
                         <tr>
                             <td>Композитор:</td>
-                            <td>Джеймс Хорнер</td>
+                            <td itemprop="musicBy">Джеймс Хорнер</td>
                         </tr>
                         <tr>
                             <td>Художник:</td>
@@ -291,7 +307,7 @@
                         </tr>
                         <tr>
                             <td>Жанр:</td>
-                            <td>драма, мелодрама</td>
+                            <td itemprop="genre">драма, мелодрама</td>
                         </tr>
                         <tr>
                             <td>Дата размещения:</td>
@@ -307,7 +323,7 @@
                         </tr>
                         <tr>
                             <td>Описание:</td>
-                            <td>
+                            <td itemprop="description">
                                 Молодые влюбленные Джек и Роза находят друг друга в первом и
                                 последнем плавании «непотопляемого» Титаника. Они не могли знать, что
                                 шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики,
@@ -318,15 +334,15 @@
                 </table>
                 <br>
                 <img src="Cameron.jpg" alt="Джеймс Кэмерон" height="400">
-                <table>
+                <table itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <tbody>
                         <tr>
                             <td>Автор:</td>
-                            <td>Джеймс Кэмерон</td>
+                            <td itemprop="name">Джеймс Кэмерон</td>
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td>16 августа 1954</td>
+                            <td itemprop="birthDate">16 августа 1954</td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
@@ -334,11 +350,11 @@
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
-                            <td>Капускасинг, Онтарио, Канада</td>
+                            <td itemprop="birthPlace">Капускасинг, Онтарио, Канада</td>
                         </tr>
                         <tr>
                             <td>Род деятельности:</td>
-                            <td>продюсер, режиссер, сценарист, актер</td>
+                            <td itemprop="jobTitle">продюсер, режиссер, сценарист, актер</td>
                         </tr>
                     </tbody>
                 </table>
