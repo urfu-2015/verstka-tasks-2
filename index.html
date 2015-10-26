@@ -121,13 +121,23 @@
                                     >
                                 </td>
                                 <td>
-                                    <pre>
-Автор: Лев Николаевич Толстой
-Дата рождения: 16 августа 1828
-Дата смерти: 7 ноября 1910
-Место рождения: Ясная Поляна, Тульская губерния, Российская империя
-Род деятельности: прозаик, публицист, философ
-                                    </pre>
+                                    Автор: Лев Николаевич Толстой<br>
+                                    Дата рождения:
+                                    <span itemprop="birthDate">
+                                        <time datetime="1828-8-16">16 августа 1828</time>
+                                    </span><br>
+                                    Дата смерти:
+                                    <span itemprop="deathDate">
+                                        <time datetime="1910-11-7">7 ноября 1910</time>
+                                    </span><br>
+                                    Место рождения:
+                                    <span itemprop="birthPlace">
+                                        Ясная Поляна, Тульская губерния, Российская империя
+                                    </span><br>
+                                    Род деятельности:
+                                    <span itemprop="jobTitle">
+                                        прозаик, публицист, философ
+                                    </span><br>
                                 </td>
                             </tr>
                         </table>
@@ -240,16 +250,27 @@
                                     >
                                 </td>
                                 <td>
-                                    <pre>
-Автор: J. K. Rowling
-Дата рождения: 31 июля 1965
-Дата смерти: –
-Место рождения:    Глостершир, Англия
-Род деятельности: прозаик
-URL: jkrowling.com
-Адрес: 50 Bedford Square, London
-Email: info@jkrowlingpr.com
-                                    </pre>
+                                    Автор: J. K. Rowling<br>
+                                    Дата рождения:
+                                    <span itemprop="birthDate">
+                                        <time datetime="1965-7-31">31 июля 1965</time>
+                                    </span><br>
+                                    Дата смерти:
+                                    <span itemprop="deathDate">–</span><br>
+                                    Место рождения:
+                                    <span itemprop="birthPlace">Глостершир, Англия</span><br>
+                                    Род деятельности:
+                                    <span itemprop="jobTitle">прозаик</span><br>
+                                    URL:
+                                    <span itemprop="url">
+                                        <a href="http://www.jkrowling.com/">jkrowling.com</a>
+                                    </span><br>
+                                    Адрес:
+                                    <span itemprop="address">50 Bedford Square, London</span><br>
+                                    Email:
+                                    <span itemprop="email">
+                                        <a href="mailto:info@jkrowlingpr.com">info@jkrowlingpr.com</a>
+                                    </span><br>
                                 </td>
                             </tr>
                         </table>
@@ -371,13 +392,17 @@ Email: info@jkrowlingpr.com
                                     >
                                 </td>
                                 <td>
-                                    <pre>
-Автор: Джеймс Кэмерон
-Дата рождения: 16 августа 1954
-Дата смерти: –
-Место рождения: Капускасинг, Онтарио, Канада
-Род деятельности: продюсер, режиссер, сценарист, актер
-                                    </pre>
+                                    Автор: Джеймс Кэмерон<br>
+                                    Дата рождения:
+                                    <span itemprop="birthDate">
+                                        <time datetime="1954-8-16">16 августа 1954</time>
+                                    </span><br>
+                                    Дата смерти:
+                                    <span itemprop="deathDate">–</span><br>
+                                    Место рождения:
+                                    <span itemprop="birthPlace">Капускасинг, Онтарио, Канада</span><br>
+                                    Род деятельности:
+                                    <span itemprop="jobTitle">продюсер, режиссер, сценарист, актер</span><br>
                                 </td>
                             </tr>
                         </table>
@@ -397,7 +422,7 @@ Email: info@jkrowlingpr.com
         </article>
     </main>
     <section>
-        <form action="index.html" method="POST">
+        <form action="index.html" method="POST" enctype="multipart/form-data">
             <label for="cover">Тип:</label>
             <select id="cover" name="cover" onChange="onCoverChange()">
                 <option value="Book" selected>Книга</option>
