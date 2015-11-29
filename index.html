@@ -12,7 +12,7 @@
         </header>
         <section>
             <hr>
-            <article itemscop  itemtype="http://schema.org/Book">
+            <article itemscope itemtype="http://schema.org/Book">
                 <h2 itemprop="name">Война и мир</h2>
                 <img src="warandpeace.jpg" alt="Обложка книги 'Война и Мир'" height="400" itemprop="image">
                 <table>
@@ -33,7 +33,7 @@
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td itemprop="copyrightYear">1867 г</td>
+                            <td><span itemprop="copyrightYear">1867</span> г</td>
                         </tr>
                         <tr>
                             <td>Тип издания:</td>
@@ -99,11 +99,11 @@
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td itemprop="birthDate">16 августа 1828</td>
+                            <td itemprop="birthDate" content="1828-08-16">16 августа 1828</td>
                         </tr>
                         <tr>
-                            <td itemprop="deathDate">Дата смерти:</td>
-                            <td>7 ноября 1910</td>
+                            <td>Дата смерти:</td>
+                            <td itemprop="deathDate" content="1910-11-07">7 ноября 1910</td>
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
@@ -120,7 +120,7 @@
             </article>
 
             <hr>
-            <article itemscop itemtype="http://schema.org/Book">
+            <article itemscope itemtype="http://schema.org/Book">
                 <h2 itemprop="name">Harry Potter and the Sorcerer's Stone</h2>
                 <img
                     src="hpstone.jpg"
@@ -145,7 +145,7 @@
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td itemprop="copyrightYear">1998 г</td>
+                            <td><span itemprop="copyrightYear">1998</span> г</td>
                         </tr>
                         <tr>
                             <td>Язык:</td>
@@ -207,7 +207,7 @@
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td itemprop="birthDate">31 июля 1965</td>
+                            <td itemprop="birthDate" content="1965-07-31">31 июля 1965</td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
@@ -215,7 +215,7 @@
                         </tr>
                         <tr>
                             <td>Место рождения:</td>
-                            <td itemprop="BirthPlace">Глостершир, Англия</td>
+                            <td itemprop="birthPlace">Глостершир, Англия</td>
                         </tr>
                         <tr>
                             <td>Род деятельности:</td>
@@ -246,13 +246,30 @@
             <hr>
             <article itemscope itemtype="http://schema.org/Movie">
                 <h2 itemprop="name">Titanic</h2>
-                <video itemprop="trailer" height="400" poster="titanic.jpg" controls>
-                    <track kind="subtitles" src="titanik.vtt" srclang="ru" label="Русский" default>
-                    <source
-                        src="http://cache-ekt03.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-119770.mp4"
-                        type="video/mp4"
-                    >
-                </video>
+                <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+                    <span itemprop="caption" content="Трейлер к фильму 'Титаник'"></span>
+                    <span itemprop="name" content="Трейлер к фильму 'Титаник'"></span>
+                    <span
+                        itemprop="description"
+                        content="Молодые влюбленные Джек и Роза находят друг друга в первом и последнем плавании «непотопляемого» Титаника. Они не могли знать, что шикарный лайнер столкнется с айсбергом в холодных водах Северной Атлантики, и их страстная любовь превратится в схватку со смертью…">
+                    </span>
+                    <span itemprop="uploadDate" content="2015-11-29"></span>
+                    <span itemprop="duration" content="2:16"></span>
+                    <span itemprop="isFamilyFriendly" content="true"></span>
+                    <span itemprop="duration" content="2:16"></span>
+                    <span itemprop="thumbnail" content="titanic.jpg"></span>
+                    <video height="400" poster="titanic.jpg" controls>
+                        <track kind="subtitles" src="titanik.vtt" srclang="ru" label="Русский" default>
+                        <source
+                            src="http://cache-ekt03.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-119770.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+                    <br>
+                    <a itemprop="url" href="http://cache-ekt03.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-119770.mp4">
+                        http://cache-ekt03.cdn.yandex.net/kp.cdn.yandex.net/2213/kinopoisk.ru-Titanic-119770.mp4
+                    </a>
+                </div>
                 <table>
                     <tbody>
                         <tr>
@@ -261,7 +278,7 @@
                         </tr>
                         <tr>
                             <td>Год:</td>
-                            <td itemprop="copyrightYear">1997 г</td>
+                            <td><span itemprop="copyrightYear">1997</span> г</td>
                         </tr>
                         <tr>
                             <td>Страна:</td>
@@ -342,7 +359,7 @@
                         </tr>
                         <tr>
                             <td>Дата рождения:</td>
-                            <td itemprop="birthDate">16 августа 1954</td>
+                            <td itemprop="birthDate" content="1954-08-16">16 августа 1954</td>
                         </tr>
                         <tr>
                             <td>Дата смерти:</td>
